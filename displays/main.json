@@ -16,6 +16,7 @@
         {
           "name": "main",
           "tabs": [
+            "outputs"
           ]
         }
       ],
@@ -27,6 +28,15 @@
           "views": [
             "upload",
             "params"
+          ]
+        },
+        {
+          "name": "outputs",
+          "title": "Outputs",
+          "icon": "",
+          "views": [
+            "dataTable",
+            "fitTable"
           ]
         }
       ]

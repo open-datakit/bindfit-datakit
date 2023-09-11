@@ -29,6 +29,12 @@
     },
     {
       "name": "params"
+    },
+    {
+      "name": "dataTable"
+    },
+    {
+      "name": "fitTable"
     }
   ],
   "displays": [

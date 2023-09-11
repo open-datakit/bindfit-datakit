@@ -290,6 +290,22 @@
         "inputParams",
         "outputParams"
       ]
+    },
+    {
+      "name": "dataTable",
+      "spec": {},
+      "specType": "opendatafit-table",
+      "resources": [
+        "inputData"
+      ]
+    },
+    {
+      "name": "fitTable",
+      "spec": {},
+      "specType": "opendatafit-table",
+      "resources": [
+        "outputFit"
+      ]
     }
   ],
   "displays": [
@@ -310,7 +326,9 @@
             },
             {
               "name": "main",
-              "tabs": []
+              "tabs": [
+                "outputs"
+              ]
             }
           ],
           "tabs": [
@@ -321,6 +339,15 @@
               "views": [
                 "upload",
                 "params"
+              ]
+            },
+            {
+              "name": "outputs",
+              "title": "Outputs",
+              "icon": "",
+              "views": [
+                "dataTable",
+                "fitTable"
               ]
             }
           ]

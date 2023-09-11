@@ -1,0 +1,8 @@
+{
+  "name": "fitTable",
+  "spec": {},
+  "specType": "opendatafit-table",
+  "resources": [
+    "outputFit"
+  ]
+}

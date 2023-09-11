@@ -1,0 +1,8 @@
+{
+  "name": "dataTable",
+  "spec": {},
+  "specType": "opendatafit-table",
+  "resources": [
+    "inputData"
+  ]
+}
