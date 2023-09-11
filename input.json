@@ -6,27 +6,27 @@
       {
         "name": "bindfit",
         "title": "Bindfit",
-        "code": "ZGVmIG1haW4oCiAgICBkYXRhLAogICAgcGFyYW1zLAogICAgb3B0aW9ucywKICAgIG91dHB1dHMsCiAgICAqKmt3YXJncywKKToKICAgIGltcG9ydCBudW1weSBhcyBucAogICAgaW1wb3J0IHBhbmRhcyBhcyBwZAoKICAgIGltcG9ydCBiaW5kZml0CgoKICAgICMgQ29udmVydCBwYXJhbXMgdG8gQmluZGZpdCBmb3JtYXQKICAgICMgVE9ETzogTW9kaWZ5IGxpYnJhcnkgdG8gYWNjZXB0IEZyaWN0aW9ubGVzcyBwYXJhbXMgZm9ybWF0CiAgICBiaW5kZml0X3BhcmFtcyA9IHt9CgogICAgZm9yIGtleSwgcGFyYW0gaW4gcGFyYW1zWyJkYXRhIl0uaXRlbXMoKToKICAgICAgICBiaW5kZml0X3BhcmFtcy51cGRhdGUoewogICAgICAgICAgICBrZXk6IHsKICAgICAgICAgICAgICAgICJpbml0IjogcGFyYW1bInZhbHVlIl0sCiAgICAgICAgICAgICAgICAiYm91bmRzIjogewogICAgICAgICAgICAgICAgICAgICJtaW4iOiBwYXJhbVsibG93ZXJCb3VuZCJdLAogICAgICAgICAgICAgICAgICAgICJtYXgiOiBwYXJhbVsidXBwZXJCb3VuZCJdLAogICAgICAgICAgICAgICAgfSwKICAgICAgICAgICAgfQogICAgICAgIH0pCgogICAgIyBCaW5kZml0IG9wdGlvbnMKICAgIG1vZGVsID0gb3B0aW9uc1siZGF0YSJdWyJtb2RlbCJdCiAgICBtZXRob2QgPSBvcHRpb25zWyJkYXRhIl1bIm1ldGhvZCJdCiAgICBub3JtYWxpc2UgPSBvcHRpb25zWyJkYXRhIl1bIm5vcm1hbGlzZSJdCiAgICBkaWx1dGUgPSBvcHRpb25zWyJkYXRhIl1bImRpbHV0ZSJdCiAgICBmbGF2b3VyID0gb3B0aW9uc1siZGF0YSJdWyJmbGF2b3VyIl0KCiAgICAjIExvYWQgZGF0YQogICAgIyBUT0RPOiBTcGxpdCB0aGlzIGZ1bmN0aW9uIG91dCBpbnRvIGRhdGFwYWNrYWdlLXV0aWxpdGllcyBsaWJyYXJ5CiAgICBkZWYgZGF0YXBhY2thZ2VfdG9fZGF0YWZyYW1lKGRwKToKICAgICAgICBkZiA9IHBkLkRhdGFGcmFtZS5mcm9tX2RpY3QoZHBbImRhdGEiXSkKICAgICAgICAjIFJlb3JkZXIgY29sdW1ucyBieSBzY2hlbWEgZmllbGQgb3JkZXIKICAgICAgICBjb2xzID0gWyBmaWVsZFsibmFtZSJdIGZvciBmaWVsZCBpbiBkcFsic2NoZW1hIl1bImZpZWxkcyJdIF0KICAgICAgICBkZiA9IGRmW2NvbHNdCiAgICAgICAgcmV0dXJuIGRmCgogICAgZGYgPSBkYXRhcGFja2FnZV90b19kYXRhZnJhbWUoZGF0YSkKCiAgICAjIEJpbmRmaXQgZXhwZWN0cyBlYWNoIHZhcmlhYmxlIGFzIHJvd3MKICAgIGRhdGFfeCA9IG5wLnRyYW5zcG9zZShkZi5pbG9jWzosIDoyXS50b19udW1weSgpKQogICAgZGF0YV95ID0gbnAudHJhbnNwb3NlKGRmLmlsb2NbOiwgMjpdLnRvX251bXB5KCkpCgogICAgIyBBcHBseSBkaWx1dGlvbiBjb3JyZWN0aW9uCiAgICAjIFRPRE86IFRoaW5rIGFib3V0IHdoZXJlIHRoaXMgc2hvdWxkIGdvIC0gZml0dGVyIG9yIGZ1bmN0aW9uPwogICAgIyBPciBqdXN0IGFwcGx5IGl0IGJlZm9yZSB0aGUgZml0PwogICAgaWYgZGlsdXRlOgogICAgICAgIGRhdGFfeSA9IGJpbmRmaXQuaGVscGVycy5kaWx1dGUoZGF0YV94WzBdLCBkYXRhX3kpCgogICAgZnVuY3Rpb24gPSBiaW5kZml0LmZ1bmN0aW9ucy5jb25zdHJ1Y3QoCiAgICAgICAgbW9kZWwsCiAgICAgICAgbm9ybWFsaXNlPW5vcm1hbGlzZSwKICAgICAgICBmbGF2b3VyPWZsYXZvdXIsCiAgICApCgogICAgZml0dGVyID0gYmluZGZpdC5maXR0ZXIuRml0dGVyKAogICAgICAgIGRhdGFfeCwgZGF0YV95LCBmdW5jdGlvbiwgbm9ybWFsaXNlPW5vcm1hbGlzZSwgcGFyYW1zPWJpbmRmaXRfcGFyYW1zCiAgICApCgogICAgZml0dGVyLnJ1bl9zY2lweShiaW5kZml0X3BhcmFtcywgbWV0aG9kPW1ldGhvZCkKCiAgICBzdW1tYXJ5ID0gewogICAgICAgICJmaXR0ZXIiOiBtb2RlbCwKICAgICAgICAiZml0IjogewogICAgICAgICAgICAieSI6IGZpdHRlci5maXQsCiAgICAgICAgICAgICJjb2VmZnNfcmF3IjogZml0dGVyLmNvZWZmc19yYXcsCiAgICAgICAgICAgICJjb2VmZnMiOiBmaXR0ZXIuY29lZmZzLAogICAgICAgICAgICAibW9sZWZyYWNfcmF3IjogZml0dGVyLm1vbGVmcmFjX3JhdywKICAgICAgICAgICAgIm1vbGVmcmFjIjogZml0dGVyLm1vbGVmcmFjLAogICAgICAgICAgICAicGFyYW1zIjogZml0dGVyLnBhcmFtcywKICAgICAgICAgICAgIm5feSI6IG5wLmFycmF5KGZpdHRlci5maXQpLnNpemUsCiAgICAgICAgICAgICJuX3BhcmFtcyI6IGxlbihmaXR0ZXIucGFyYW1zKSArIG5wLmFycmF5KGZpdHRlci5jb2VmZnNfcmF3KS5zaXplLAogICAgICAgIH0sCiAgICAgICAgInFvZiI6IHsKICAgICAgICAgICAgInJlc2lkdWFscyI6IGZpdHRlci5yZXNpZHVhbHMsCiAgICAgICAgICAgICJzc3IiOiBiaW5kZml0LmhlbHBlcnMuc3NyKGZpdHRlci5yZXNpZHVhbHMpLAogICAgICAgICAgICAicm1zIjogYmluZGZpdC5oZWxwZXJzLnJtcyhmaXR0ZXIucmVzaWR1YWxzKSwKICAgICAgICAgICAgImNvdiI6IGJpbmRmaXQuaGVscGVycy5jb3YoZGF0YV95LCBmaXR0ZXIucmVzaWR1YWxzKSwKICAgICAgICAgICAgInJtc190b3RhbCI6IGJpbmRmaXQuaGVscGVycy5ybXMoZml0dGVyLnJlc2lkdWFscywgdG90YWw9VHJ1ZSksCiAgICAgICAgICAgICJjb3ZfdG90YWwiOiBiaW5kZml0LmhlbHBlcnMuY292KGRhdGFfeSwgZml0dGVyLnJlc2lkdWFscywgdG90YWw9VHJ1ZSksCiAgICAgICAgfSwKICAgICAgICAidGltZSI6IGZpdHRlci50aW1lLAogICAgICAgICJvcHRpb25zIjogewogICAgICAgICAgICAiZGlsdXRlIjogZGlsdXRlLAogICAgICAgICAgICAibm9ybWFsaXNlIjogbm9ybWFsaXNlLAogICAgICAgICAgICAibWV0aG9kIjogbWV0aG9kLAogICAgICAgICAgICAiZmxhdm91ciI6IGZsYXZvdXIsCiAgICAgICAgfSwKICAgIH0KCiAgICAjIFRPRE86IFRoaXMgY29udmVyc2lvbiBzaG91bGQgYmUgbW92ZWQgdG8gQmluZGZpdCBsaWJyYXJ5CiAgICBmb3Iga2V5LCBwYXJhbSBpbiBmaXR0ZXIucGFyYW1zLml0ZW1zKCk6CiAgICAgICAgb3V0cHV0c1sicGFyYW1zIl0udXBkYXRlKHsKICAgICAgICAgICAgImRhdGEiOiB7CiAgICAgICAgICAgICAgICBrZXk6IHsKICAgICAgICAgICAgICAgICAgICAidmFsdWUiOiBwYXJhbVsidmFsdWUiXSwKICAgICAgICAgICAgICAgICAgICAic3RkZXJyIjogcGFyYW1bInN0ZGVyciJdLAogICAgICAgICAgICAgICAgfSwKICAgICAgICAgICAgfSwKICAgICAgICB9KQoKICAgIHByaW50KCI9PT09PT09PT09PT09PT09PT09PT09PT09PSIpCiAgICBwcmludCgiZGF0YSIpCiAgICBwcmludChkYXRhWyJkYXRhIl0pCiAgICBwcmludChkYXRhWyJzY2hlbWEiXVsiZmllbGRzIl0pCiAgICBwcmludCgiPT09PT09PT09PT09PT09PT09PT09PT09PT0iKQogICAgcHJpbnQoIm91dHB1dHNbXCJvdXRwdXRGaXRcIl0iKQogICAgcHJpbnQob3V0cHV0c1sib3V0cHV0Rml0Il1bImRhdGEiXSkKICAgIHByaW50KCI9PT09PT09PT09PT09PT09PT09PT09PT09PSIpCiAgICBwcmludCgiZml0dGVyLmZpdCIpCiAgICBwcmludChmaXR0ZXIuZml0KQogICAgcHJpbnQoZml0dGVyLmZpdC5UKQogICAgcHJpbnQoIj09PT09PT09PT09PT09PT09PT09PT09PT09IikKCiAgICAjIFRyYW5zbGF0ZSBmaXR0ZXIuZml0IGludG8gSlNPTiBmb3IgdGFidWxhciBkYXRhIHNjaGVtYQogICAgIyBUT0RPOiBUaGlzIHNob3VsZCBiZSBkb25lIGJ5IHRoZSBCaW5kZml0IGxpYnJhcnkKICAgIGRlZiBmaXRfdG9fanNvbihkYXRhLCBmaXQpOgogICAgICAgIHhGaWVsZHMgPSBbIGlbIm5hbWUiXSBmb3IgaSBpbiBkYXRhWyJzY2hlbWEiXVsiZmllbGRzIl1bOjJdIF0KICAgICAgICB5RmllbGRzID0gWyBpWyJuYW1lIl0gZm9yIGkgaW4gZGF0YVsic2NoZW1hIl1bImZpZWxkcyJdWzI6XSBdCgogICAgICAgIGZpdERhdGEgPSBbXQoKICAgICAgICBmb3IgZGF0YVJvdywgZml0Um93IGluIHppcChkYXRhWyJkYXRhIl0sIGZpdC5UKToKICAgICAgICAgICAgcm93ID0ge30KCiAgICAgICAgICAgIGZvciBmaWVsZCBpbiB4RmllbGRzOgogICAgICAgICAgICAgICAgcm93W2ZpZWxkXSA9IGRhdGFSb3dbZmllbGRdCgogICAgICAgICAgICBmb3IgaSwgZmllbGQgaW4gZW51bWVyYXRlKHlGaWVsZHMpOgogICAgICAgICAgICAgICAgcm93W2ZpZWxkXSA9IGZpdFJvd1tpXQoKICAgICAgICAgICAgZml0RGF0YS5hcHBlbmQocm93KQoKICAgICAgICByZXR1cm4gZml0RGF0YQoKICAgIG91dHB1dHNbIm91dHB1dEZpdCJdWyJkYXRhIl0gPSBmaXRfdG9fanNvbihkYXRhLCBmaXR0ZXIuZml0KQogICAgb3V0cHV0c1sib3V0cHV0Rml0Il1bInNjaGVtYSJdID0gZGF0YVsic2NoZW1hIl0KCiAgICByZXR1cm4gb3V0cHV0cwo=",
+        "code": "ZGVmIG1haW4oCiAgICBpbnB1dERhdGEsCiAgICBpbnB1dFBhcmFtcywKICAgIGlucHV0T3B0aW9ucywKICAgIG91dHB1dHMsCiAgICAqKmt3YXJncywKKToKICAgIGltcG9ydCBudW1weSBhcyBucAogICAgaW1wb3J0IHBhbmRhcyBhcyBwZAoKICAgIGltcG9ydCBiaW5kZml0CgoKICAgICMgQ29udmVydCBwYXJhbXMgdG8gQmluZGZpdCBmb3JtYXQKICAgICMgVE9ETzogTW9kaWZ5IGxpYnJhcnkgdG8gYWNjZXB0IEZyaWN0aW9ubGVzcyBwYXJhbXMgZm9ybWF0CiAgICBiaW5kZml0X3BhcmFtcyA9IHt9CgogICAgZm9yIGtleSwgcGFyYW0gaW4gaW5wdXRQYXJhbXNbImRhdGEiXS5pdGVtcygpOgogICAgICAgIGJpbmRmaXRfcGFyYW1zLnVwZGF0ZSh7CiAgICAgICAgICAgIGtleTogewogICAgICAgICAgICAgICAgImluaXQiOiBwYXJhbVsidmFsdWUiXSwKICAgICAgICAgICAgICAgICJib3VuZHMiOiB7CiAgICAgICAgICAgICAgICAgICAgIm1pbiI6IHBhcmFtWyJsb3dlckJvdW5kIl0sCiAgICAgICAgICAgICAgICAgICAgIm1heCI6IHBhcmFtWyJ1cHBlckJvdW5kIl0sCiAgICAgICAgICAgICAgICB9LAogICAgICAgICAgICB9CiAgICAgICAgfSkKCiAgICAjIEJpbmRmaXQgb3B0aW9ucwogICAgbW9kZWwgPSBpbnB1dE9wdGlvbnNbImRhdGEiXVsibW9kZWwiXQogICAgbWV0aG9kID0gaW5wdXRPcHRpb25zWyJkYXRhIl1bIm1ldGhvZCJdCiAgICBub3JtYWxpc2UgPSBpbnB1dE9wdGlvbnNbImRhdGEiXVsibm9ybWFsaXNlIl0KICAgIGRpbHV0ZSA9IGlucHV0T3B0aW9uc1siZGF0YSJdWyJkaWx1dGUiXQogICAgZmxhdm91ciA9IGlucHV0T3B0aW9uc1siZGF0YSJdWyJmbGF2b3VyIl0KCiAgICAjIExvYWQgZGF0YQogICAgIyBUT0RPOiBTcGxpdCB0aGlzIGZ1bmN0aW9uIG91dCBpbnRvIGRhdGFwYWNrYWdlLXV0aWxpdGllcyBsaWJyYXJ5CiAgICBkZWYgZGF0YXBhY2thZ2VfdG9fZGF0YWZyYW1lKGRwKToKICAgICAgICBkZiA9IHBkLkRhdGFGcmFtZS5mcm9tX2RpY3QoZHBbImRhdGEiXSkKICAgICAgICAjIFJlb3JkZXIgY29sdW1ucyBieSBzY2hlbWEgZmllbGQgb3JkZXIKICAgICAgICBjb2xzID0gWyBmaWVsZFsibmFtZSJdIGZvciBmaWVsZCBpbiBkcFsic2NoZW1hIl1bImZpZWxkcyJdIF0KICAgICAgICBkZiA9IGRmW2NvbHNdCiAgICAgICAgcmV0dXJuIGRmCgogICAgZGYgPSBkYXRhcGFja2FnZV90b19kYXRhZnJhbWUoaW5wdXREYXRhKQoKICAgICMgQmluZGZpdCBleHBlY3RzIGVhY2ggdmFyaWFibGUgYXMgcm93cwogICAgZGF0YV94ID0gbnAudHJhbnNwb3NlKGRmLmlsb2NbOiwgOjJdLnRvX251bXB5KCkpCiAgICBkYXRhX3kgPSBucC50cmFuc3Bvc2UoZGYuaWxvY1s6LCAyOl0udG9fbnVtcHkoKSkKCiAgICAjIEFwcGx5IGRpbHV0aW9uIGNvcnJlY3Rpb24KICAgICMgVE9ETzogVGhpbmsgYWJvdXQgd2hlcmUgdGhpcyBzaG91bGQgZ28gLSBmaXR0ZXIgb3IgZnVuY3Rpb24/CiAgICAjIE9yIGp1c3QgYXBwbHkgaXQgYmVmb3JlIHRoZSBmaXQ/CiAgICBpZiBkaWx1dGU6CiAgICAgICAgZGF0YV95ID0gYmluZGZpdC5oZWxwZXJzLmRpbHV0ZShkYXRhX3hbMF0sIGRhdGFfeSkKCiAgICBmdW5jdGlvbiA9IGJpbmRmaXQuZnVuY3Rpb25zLmNvbnN0cnVjdCgKICAgICAgICBtb2RlbCwKICAgICAgICBub3JtYWxpc2U9bm9ybWFsaXNlLAogICAgICAgIGZsYXZvdXI9Zmxhdm91ciwKICAgICkKCiAgICBmaXR0ZXIgPSBiaW5kZml0LmZpdHRlci5GaXR0ZXIoCiAgICAgICAgZGF0YV94LCBkYXRhX3ksIGZ1bmN0aW9uLCBub3JtYWxpc2U9bm9ybWFsaXNlLCBwYXJhbXM9YmluZGZpdF9wYXJhbXMKICAgICkKCiAgICBmaXR0ZXIucnVuX3NjaXB5KGJpbmRmaXRfcGFyYW1zLCBtZXRob2Q9bWV0aG9kKQoKICAgIHN1bW1hcnkgPSB7CiAgICAgICAgImZpdHRlciI6IG1vZGVsLAogICAgICAgICJmaXQiOiB7CiAgICAgICAgICAgICJ5IjogZml0dGVyLmZpdCwKICAgICAgICAgICAgImNvZWZmc19yYXciOiBmaXR0ZXIuY29lZmZzX3JhdywKICAgICAgICAgICAgImNvZWZmcyI6IGZpdHRlci5jb2VmZnMsCiAgICAgICAgICAgICJtb2xlZnJhY19yYXciOiBmaXR0ZXIubW9sZWZyYWNfcmF3LAogICAgICAgICAgICAibW9sZWZyYWMiOiBmaXR0ZXIubW9sZWZyYWMsCiAgICAgICAgICAgICJwYXJhbXMiOiBmaXR0ZXIucGFyYW1zLAogICAgICAgICAgICAibl95IjogbnAuYXJyYXkoZml0dGVyLmZpdCkuc2l6ZSwKICAgICAgICAgICAgIm5fcGFyYW1zIjogbGVuKGZpdHRlci5wYXJhbXMpICsgbnAuYXJyYXkoZml0dGVyLmNvZWZmc19yYXcpLnNpemUsCiAgICAgICAgfSwKICAgICAgICAicW9mIjogewogICAgICAgICAgICAicmVzaWR1YWxzIjogZml0dGVyLnJlc2lkdWFscywKICAgICAgICAgICAgInNzciI6IGJpbmRmaXQuaGVscGVycy5zc3IoZml0dGVyLnJlc2lkdWFscyksCiAgICAgICAgICAgICJybXMiOiBiaW5kZml0LmhlbHBlcnMucm1zKGZpdHRlci5yZXNpZHVhbHMpLAogICAgICAgICAgICAiY292IjogYmluZGZpdC5oZWxwZXJzLmNvdihkYXRhX3ksIGZpdHRlci5yZXNpZHVhbHMpLAogICAgICAgICAgICAicm1zX3RvdGFsIjogYmluZGZpdC5oZWxwZXJzLnJtcyhmaXR0ZXIucmVzaWR1YWxzLCB0b3RhbD1UcnVlKSwKICAgICAgICAgICAgImNvdl90b3RhbCI6IGJpbmRmaXQuaGVscGVycy5jb3YoZGF0YV95LCBmaXR0ZXIucmVzaWR1YWxzLCB0b3RhbD1UcnVlKSwKICAgICAgICB9LAogICAgICAgICJ0aW1lIjogZml0dGVyLnRpbWUsCiAgICAgICAgIm9wdGlvbnMiOiB7CiAgICAgICAgICAgICJkaWx1dGUiOiBkaWx1dGUsCiAgICAgICAgICAgICJub3JtYWxpc2UiOiBub3JtYWxpc2UsCiAgICAgICAgICAgICJtZXRob2QiOiBtZXRob2QsCiAgICAgICAgICAgICJmbGF2b3VyIjogZmxhdm91ciwKICAgICAgICB9LAogICAgfQoKICAgICMgVE9ETzogVGhpcyBjb252ZXJzaW9uIHNob3VsZCBiZSBtb3ZlZCB0byBCaW5kZml0IGxpYnJhcnkKICAgIGZvciBrZXksIHBhcmFtIGluIGZpdHRlci5wYXJhbXMuaXRlbXMoKToKICAgICAgICBvdXRwdXRzWyJvdXRwdXRQYXJhbXMiXS51cGRhdGUoewogICAgICAgICAgICAiZGF0YSI6IHsKICAgICAgICAgICAgICAgIGtleTogewogICAgICAgICAgICAgICAgICAgICJ2YWx1ZSI6IHBhcmFtWyJ2YWx1ZSJdLAogICAgICAgICAgICAgICAgICAgICJzdGRlcnIiOiBwYXJhbVsic3RkZXJyIl0sCiAgICAgICAgICAgICAgICB9LAogICAgICAgICAgICB9LAogICAgICAgIH0pCgogICAgIyBUcmFuc2xhdGUgZml0dGVyLmZpdCBpbnRvIEpTT04gZm9yIHRhYnVsYXIgZGF0YSBzY2hlbWEKICAgICMgVE9ETzogVGhpcyBzaG91bGQgYmUgZG9uZSBieSB0aGUgQmluZGZpdCBsaWJyYXJ5CiAgICBkZWYgZml0X3RvX2pzb24oZGF0YSwgZml0KToKICAgICAgICB4RmllbGRzID0gWyBpWyJuYW1lIl0gZm9yIGkgaW4gaW5wdXREYXRhWyJzY2hlbWEiXVsiZmllbGRzIl1bOjJdIF0KICAgICAgICB5RmllbGRzID0gWyBpWyJuYW1lIl0gZm9yIGkgaW4gaW5wdXREYXRhWyJzY2hlbWEiXVsiZmllbGRzIl1bMjpdIF0KCiAgICAgICAgZml0RGF0YSA9IFtdCgogICAgICAgIGZvciBkYXRhUm93LCBmaXRSb3cgaW4gemlwKGlucHV0RGF0YVsiZGF0YSJdLCBmaXQuVCk6CiAgICAgICAgICAgIHJvdyA9IHt9CgogICAgICAgICAgICBmb3IgZmllbGQgaW4geEZpZWxkczoKICAgICAgICAgICAgICAgIHJvd1tmaWVsZF0gPSBkYXRhUm93W2ZpZWxkXQoKICAgICAgICAgICAgZm9yIGksIGZpZWxkIGluIGVudW1lcmF0ZSh5RmllbGRzKToKICAgICAgICAgICAgICAgIHJvd1tmaWVsZF0gPSBmaXRSb3dbaV0KCiAgICAgICAgICAgIGZpdERhdGEuYXBwZW5kKHJvdykKCiAgICAgICAgcmV0dXJuIGZpdERhdGEKCiAgICBvdXRwdXRzWyJvdXRwdXRGaXQiXVsiZGF0YSJdID0gZml0X3RvX2pzb24oaW5wdXREYXRhLCBmaXR0ZXIuZml0KQogICAgb3V0cHV0c1sib3V0cHV0Rml0Il1bInNjaGVtYSJdID0gaW5wdXREYXRhWyJzY2hlbWEiXQoKICAgIHJldHVybiBvdXRwdXRzCg==",
         "inputs": [
           {
-            "name": "data",
+            "name": "inputData",
             "type": "resource",
-            "resource": "data"
+            "resource": "inputData"
           },
           {
-            "name": "params",
+            "name": "inputParams",
             "type": "resource",
             "resource": "inputParams"
           },
           {
-            "name": "options",
+            "name": "inputOptions",
             "type": "resource",
-            "resource": "options"
+            "resource": "inputOptions"
           }
         ],
         "outputs": [
           {
-            "name": "params",
+            "name": "outputParams",
             "type": "resource",
             "resource": "outputParams"
           },
@@ -40,8 +40,8 @@
     ],
     "resources": [
       {
-        "name": "data",
-        "title": "Data",
+        "name": "inputData",
+        "title": "Input data",
         "description": "Input data",
         "profile": "tabular-data-resource",
         "data": [
@@ -265,17 +265,6 @@
         }
       },
       {
-        "name": "outputFit",
-        "title": "Fit",
-        "description": "Output fit",
-        "profile": "tabular-data-resource",
-        "data": [],
-        "schema": {
-          "primaryKey": "",
-          "fields": []
-        }
-      },
-      {
         "name": "inputParams",
         "title": "Input parameters",
         "description": "Initial parameter values",
@@ -320,51 +309,7 @@
         }
       },
       {
-        "name": "outputParams",
-        "title": "Optimised parameters",
-        "description": "Optimised parameter values",
-        "profile": "parameter-data-resource",
-        "data": {
-          "k": {}
-        },
-        "schema": {
-          "keys": [
-            {
-              "name": "k",
-              "unit": "M^{-1}",
-              "fields": [
-                {
-                  "name": "vary",
-                  "title": "Vary",
-                  "type": "boolean"
-                },
-                {
-                  "name": "value",
-                  "title": "Value",
-                  "type": "number"
-                },
-                {
-                  "name": "stderr",
-                  "title": "Error",
-                  "type": "number"
-                },
-                {
-                  "name": "lowerBound",
-                  "title": "Lower bound",
-                  "type": "number"
-                },
-                {
-                  "name": "upperBound",
-                  "title": "Upper bound",
-                  "type": "number"
-                }
-              ]
-            }
-          ]
-        }
-      },
-      {
-        "name": "options",
+        "name": "inputOptions",
         "title": "Fit options",
         "description": "Fit options",
         "profile": "options-data-resource",
@@ -479,15 +424,70 @@
             }
           ]
         }
+      },
+      {
+        "name": "outputParams",
+        "title": "Optimised parameters",
+        "description": "Optimised parameter values",
+        "profile": "parameter-data-resource",
+        "data": {
+          "k": {}
+        },
+        "schema": {
+          "keys": [
+            {
+              "name": "k",
+              "unit": "M^{-1}",
+              "fields": [
+                {
+                  "name": "vary",
+                  "title": "Vary",
+                  "type": "boolean"
+                },
+                {
+                  "name": "value",
+                  "title": "Value",
+                  "type": "number"
+                },
+                {
+                  "name": "stderr",
+                  "title": "Error",
+                  "type": "number"
+                },
+                {
+                  "name": "lowerBound",
+                  "title": "Lower bound",
+                  "type": "number"
+                },
+                {
+                  "name": "upperBound",
+                  "title": "Upper bound",
+                  "type": "number"
+                }
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "name": "outputFit",
+        "title": "Fit",
+        "description": "Output fit",
+        "profile": "tabular-data-resource",
+        "data": [],
+        "schema": {
+          "primaryKey": "",
+          "fields": []
+        }
       }
     ],
     "views": [
       {
-        "name": "data",
+        "name": "upload",
         "specType": "opendatafit-upload",
         "spec": {},
         "resources": [
-          "data"
+          "inputData"
         ]
       },
       {
@@ -520,7 +520,7 @@
               {
                 "name": "control",
                 "tabs": [
-                  "data",
+                  "upload",
                   "params"
                 ]
               },
@@ -531,11 +531,11 @@
             ],
             "tabs": [
               {
-                "name": "data",
-                "title": "Data",
+                "name": "upload",
+                "title": "Upload",
                 "icon": "",
                 "views": [
-                  "data"
+                  "upload"
                 ]
               },
               {

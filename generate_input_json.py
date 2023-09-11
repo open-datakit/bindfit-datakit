@@ -14,7 +14,7 @@ with open("datapackage.json") as f:
 df = pd.read_csv("input.csv")
 
 # Get input data resource to be modified
-data_resource = next(i for i in dp["resources"] if i["name"] == "data")
+data_resource = next(i for i in dp["resources"] if i["name"] == "inputData")
 
 # Generate fields based on data headers
 headers = list(df.columns)

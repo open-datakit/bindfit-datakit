@@ -4,24 +4,24 @@
   "code": "",
   "inputs": [
     {
-      "name": "data",
+      "name": "inputData",
       "type": "resource",
-      "resource": "data"
+      "resource": "inputData"
     },
     {
-      "name": "params",
+      "name": "inputParams",
       "type": "resource",
       "resource": "inputParams"
     },
     {
-      "name": "options",
+      "name": "inputOptions",
       "type": "resource",
-      "resource": "options"
+      "resource": "inputOptions"
     }
   ],
   "outputs": [
     {
-      "name": "params",
+      "name": "outputParams",
       "type": "resource",
       "resource": "outputParams"
     },

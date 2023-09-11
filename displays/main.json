@@ -10,7 +10,7 @@
         {
           "name": "control",
           "tabs": [
-            "data",
+            "upload",
             "params"
           ]
         },
@@ -22,11 +22,11 @@
       ],
       "tabs": [
         {
-          "name": "data",
-          "title": "Data",
+          "name": "upload",
+          "title": "Upload",
           "icon": "",
           "views": [
-            "data"
+            "upload"
           ]
         },
         {

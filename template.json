@@ -8,24 +8,24 @@
   ],
   "resources": [
     {
-      "name": "data"
-    },
-    {
-      "name": "outputFit"
+      "name": "inputData"
     },
     {
       "name": "inputParams"
     },
     {
+      "name": "inputOptions"
+    },
+    {
       "name": "outputParams"
     },
     {
-      "name": "options"
+      "name": "outputFit"
     }
   ],
   "views": [
     {
-      "name": "data"
+      "name": "upload"
     },
     {
       "name": "params"
