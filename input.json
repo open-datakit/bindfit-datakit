@@ -520,8 +520,7 @@
               {
                 "name": "control",
                 "tabs": [
-                  "upload",
-                  "params"
+                  "inputs"
                 ]
               },
               {
@@ -531,18 +530,11 @@
             ],
             "tabs": [
               {
-                "name": "upload",
-                "title": "Upload",
+                "name": "inputs",
+                "title": "Inputs",
                 "icon": "",
                 "views": [
-                  "upload"
-                ]
-              },
-              {
-                "name": "params",
-                "title": "Parameters",
-                "icon": "",
-                "views": [
+                  "upload",
                   "params"
                 ]
               }
