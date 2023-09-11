@@ -95,6 +95,7 @@ def main(
         },
     }
 
+    # TODO: This conversion should be moved to Bindfit library
     for key, param in fitter.params.items():
         outputs["params"].update({
             "data": {
@@ -104,5 +105,29 @@ def main(
                 },
             },
         })
+
+    # Translate fitter.fit into JSON for tabular data schema
+    # TODO: This should be done by the Bindfit library
+    def fit_to_json(data, fit):
+        xFields = [ i["name"] for i in data["schema"]["fields"][:2] ]
+        yFields = [ i["name"] for i in data["schema"]["fields"][2:] ]
+
+        fitData = []
+
+        for dataRow, fitRow in zip(data["data"], fit.T):
+            row = {}
+
+            for field in xFields:
+                row[field] = dataRow[field]
+
+            for i, field in enumerate(yFields):
+                row[field] = fitRow[i]
+
+            fitData.append(row)
+
+        return fitData
+
+    outputs["outputFit"]["data"] = fit_to_json(data, fitter.fit)
+    outputs["outputFit"]["schema"] = data["schema"]
 
     return outputs

@@ -24,6 +24,11 @@
       "name": "params",
       "type": "resource",
       "resource": "outputParams"
+    },
+    {
+      "name": "outputFit",
+      "type": "resource",
+      "resource": "outputFit"
     }
   ]
 }

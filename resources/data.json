@@ -6,19 +6,6 @@
   "data": [],
   "schema": {
     "primaryKey": "H",
-    "fields": [
-      {
-        "name": "H",
-        "type": "number",
-        "title": "",
-        "unit": ""
-      },
-      {
-        "name": "G",
-        "type": "number",
-        "title": "",
-        "unit": ""
-      }
-    ]
+    "fields": []
   }
 }

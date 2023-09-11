@@ -11,6 +11,9 @@
       "name": "data"
     },
     {
+      "name": "outputFit"
+    },
+    {
       "name": "inputParams"
     },
     {
