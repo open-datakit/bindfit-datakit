@@ -1,7 +1,7 @@
 def main(
-    inputData,
-    inputParams,
-    inputOptions,
+    data,
+    params,
+    options,
     outputs,
     **kwargs,
 ):
@@ -15,7 +15,7 @@ def main(
     # TODO: Modify library to accept Frictionless params format
     bindfit_params = {}
 
-    for key, param in inputParams["data"].items():
+    for key, param in params["data"].items():
         bindfit_params.update({
             key: {
                 "init": param["value"],
@@ -27,11 +27,11 @@ def main(
         })
 
     # Bindfit options
-    model = inputOptions["data"]["model"]
-    method = inputOptions["data"]["method"]
-    normalise = inputOptions["data"]["normalise"]
-    dilute = inputOptions["data"]["dilute"]
-    flavour = inputOptions["data"]["flavour"]
+    model = options["data"]["model"]
+    method = options["data"]["method"]
+    normalise = options["data"]["normalise"]
+    dilute = options["data"]["dilute"]
+    flavour = options["data"]["flavour"]
 
     # Load data
     # TODO: Split this function out into datapackage-utilities library
@@ -42,7 +42,7 @@ def main(
         df = df[cols]
         return df
 
-    df = datapackage_to_dataframe(inputData)
+    df = datapackage_to_dataframe(data)
 
     # Bindfit expects each variable as rows
     data_x = np.transpose(df.iloc[:, :2].to_numpy())
@@ -97,7 +97,7 @@ def main(
 
     # TODO: This conversion should be moved to Bindfit library
     for key, param in fitter.params.items():
-        outputs["outputParams"].update({
+        outputs["params"].update({
             "data": {
                 key: {
                     "value": param["value"],
@@ -109,25 +109,25 @@ def main(
     # Translate fitter.fit into JSON for tabular data schema
     # TODO: This should be done by the Bindfit library
     def fit_to_json(data, fit):
-        xFields = [ i["name"] for i in inputData["schema"]["fields"][:2] ]
-        yFields = [ i["name"] for i in inputData["schema"]["fields"][2:] ]
+        x_fields = [ i["name"] for i in data["schema"]["fields"][:2] ]
+        y_fields = [ i["name"] for i in data["schema"]["fields"][2:] ]
 
-        fitData = []
+        fit_data = []
 
-        for dataRow, fitRow in zip(inputData["data"], fit.T):
+        for data_row, fit_row in zip(data["data"], fit.T):
             row = {}
 
-            for field in xFields:
-                row[field] = dataRow[field]
+            for field in x_fields:
+                row[field] = data_row[field]
 
-            for i, field in enumerate(yFields):
-                row[field] = fitRow[i]
+            for i, field in enumerate(y_fields):
+                row[field] = fit_row[i]
 
-            fitData.append(row)
+            fit_data.append(row)
 
-        return fitData
+        return fit_data
 
-    outputs["outputFit"]["data"] = fit_to_json(inputData, fitter.fit)
-    outputs["outputFit"]["schema"] = inputData["schema"]
+    outputs["fit"]["data"] = fit_to_json(data, fitter.fit)
+    outputs["fit"]["schema"] = data["schema"]
 
     return outputs

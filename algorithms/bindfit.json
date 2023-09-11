@@ -4,29 +4,29 @@
   "code": "",
   "inputs": [
     {
-      "name": "inputData",
+      "name": "data",
       "type": "resource",
       "resource": "inputData"
     },
     {
-      "name": "inputParams",
+      "name": "params",
       "type": "resource",
       "resource": "inputParams"
     },
     {
-      "name": "inputOptions",
+      "name": "options",
       "type": "resource",
       "resource": "inputOptions"
     }
   ],
   "outputs": [
     {
-      "name": "outputParams",
+      "name": "params",
       "type": "resource",
       "resource": "outputParams"
     },
     {
-      "name": "outputFit",
+      "name": "fit",
       "type": "resource",
       "resource": "outputFit"
     }
