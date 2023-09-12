@@ -130,4 +130,7 @@ def main(
     outputs["fit"]["data"] = fit_to_json(data, fitter.fit)
     outputs["fit"]["schema"] = data["schema"]
 
+    outputs["residuals"]["data"] = fit_to_json(data, fitter.fit - data_y)
+    outputs["residuals"]["schema"] = data["schema"]
+
     return outputs

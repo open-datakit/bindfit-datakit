@@ -1,0 +1,11 @@
+{
+  "name": "outputResiduals",
+  "title": "Residuals",
+  "description": "Fit residuals",
+  "profile": "tabular-data-resource",
+  "data": [],
+  "schema": {
+    "primaryKey": "",
+    "fields": []
+  }
+}

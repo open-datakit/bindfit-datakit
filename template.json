@@ -21,6 +21,9 @@
     },
     {
       "name": "outputFit"
+    },
+    {
+      "name": "outputResiduals"
     }
   ],
   "views": [

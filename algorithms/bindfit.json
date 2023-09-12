@@ -29,6 +29,11 @@
       "name": "fit",
       "type": "resource",
       "resource": "outputFit"
+    },
+    {
+      "name": "residuals",
+      "type": "resource",
+      "resource": "outputResiduals"
     }
   ]
 }
