@@ -1,16 +1,10 @@
 {
     "data": [
         {
-            "meta": {
-                "columnNames": {
-                    "x": "Guest",
-                    "y": "Proton 1"
-                }
-            },
-            "mode": "markers",
             "name": "Proton 1",
+            "mode": "markers",
             "type": "scatter",
-            "xsrc": "echus:0:18f544",
+            "legendgroup": 1,
             "x": [
                 "0",
                 "0.0000970537",
@@ -35,7 +29,6 @@
                 "0.008810489",
                 "0.012504331"
             ],
-            "ysrc": "echus:0:34aa88",
             "y": [
                 "0",
                 "-0.0039",
@@ -59,22 +52,13 @@
                 "-0.1012",
                 "-0.1139",
                 "-0.1237"
-            ],
-            "visible": true,
-            "stackgroup": "",
-            "legendgroup": 1
+            ]
         },
         {
-            "meta": {
-                "columnNames": {
-                    "x": "Guest",
-                    "y": "Proton 2"
-                }
-            },
-            "mode": "markers",
             "name": "Proton 2",
+            "mode": "markers",
             "type": "scatter",
-            "xsrc": "echus:0:18f544",
+            "legendgroup": 1,
             "x": [
                 "0",
                 "0.0000970537",
@@ -99,7 +83,6 @@
                 "0.008810489",
                 "0.012504331"
             ],
-            "ysrc": "echus:0:bd77ec",
             "y": [
                 "0",
                 "-0.0005",
@@ -123,22 +106,13 @@
                 "-0.0147",
                 "-0.0171",
                 "-0.0181"
-            ],
-            "visible": true,
-            "stackgroup": null,
-            "legendgroup": 1
+            ]
         },
         {
-            "meta": {
-                "columnNames": {
-                    "x": "Guest",
-                    "y": "Proton 3"
-                }
-            },
-            "mode": "markers",
             "name": "Proton 3",
+            "mode": "markers",
             "type": "scatter",
-            "xsrc": "echus:0:18f544",
+            "legendgroup": 1,
             "x": [
                 "0",
                 "0.0000970537",
@@ -163,7 +137,6 @@
                 "0.008810489",
                 "0.012504331"
             ],
-            "ysrc": "echus:0:a3da77",
             "y": [
                 "0",
                 "0.0007",
@@ -187,22 +160,13 @@
                 "0.0317",
                 "0.03565",
                 "0.04055"
-            ],
-            "visible": true,
-            "stackgroup": null,
-            "legendgroup": 1
+            ]
         },
         {
-            "meta": {
-                "columnNames": {
-                    "x": "Guest",
-                    "y": "Proton 4"
-                }
-            },
-            "mode": "markers",
             "name": "Proton 4",
+            "mode": "markers",
             "type": "scatter",
-            "xsrc": "echus:0:18f544",
+            "legendgroup": 1,
             "x": [
                 "0",
                 "0.0000970537",
@@ -227,7 +191,6 @@
                 "0.008810489",
                 "0.012504331"
             ],
-            "ysrc": "echus:0:5daab2",
             "y": [
                 "0",
                 "0.0002",
@@ -251,22 +214,13 @@
                 "0.01315",
                 "0.0144",
                 "0.0169"
-            ],
-            "visible": true,
-            "stackgroup": null,
-            "legendgroup": 1
+            ]
         },
         {
-            "meta": {
-                "columnNames": {
-                    "x": "Guest",
-                    "y": "Proton 1"
-                }
-            },
-            "mode": "lines",
             "name": "Proton 1 fit",
+            "mode": "lines",
             "type": "scatter",
-            "xsrc": "echus:1:88bba1",
+            "legendgroup": 2,
             "x": [
                 "0",
                 "0.0000970537",
@@ -291,7 +245,6 @@
                 "0.008810489",
                 "0.012504331"
             ],
-            "ysrc": "echus:1:237d21",
             "y": [
                 "0",
                 "-0.0039220206102700324",
@@ -315,21 +268,13 @@
                 "-0.10190070020115485",
                 "-0.11396182599066756",
                 "-0.12408841291050586"
-            ],
-            "visible": true,
-            "legendgroup": 2
+            ]
         },
         {
-            "meta": {
-                "columnNames": {
-                    "x": "Guest",
-                    "y": "Proton 2"
-                }
-            },
-            "mode": "lines",
             "name": "Proton 2 fit",
+            "mode": "lines",
             "type": "scatter",
-            "xsrc": "echus:1:88bba1",
+            "legendgroup": 2,
             "x": [
                 "0",
                 "0.0000970537",
@@ -354,7 +299,6 @@
                 "0.008810489",
                 "0.012504331"
             ],
-            "ysrc": "echus:1:997b96",
             "y": [
                 "0",
                 "-0.0005720699271234041",
@@ -378,22 +322,13 @@
                 "-0.014863340081704701",
                 "-0.01662258819309025",
                 "-0.018099662491494268"
-            ],
-            "visible": true,
-            "stackgroup": null,
-            "legendgroup": 2
+            ]
         },
         {
-            "meta": {
-                "columnNames": {
-                    "x": "Guest",
-                    "y": "Proton 3"
-                }
-            },
-            "mode": "lines",
             "name": "Proton 3 fit",
+            "mode": "lines",
             "type": "scatter",
-            "xsrc": "echus:1:88bba1",
+            "legendgroup": 2,
             "x": [
                 "0",
                 "0.0000970537",
@@ -418,7 +353,6 @@
                 "0.008810489",
                 "0.012504331"
             ],
-            "ysrc": "echus:1:b991bc",
             "y": [
                 "0",
                 "0.0011986886971990798",
@@ -442,22 +376,13 @@
                 "0.03114395096444596",
                 "0.03483019756945547",
                 "0.03792519030106645"
-            ],
-            "visible": true,
-            "stackgroup": null,
-            "legendgroup": 2
+            ]
         },
         {
-            "meta": {
-                "columnNames": {
-                    "x": "Guest",
-                    "y": "Proton 4"
-                }
-            },
-            "mode": "lines",
             "name": "Proton 4 fit",
+            "mode": "lines",
             "type": "scatter",
-            "xsrc": "echus:1:88bba1",
+            "legendgroup": 2,
             "x": [
                 "0",
                 "0.0000970537",
@@ -482,7 +407,6 @@
                 "0.008810489",
                 "0.012504331"
             ],
-            "ysrc": "echus:1:7008cb",
             "y": [
                 "0",
                 "0.0004953162852189336",
@@ -506,22 +430,14 @@
                 "0.012869151210648324",
                 "0.014392364017326664",
                 "0.01567126178801829"
-            ],
-            "visible": true,
-            "stackgroup": null,
-            "legendgroup": 2
+            ]
         },
         {
-            "meta": {
-                "columnNames": {
-                    "x": "Guest",
-                    "y": "Proton 1"
-                }
-            },
-            "mode": "lines",
             "name": "Proton 1 residuals",
+            "mode": "lines",
             "type": "scatter",
-            "xsrc": "echus:2:f6afa4",
+            "yaxis": "y2",
+            "legendgroup": 3,
             "x": [
                 "0",
                 "0.0000970537",
@@ -546,7 +462,6 @@
                 "0.008810489",
                 "0.012504331"
             ],
-            "ysrc": "echus:2:b12dd2",
             "y": [
                 "0",
                 "-0.000022020610270032624",
@@ -570,23 +485,14 @@
                 "-0.0007007002011548552",
                 "-0.00006182599066756334",
                 "-0.0003884129105058559"
-            ],
-            "yaxis": "y2",
-            "visible": true,
-            "stackgroup": null,
-            "legendgroup": 3
+            ]
         },
         {
-            "meta": {
-                "columnNames": {
-                    "x": "Guest",
-                    "y": "Proton 2"
-                }
-            },
-            "mode": "lines",
             "name": "Proton 2 residuals",
+            "mode": "lines",
             "type": "scatter",
-            "xsrc": "echus:2:f6afa4",
+            "yaxis": "y2",
+            "legendgroup": 3,
             "x": [
                 "0",
                 "0.0000970537",
@@ -611,7 +517,6 @@
                 "0.008810489",
                 "0.012504331"
             ],
-            "ysrc": "echus:2:7d2e7e",
             "y": [
                 "0",
                 "-0.00007206992712340411",
@@ -635,23 +540,14 @@
                 "-0.0001633400817047017",
                 "0.0004774118069097513",
                 "3.37508505733608e-7"
-            ],
-            "yaxis": "y2",
-            "visible": true,
-            "stackgroup": null,
-            "legendgroup": 3
+            ]
         },
         {
-            "meta": {
-                "columnNames": {
-                    "x": "Guest",
-                    "y": "Proton 3"
-                }
-            },
             "mode": "lines",
             "name": "Proton 3 residuals",
             "type": "scatter",
-            "xsrc": "echus:2:f6afa4",
+            "yaxis": "y2",
+            "legendgroup": 3,
             "x": [
                 "0",
                 "0.0000970537",
@@ -676,7 +572,6 @@
                 "0.008810489",
                 "0.012504331"
             ],
-            "ysrc": "echus:2:e4dcde",
             "y": [
                 "0",
                 "0.0004986886971990798",
@@ -700,23 +595,14 @@
                 "-0.0005560490355540383",
                 "-0.000819802430544532",
                 "-0.0026248096989335556"
-            ],
-            "yaxis": "y2",
-            "visible": true,
-            "stackgroup": null,
-            "legendgroup": 3
+            ]
         },
         {
-            "meta": {
-                "columnNames": {
-                    "x": "Guest",
-                    "y": "Proton 4"
-                }
-            },
             "mode": "lines",
             "name": "Proton 4 residuals",
             "type": "scatter",
-            "xsrc": "echus:2:f6afa4",
+            "yaxis": "y2",
+            "legendgroup": 3,
             "x": [
                 "0",
                 "0.0000970537",
@@ -741,7 +627,6 @@
                 "0.008810489",
                 "0.012504331"
             ],
-            "ysrc": "echus:2:402410",
             "y": [
                 "0",
                 "0.00029531628521893365",
@@ -765,11 +650,7 @@
                 "-0.00028084878935167625",
                 "-0.000007635982673335692",
                 "-0.00122873821198171"
-            ],
-            "yaxis": "y2",
-            "visible": true,
-            "stackgroup": null,
-            "legendgroup": 3
+            ]
         }
     ],
     "layout": {
@@ -777,715 +658,52 @@
             "text": "Bindfit"
         },
         "xaxis": {
-            "side": "bottom",
-            "type": "linear",
-            "range": [
-                -0.0007703917965707644,
-                0.013274722796570765
-            ],
-            "ticks": "",
             "title": {
                 "text": "Equivalent total [G]<sub>0</sub>/[H]<sub>0</sub>"
             },
+            "exponentformat": "power",
             "domain": [
                 0,
                 1
             ],
-            "mirror": "ticks",
-            "showline": true,
-            "zeroline": true,
+            "side": "bottom",
+            "type": "linear",
             "autorange": true,
-            "gridcolor": "rgb(221, 221, 221)",
-            "linecolor": "rgb(221, 221, 221)",
-            "linewidth": 1,
-            "automargin": true,
-            "showspikes": false,
-            "rangeslider": {
-                "range": [
-                    -0.0007703917965707644,
-                    0.013274722796570765
-                ],
-                "yaxis": {},
-                "yaxis2": {},
-                "visible": false,
-                "autorange": true
-            },
-            "zerolinecolor": "rgb(221, 221, 221)",
-            "zerolinewidth": 2,
-            "exponentformat": "power",
-            "showticklabels": true
+            "automargin": true
         },
         "yaxis": {
-            "type": "linear",
-            "range": [
-                -0.13597155172413794,
-                0.05282155172413793
-            ],
-            "ticks": "",
             "title": {
-                "font": {
-                    "size": 14,
-                    "family": "Arial"
-                },
                 "text": "$\\delta$"
             },
+            "ticksuffix": " ppm",
+            "exponentformat": "power",
             "domain": [
                 0.375,
                 1
             ],
-            "mirror": "ticks",
-            "showline": true,
-            "autorange": true,
-            "gridcolor": "rgb(221, 221, 221)",
-            "linecolor": "rgb(221, 221, 221)",
-            "linewidth": 1,
-            "showspikes": false,
-            "ticksuffix": " ppm",
-            "zerolinecolor": "rgb(221, 221, 221)",
-            "zerolinewidth": 2,
-            "exponentformat": "power",
-            "showticklabels": true,
-            "showticksuffix": "all",
-            "separatethousands": false
-        },
-        "legend": {
-            "traceorder": "grouped"
-        },
-        "yaxis2": {
             "side": "left",
             "type": "linear",
-            "range": [
-                -0.0028444494004447383,
-                0.0015483446297789162
-            ],
-            "ticks": "",
+            "autorange": true
+        },
+        "yaxis2": {
             "title": {
                 "text": "Residuals"
             },
+            "ticksuffix": " ppm",
+            "exponentformat": "power",
             "domain": [
                 0,
                 0.25
             ],
-            "mirror": "ticks",
-            "showline": true,
-            "autorange": true,
-            "gridcolor": "rgb(221, 221, 221)",
-            "linecolor": "rgb(221, 221, 221)",
-            "linewidth": 1,
-            "overlaying": false,
-            "showspikes": false,
-            "ticksuffix": " ppm",
-            "zerolinecolor": "rgb(221, 221, 221)",
-            "zerolinewidth": 2,
-            "exponentformat": "power",
-            "showticklabels": true
+            "side": "left",
+            "type": "linear",
+            "autorange": true
         },
         "autosize": true,
-        "colorway": [
-            "#1b9e77",
-            "#d95f02",
-            "#7570b3",
-            "#e7298a",
-            "#66a61e",
-            "#e6ab02",
-            "#a6761d",
-            "#666666"
-        ],
-        "template": {
-            "data": {
-                "bar": [
-                    {
-                        "type": "bar",
-                        "marker": {
-                            "colorbar": {
-                                "ticks": "",
-                                "outlinewidth": 0
-                            }
-                        }
-                    }
-                ],
-                "table": [
-                    {
-                        "type": "table",
-                        "cells": {
-                            "fill": {
-                                "color": "#EBF0F8"
-                            },
-                            "line": {
-                                "color": "white"
-                            }
-                        },
-                        "header": {
-                            "fill": {
-                                "color": "#C8D4E3"
-                            },
-                            "line": {
-                                "color": "white"
-                            }
-                        }
-                    }
-                ],
-                "carpet": [
-                    {
-                        "type": "carpet",
-                        "aaxis": {
-                            "gridcolor": "#C8D4E3",
-                            "linecolor": "#C8D4E3",
-                            "endlinecolor": "#2a3f5f",
-                            "minorgridcolor": "#C8D4E3",
-                            "startlinecolor": "#2a3f5f"
-                        },
-                        "baxis": {
-                            "gridcolor": "#C8D4E3",
-                            "linecolor": "#C8D4E3",
-                            "endlinecolor": "#2a3f5f",
-                            "minorgridcolor": "#C8D4E3",
-                            "startlinecolor": "#2a3f5f"
-                        }
-                    }
-                ],
-                "mesh3d": [
-                    {
-                        "type": "mesh3d",
-                        "colorbar": {
-                            "ticks": "",
-                            "outlinewidth": 0
-                        }
-                    }
-                ],
-                "contour": [
-                    {
-                        "type": "contour",
-                        "colorbar": {
-                            "ticks": "",
-                            "outlinewidth": 0
-                        },
-                        "autocolorscale": true
-                    }
-                ],
-                "heatmap": [
-                    {
-                        "type": "heatmap",
-                        "colorbar": {
-                            "ticks": "",
-                            "outlinewidth": 0
-                        },
-                        "autocolorscale": true
-                    }
-                ],
-                "scatter": [
-                    {
-                        "type": "scatter",
-                        "marker": {
-                            "colorbar": {
-                                "ticks": "",
-                                "outlinewidth": 0
-                            }
-                        }
-                    }
-                ],
-                "surface": [
-                    {
-                        "type": "surface",
-                        "colorbar": {
-                            "ticks": "",
-                            "outlinewidth": 0
-                        }
-                    }
-                ],
-                "heatmapgl": [
-                    {
-                        "type": "heatmapgl",
-                        "colorbar": {
-                            "ticks": "",
-                            "outlinewidth": 0
-                        }
-                    }
-                ],
-                "histogram": [
-                    {
-                        "type": "histogram",
-                        "marker": {
-                            "colorbar": {
-                                "ticks": "",
-                                "outlinewidth": 0
-                            }
-                        }
-                    }
-                ],
-                "parcoords": [
-                    {
-                        "line": {
-                            "colorbar": {
-                                "ticks": "",
-                                "outlinewidth": 0
-                            }
-                        },
-                        "type": "parcoords"
-                    }
-                ],
-                "scatter3d": [
-                    {
-                        "type": "scatter3d",
-                        "marker": {
-                            "colorbar": {
-                                "ticks": "",
-                                "outlinewidth": 0
-                            }
-                        }
-                    }
-                ],
-                "scattergl": [
-                    {
-                        "type": "scattergl",
-                        "marker": {
-                            "colorbar": {
-                                "ticks": "",
-                                "outlinewidth": 0
-                            }
-                        }
-                    }
-                ],
-                "choropleth": [
-                    {
-                        "type": "choropleth",
-                        "colorbar": {
-                            "ticks": "",
-                            "outlinewidth": 0
-                        }
-                    }
-                ],
-                "scattergeo": [
-                    {
-                        "type": "scattergeo",
-                        "marker": {
-                            "colorbar": {
-                                "ticks": "",
-                                "outlinewidth": 0
-                            }
-                        }
-                    }
-                ],
-                "histogram2d": [
-                    {
-                        "type": "histogram2d",
-                        "colorbar": {
-                            "ticks": "",
-                            "outlinewidth": 0
-                        },
-                        "autocolorscale": true
-                    }
-                ],
-                "scatterpolar": [
-                    {
-                        "type": "scatterpolar",
-                        "marker": {
-                            "colorbar": {
-                                "ticks": "",
-                                "outlinewidth": 0
-                            }
-                        }
-                    }
-                ],
-                "contourcarpet": [
-                    {
-                        "type": "contourcarpet",
-                        "colorbar": {
-                            "ticks": "",
-                            "outlinewidth": 0
-                        }
-                    }
-                ],
-                "scattercarpet": [
-                    {
-                        "type": "scattercarpet",
-                        "marker": {
-                            "colorbar": {
-                                "ticks": "",
-                                "outlinewidth": 0
-                            }
-                        }
-                    }
-                ],
-                "scattermapbox": [
-                    {
-                        "type": "scattermapbox",
-                        "marker": {
-                            "colorbar": {
-                                "ticks": "",
-                                "outlinewidth": 0
-                            }
-                        }
-                    }
-                ],
-                "scatterpolargl": [
-                    {
-                        "type": "scatterpolargl",
-                        "marker": {
-                            "colorbar": {
-                                "ticks": "",
-                                "outlinewidth": 0
-                            }
-                        }
-                    }
-                ],
-                "scatterternary": [
-                    {
-                        "type": "scatterternary",
-                        "marker": {
-                            "colorbar": {
-                                "ticks": "",
-                                "outlinewidth": 0
-                            }
-                        }
-                    }
-                ],
-                "histogram2dcontour": [
-                    {
-                        "type": "histogram2dcontour",
-                        "colorbar": {
-                            "ticks": "",
-                            "outlinewidth": 0
-                        },
-                        "autocolorscale": true
-                    }
-                ]
-            },
-            "layout": {
-                "geo": {
-                    "bgcolor": "white",
-                    "showland": true,
-                    "lakecolor": "white",
-                    "landcolor": "white",
-                    "showlakes": true,
-                    "subunitcolor": "#C8D4E3"
-                },
-                "font": {
-                    "color": "#2a3f5f"
-                },
-                "polar": {
-                    "bgcolor": "white",
-                    "radialaxis": {
-                        "ticks": "",
-                        "gridcolor": "#EBF0F8",
-                        "linecolor": "#EBF0F8"
-                    },
-                    "angularaxis": {
-                        "ticks": "",
-                        "gridcolor": "#EBF0F8",
-                        "linecolor": "#EBF0F8"
-                    }
-                },
-                "scene": {
-                    "xaxis": {
-                        "ticks": "",
-                        "gridcolor": "#DFE8F3",
-                        "gridwidth": 2,
-                        "linecolor": "#EBF0F8",
-                        "zerolinecolor": "#EBF0F8",
-                        "showbackground": true,
-                        "backgroundcolor": "white"
-                    },
-                    "yaxis": {
-                        "ticks": "",
-                        "gridcolor": "#DFE8F3",
-                        "gridwidth": 2,
-                        "linecolor": "#EBF0F8",
-                        "zerolinecolor": "#EBF0F8",
-                        "showbackground": true,
-                        "backgroundcolor": "white"
-                    },
-                    "zaxis": {
-                        "ticks": "",
-                        "gridcolor": "#DFE8F3",
-                        "gridwidth": 2,
-                        "linecolor": "#EBF0F8",
-                        "zerolinecolor": "#EBF0F8",
-                        "showbackground": true,
-                        "backgroundcolor": "white"
-                    }
-                },
-                "title": {
-                    "x": 0.05
-                },
-                "xaxis": {
-                    "ticks": "",
-                    "gridcolor": "#EBF0F8",
-                    "linecolor": "#EBF0F8",
-                    "automargin": true,
-                    "zerolinecolor": "#EBF0F8",
-                    "zerolinewidth": 2
-                },
-                "yaxis": {
-                    "ticks": "",
-                    "gridcolor": "#EBF0F8",
-                    "linecolor": "#EBF0F8",
-                    "automargin": true,
-                    "zerolinecolor": "#EBF0F8",
-                    "zerolinewidth": 2
-                },
-                "ternary": {
-                    "aaxis": {
-                        "ticks": "",
-                        "gridcolor": "#DFE8F3",
-                        "linecolor": "#A2B1C6"
-                    },
-                    "baxis": {
-                        "ticks": "",
-                        "gridcolor": "#DFE8F3",
-                        "linecolor": "#A2B1C6"
-                    },
-                    "caxis": {
-                        "ticks": "",
-                        "gridcolor": "#DFE8F3",
-                        "linecolor": "#A2B1C6"
-                    },
-                    "bgcolor": "white"
-                },
-                "colorway": [
-                    "#636efa",
-                    "#EF553B",
-                    "#00cc96",
-                    "#ab63fa",
-                    "#19d3f3",
-                    "#e763fa",
-                    "#fecb52",
-                    "#ffa15a",
-                    "#ff6692",
-                    "#b6e880"
-                ],
-                "hovermode": "closest",
-                "colorscale": {
-                    "diverging": [
-                        [
-                            0,
-                            "#8e0152"
-                        ],
-                        [
-                            0.1,
-                            "#c51b7d"
-                        ],
-                        [
-                            0.2,
-                            "#de77ae"
-                        ],
-                        [
-                            0.3,
-                            "#f1b6da"
-                        ],
-                        [
-                            0.4,
-                            "#fde0ef"
-                        ],
-                        [
-                            0.5,
-                            "#f7f7f7"
-                        ],
-                        [
-                            0.6,
-                            "#e6f5d0"
-                        ],
-                        [
-                            0.7,
-                            "#b8e186"
-                        ],
-                        [
-                            0.8,
-                            "#7fbc41"
-                        ],
-                        [
-                            0.9,
-                            "#4d9221"
-                        ],
-                        [
-                            1,
-                            "#276419"
-                        ]
-                    ],
-                    "sequential": [
-                        [
-                            0,
-                            "#0508b8"
-                        ],
-                        [
-                            0.0893854748603352,
-                            "#1910d8"
-                        ],
-                        [
-                            0.1787709497206704,
-                            "#3c19f0"
-                        ],
-                        [
-                            0.2681564245810056,
-                            "#6b1cfb"
-                        ],
-                        [
-                            0.3575418994413408,
-                            "#981cfd"
-                        ],
-                        [
-                            0.44692737430167595,
-                            "#bf1cfd"
-                        ],
-                        [
-                            0.5363128491620112,
-                            "#dd2bfd"
-                        ],
-                        [
-                            0.6256983240223464,
-                            "#f246fe"
-                        ],
-                        [
-                            0.7150837988826816,
-                            "#fc67fd"
-                        ],
-                        [
-                            0.8044692737430168,
-                            "#fe88fc"
-                        ],
-                        [
-                            0.8938547486033519,
-                            "#fea5fd"
-                        ],
-                        [
-                            0.9832402234636871,
-                            "#febefe"
-                        ],
-                        [
-                            1,
-                            "#fec3fe"
-                        ]
-                    ],
-                    "sequentialminus": [
-                        [
-                            0,
-                            "#0508b8"
-                        ],
-                        [
-                            0.0893854748603352,
-                            "#1910d8"
-                        ],
-                        [
-                            0.1787709497206704,
-                            "#3c19f0"
-                        ],
-                        [
-                            0.2681564245810056,
-                            "#6b1cfb"
-                        ],
-                        [
-                            0.3575418994413408,
-                            "#981cfd"
-                        ],
-                        [
-                            0.44692737430167595,
-                            "#bf1cfd"
-                        ],
-                        [
-                            0.5363128491620112,
-                            "#dd2bfd"
-                        ],
-                        [
-                            0.6256983240223464,
-                            "#f246fe"
-                        ],
-                        [
-                            0.7150837988826816,
-                            "#fc67fd"
-                        ],
-                        [
-                            0.8044692737430168,
-                            "#fe88fc"
-                        ],
-                        [
-                            0.8938547486033519,
-                            "#fea5fd"
-                        ],
-                        [
-                            0.9832402234636871,
-                            "#febefe"
-                        ],
-                        [
-                            1,
-                            "#fec3fe"
-                        ]
-                    ]
-                },
-                "plot_bgcolor": "white",
-                "paper_bgcolor": "white",
-                "shapedefaults": {
-                    "line": {
-                        "width": 0
-                    },
-                    "opacity": 0.4,
-                    "fillcolor": "#506784"
-                },
-                "annotationdefaults": {
-                    "arrowhead": 0,
-                    "arrowcolor": "#506784",
-                    "arrowwidth": 1
-                }
-            },
-            "themeRef": "PLOTLY_WHITE"
-        },
         "hovermode": "x",
-        "colorscale": {
-            "sequential": [
-                [
-                    0,
-                    "#0508b8"
-                ],
-                [
-                    0.08333333333333333,
-                    "#1910d8"
-                ],
-                [
-                    0.16666666666666666,
-                    "#3c19f0"
-                ],
-                [
-                    0.25,
-                    "#6b1cfb"
-                ],
-                [
-                    0.3333333333333333,
-                    "#981cfd"
-                ],
-                [
-                    0.4166666666666667,
-                    "#bf1cfd"
-                ],
-                [
-                    0.5,
-                    "#dd2bfd"
-                ],
-                [
-                    0.5833333333333334,
-                    "#f246fe"
-                ],
-                [
-                    0.6666666666666666,
-                    "#fc67fd"
-                ],
-                [
-                    0.75,
-                    "#fe88fc"
-                ],
-                [
-                    0.8333333333333334,
-                    "#fea5fd"
-                ],
-                [
-                    0.9166666666666666,
-                    "#febefe"
-                ],
-                [
-                    1,
-                    "#fec3fe"
-                ]
-            ]
-        },
-        "showlegend": true
-    },
-    "frames": []
+        "showlegend": true,
+        "legend": {
+            "traceorder": "grouped"
+        }
+    }
 }
