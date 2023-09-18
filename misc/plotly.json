@@ -5,6 +5,11 @@
             "mode": "markers",
             "type": "scatter",
             "legendgroup": 1,
+            "marker": {
+              "size": 8,
+              "color": "darkcyan",
+              "symbol": "circle-open-dot"
+            },
             "x": [
                 "0",
                 "0.0000970537",
@@ -58,7 +63,12 @@
             "name": "Proton 2",
             "mode": "markers",
             "type": "scatter",
-            "legendgroup": 1,
+            "legendgroup": 2,
+            "marker": {
+              "size": 8,
+              "color": "darkslateblue",
+              "symbol": "circle-open-dot"
+            },
             "x": [
                 "0",
                 "0.0000970537",
@@ -112,7 +122,12 @@
             "name": "Proton 3",
             "mode": "markers",
             "type": "scatter",
-            "legendgroup": 1,
+            "legendgroup": 3,
+            "marker": {
+              "size": 8,
+              "color": "darkmagenta",
+              "symbol": "circle-open-dot"
+            },
             "x": [
                 "0",
                 "0.0000970537",
@@ -166,7 +181,12 @@
             "name": "Proton 4",
             "mode": "markers",
             "type": "scatter",
-            "legendgroup": 1,
+            "legendgroup": 4,
+            "marker": {
+              "size": 8,
+              "color": "crimson",
+              "symbol": "circle-open-dot"
+            },
             "x": [
                 "0",
                 "0.0000970537",
@@ -220,7 +240,12 @@
             "name": "Proton 1 fit",
             "mode": "lines",
             "type": "scatter",
-            "legendgroup": 2,
+            "legendgroup": 1,
+            "line": {
+                "width": 1,
+                "color": "darkcyan",
+                "shape": "spline"
+            },
             "x": [
                 "0",
                 "0.0000970537",
@@ -275,6 +300,11 @@
             "mode": "lines",
             "type": "scatter",
             "legendgroup": 2,
+            "line": {
+                "width": 1,
+                "color": "darkslateblue",
+                "shape": "spline"
+            },
             "x": [
                 "0",
                 "0.0000970537",
@@ -328,7 +358,12 @@
             "name": "Proton 3 fit",
             "mode": "lines",
             "type": "scatter",
-            "legendgroup": 2,
+            "legendgroup": 3,
+            "line": {
+                "width": 1,
+                "color": "darkmagenta",
+                "shape": "spline"
+            },
             "x": [
                 "0",
                 "0.0000970537",
@@ -382,7 +417,12 @@
             "name": "Proton 4 fit",
             "mode": "lines",
             "type": "scatter",
-            "legendgroup": 2,
+            "legendgroup": 4,
+            "line": {
+                "width": 1,
+                "color": "crimson",
+                "shape": "spline"
+            },
             "x": [
                 "0",
                 "0.0000970537",
@@ -437,7 +477,11 @@
             "mode": "lines",
             "type": "scatter",
             "yaxis": "y2",
-            "legendgroup": 3,
+            "legendgroup": 1,
+            "line": {
+                "width": 1,
+                "color": "darkcyan"
+            },
             "x": [
                 "0",
                 "0.0000970537",
@@ -492,7 +536,11 @@
             "mode": "lines",
             "type": "scatter",
             "yaxis": "y2",
-            "legendgroup": 3,
+            "legendgroup": 2,
+            "line": {
+                "width": 1,
+                "color": "darkslateblue"
+            },
             "x": [
                 "0",
                 "0.0000970537",
@@ -548,6 +596,10 @@
             "type": "scatter",
             "yaxis": "y2",
             "legendgroup": 3,
+            "line": {
+                "width": 1,
+                "color": "darkmagenta"
+            },
             "x": [
                 "0",
                 "0.0000970537",
@@ -602,7 +654,11 @@
             "name": "Proton 4 residuals",
             "type": "scatter",
             "yaxis": "y2",
-            "legendgroup": 3,
+            "legendgroup": 4,
+            "line": {
+                "width": 1,
+                "color": "crimson"
+            },
             "x": [
                 "0",
                 "0.0000970537",

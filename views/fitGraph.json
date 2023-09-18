@@ -1,0 +1,165 @@
+{
+  "name": "fitGraph",
+  "spec": {
+    "data": [
+      {
+        "name": "inputData",
+        "x": {
+          "transform": {
+            "type": "formula",
+            "expr": "datum[1]/datum[0]"
+          }
+        },
+        "y": {
+          "transform": {
+            "type": "formula",
+            "expr": "datum.slice(2)"
+          }
+        },
+        "colors": {
+          "attributePath": "marker.color",
+          "values": [
+            "darkcyan",
+            "darkslateblue",
+            "darkmagenta",
+            "crimson"
+          ]
+        },
+        "config": {
+            "mode": "markers",
+            "type": "scatter",
+            "marker": {
+            "size": 8,
+            "color": "",
+            "symbol": "circle-open-dot"
+          }
+        }
+      },
+      {
+        "name": "outputFit",
+        "x": {
+            "transform": {
+            "type": "formula",
+            "expr": "datum[1]/datum[0]"
+          }
+        },
+        "y": {
+            "transform": {
+            "type": "formula",
+            "expr": "datum.slice(2)"
+          }
+        },
+        "colors": {
+          "attributePath": "line.color",
+          "values": [
+            "darkcyan",
+            "darkslateblue",
+            "darkmagenta",
+            "crimson"
+          ]
+        },
+        "config": {
+          "mode": "lines",
+          "type": "scatter",
+          "line": {
+            "width": 1,
+            "color": "",
+            "shape": "spline"
+          }
+        }
+      },
+      {
+        "name": "outputResiduals",
+        "x": {
+            "transform": {
+            "type": "formula",
+            "expr": "datum[1]/datum[0]"
+          }
+        },
+        "y": {
+            "transform": {
+            "type": "formula",
+            "expr": "datum.slice(2)"
+          }
+        },
+        "colors": {
+          "attributePath": "line.color",
+          "values": [
+            "darkcyan",
+            "darkslateblue",
+            "darkmagenta",
+            "crimson"
+          ]
+        },
+        "config": {
+          "mode": "lines",
+          "type": "scatter",
+          "yaxis": "y2",
+          "line": {
+            "width": 1,
+            "color": ""
+          }
+        }
+      }
+    ],
+    "layout": {
+      "title": {
+        "text": "Bindfit"
+      },
+      "xaxis": {
+        "title": {
+          "text": "Equivalent total [G]<sub>0</sub>/[H]<sub>0</sub>"
+        },
+        "exponentformat": "power",
+        "domain": [
+          0,
+          1
+        ],
+        "side": "bottom",
+        "type": "linear",
+        "autorange": true,
+        "automargin": true
+      },
+      "yaxis": {
+        "title": {
+          "text": "$\\delta$"
+        },
+        "ticksuffix": " ppm",
+        "exponentformat": "power",
+        "domain": [
+          0.375,
+          1
+        ],
+        "side": "left",
+        "type": "linear",
+        "autorange": true
+      },
+      "yaxis2": {
+        "title": {
+          "text": "Residuals"
+        },
+        "ticksuffix": " ppm",
+        "exponentformat": "power",
+        "domain": [
+          0,
+          0.25
+        ],
+        "side": "left",
+        "type": "linear",
+        "autorange": true
+      },
+      "autosize": true,
+      "hovermode": "x",
+      "showlegend": true,
+      "legend": {
+        "traceorder": "grouped"
+      }
+    }
+  },
+  "specType": "plotly",
+  "resources": [
+    "inputData",
+    "outputFit",
+    "outputResiduals"
+  ]
+}
