@@ -11,7 +11,10 @@
       "name": "inputData"
     },
     {
-      "name": "inputParams"
+      "name": "inputParamsNMR11"
+    },
+    {
+      "name": "inputParamsNMR12"
     },
     {
       "name": "inputOptions"

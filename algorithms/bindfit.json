@@ -10,8 +10,12 @@
     },
     {
       "name": "params",
-      "type": "resource",
-      "resource": "inputParams"
+      "type": "enum",
+      "resource": "inputParamsNMR11",
+      "enum": [
+        "inputParamsNMR11",
+        "inputParamsNMR12"
+      ]
     },
     {
       "name": "options",

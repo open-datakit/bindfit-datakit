@@ -15,8 +15,12 @@
           },
           {
             "name": "params",
-            "type": "resource",
-            "resource": "inputParams"
+            "type": "enum",
+            "resource": "inputParamsNMR11",
+            "enum": [
+              "inputParamsNMR11",
+              "inputParamsNMR12"
+            ]
           },
           {
             "name": "options",
@@ -270,7 +274,51 @@
         }
       },
       {
-        "name": "inputParams",
+        "name": "inputParamsNMR11",
+        "title": "Input parameters",
+        "description": "Initial parameter values",
+        "profile": "parameter-data-resource",
+        "data": {
+          "k": {
+            "vary": true,
+            "value": 100,
+            "lowerBound": 0,
+            "upperBound": null
+          }
+        },
+        "schema": {
+          "keys": [
+            {
+              "name": "k",
+              "unit": "M^{-1}",
+              "fields": [
+                {
+                  "name": "vary",
+                  "title": "Vary",
+                  "type": "boolean"
+                },
+                {
+                  "name": "value",
+                  "title": "Value",
+                  "type": "number"
+                },
+                {
+                  "name": "lowerBound",
+                  "title": "Lower bound",
+                  "type": "number"
+                },
+                {
+                  "name": "upperBound",
+                  "title": "Upper bound",
+                  "type": "number"
+                }
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "name": "inputParamsNMR12",
         "title": "Input parameters",
         "description": "Initial parameter values",
         "profile": "parameter-data-resource",
@@ -517,13 +565,20 @@
             }
           ]
         },
-        "resources": [
-          "inputParams",
-          "outputParams"
-        ]
+        "resources": {
+          "input": {
+            "type": "algorithmInput",
+            "name": "params"
+          },
+          "output": {
+            "type": "resource",
+            "name": "outputParams"
+          }
+        }
       },
       {
         "name": "dataTable",
+        "title": "Input data",
         "spec": {},
         "specType": "opendatafit-table",
         "resources": [
@@ -532,6 +587,7 @@
       },
       {
         "name": "fitTable",
+        "title": "Fit data",
         "spec": {},
         "specType": "opendatafit-table",
         "resources": [
@@ -717,20 +773,21 @@
               {
                 "name": "control",
                 "tabs": [
-                  "inputs"
+                  "control"
                 ]
               },
               {
                 "name": "main",
                 "tabs": [
-                  "outputs"
+                  "fit",
+                  "data"
                 ]
               }
             ],
             "tabs": [
               {
-                "name": "inputs",
-                "title": "Inputs",
+                "name": "control",
+                "title": "Options",
                 "icon": "",
                 "views": [
                   "upload",
@@ -738,11 +795,18 @@
                 ]
               },
               {
-                "name": "outputs",
-                "title": "Outputs",
+                "name": "fit",
+                "title": "Fit",
                 "icon": "",
                 "views": [
-                  "fitGraph",
+                  "fitGraph"
+                ]
+              },
+              {
+                "name": "data",
+                "title": "Data",
+                "icon": "",
+                "views": [
                   "dataTable",
                   "fitTable"
                 ]

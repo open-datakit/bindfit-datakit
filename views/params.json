@@ -9,8 +9,14 @@
       }
     ]
   },
-  "resources": [
-    "inputParams",
-    "outputParams"
-  ]
+  "resources": {
+    "input": {
+      "type": "algorithmInput",
+      "name": "params"
+    },
+    "output": {
+      "type": "resource",
+      "name": "outputParams"
+    }
+  }
 }

@@ -1,0 +1,44 @@
+{
+  "name": "inputParamsNMR12",
+  "title": "Input parameters",
+  "description": "Initial parameter values",
+  "profile": "parameter-data-resource",
+  "data": {
+    "k": {
+      "vary": true,
+      "value": 100,
+      "lowerBound": 0,
+      "upperBound": null
+    }
+  },
+  "schema": {
+    "keys": [
+      {
+        "name": "k",
+        "unit": "M^{-1}",
+        "fields": [
+          {
+            "name": "vary",
+            "title": "Vary",
+            "type": "boolean"
+          },
+          {
+            "name": "value",
+            "title": "Value",
+            "type": "number"
+          },
+          {
+            "name": "lowerBound",
+            "title": "Lower bound",
+            "type": "number"
+          },
+          {
+            "name": "upperBound",
+            "title": "Upper bound",
+            "type": "number"
+          }
+        ]
+      }
+    ]
+  }
+}
