@@ -10,20 +10,21 @@
         {
           "name": "control",
           "tabs": [
-            "inputs"
+            "control"
           ]
         },
         {
           "name": "main",
           "tabs": [
-            "outputs"
+            "fit",
+            "data"
           ]
         }
       ],
       "tabs": [
         {
-          "name": "inputs",
-          "title": "Inputs",
+          "name": "control",
+          "title": "Options",
           "icon": "",
           "views": [
             "upload",
@@ -31,11 +32,18 @@
           ]
         },
         {
-          "name": "outputs",
-          "title": "Outputs",
+          "name": "fit",
+          "title": "Fit",
           "icon": "",
           "views": [
-            "fitGraph",
+            "fitGraph"
+          ]
+        },
+        {
+          "name": "data",
+          "title": "Data",
+          "icon": "",
+          "views": [
             "dataTable",
             "fitTable"
           ]
