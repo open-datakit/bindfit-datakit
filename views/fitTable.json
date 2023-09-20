@@ -1,5 +1,6 @@
 {
   "name": "fitTable",
+  "title": "Fit data",
   "spec": {},
   "specType": "opendatafit-table",
   "resources": [
