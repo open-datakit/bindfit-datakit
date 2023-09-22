@@ -353,6 +353,7 @@
       "resources": {
         "input": {
           "type": "algorithmInput",
+          "algorithm": "bindfit",
           "name": "params"
         },
         "output": {
