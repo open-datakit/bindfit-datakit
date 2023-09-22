@@ -8,7 +8,7 @@
       "vary": true,
       "value": 100,
       "lowerBound": 0,
-      "upperBound": null
+      "upperBound": 1000
     }
   },
   "schema": {
