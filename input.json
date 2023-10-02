@@ -275,15 +275,15 @@
       },
       {
         "name": "inputParamsNMR11",
-        "title": "Input parameters",
-        "description": "Initial parameter values",
+        "title": "NMR 1:1",
+        "description": "NMR 1:1 initial parameter values",
         "profile": "parameter-data-resource",
         "data": {
           "k": {
             "vary": true,
             "value": 100,
             "lowerBound": 0,
-            "upperBound": null
+            "upperBound": 1000
           }
         },
         "schema": {
@@ -319,11 +319,17 @@
       },
       {
         "name": "inputParamsNMR12",
-        "title": "Input parameters",
-        "description": "Initial parameter values",
+        "title": "NMR 1:2",
+        "description": "NMR 1:2 initial parameter values",
         "profile": "parameter-data-resource",
         "data": {
-          "k": {
+          "k11": {
+            "vary": true,
+            "value": 1000,
+            "lowerBound": 0,
+            "upperBound": null
+          },
+          "k12": {
             "vary": true,
             "value": 100,
             "lowerBound": 0,
@@ -333,7 +339,33 @@
         "schema": {
           "keys": [
             {
-              "name": "k",
+              "name": "k11",
+              "unit": "M^{-1}",
+              "fields": [
+                {
+                  "name": "vary",
+                  "title": "Vary",
+                  "type": "boolean"
+                },
+                {
+                  "name": "value",
+                  "title": "Value",
+                  "type": "number"
+                },
+                {
+                  "name": "lowerBound",
+                  "title": "Lower bound",
+                  "type": "number"
+                },
+                {
+                  "name": "upperBound",
+                  "title": "Upper bound",
+                  "type": "number"
+                }
+              ]
+            },
+            {
+              "name": "k12",
               "unit": "M^{-1}",
               "fields": [
                 {
@@ -563,7 +595,12 @@
             {
               "name": "k"
             }
-          ]
+          ],
+          "parameterSpace": {
+            "type": "algorithmInput",
+            "algorithm": "bindfit",
+            "name": "params"
+          }
         },
         "resources": {
           "input": {
