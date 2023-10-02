@@ -1,7 +1,7 @@
 {
   "name": "inputParamsNMR11",
-  "title": "Input parameters",
-  "description": "Initial parameter values",
+  "title": "NMR 1:1",
+  "description": "NMR 1:1 initial parameter values",
   "profile": "parameter-data-resource",
   "data": {
     "k": {
