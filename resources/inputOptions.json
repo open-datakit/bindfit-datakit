@@ -4,7 +4,6 @@
   "description": "Fit options",
   "profile": "options-data-resource",
   "data": {
-    "model": "nmr1to1",
     "method": "Nelder-Mead",
     "normalise": true,
     "dilute": false,
@@ -12,30 +11,6 @@
   },
   "schema": {
     "fields": [
-      {
-        "name": "model",
-        "title": "Fit model",
-        "description": "The model to fit to the data",
-        "type": "object",
-        "objectFields": [
-          {
-            "name": "title",
-            "type": "string"
-          },
-          {
-            "name": "name",
-            "type": "string"
-          }
-        ],
-        "constraints": {
-          "enum": [
-            {
-              "title": "NMR 1:1",
-              "name": "nmr1to1"
-            }
-          ]
-        }
-      },
       {
         "name": "method",
         "title": "Fit method",

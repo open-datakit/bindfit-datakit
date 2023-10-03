@@ -26,8 +26,9 @@ def main(
             }
         })
 
+    model = params["metadata"]["model"]["name"]
+
     # Bindfit options
-    model = options["data"]["model"]
     method = options["data"]["method"]
     normalise = options["data"]["normalise"]
     dilute = options["data"]["dilute"]

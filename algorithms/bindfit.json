@@ -11,7 +11,7 @@
     {
       "name": "params",
       "type": "enum",
-      "resource": "inputParamsNMR11",
+      "resource": "inputParamsNMR12",
       "enum": [
         "inputParamsNMR11",
         "inputParamsNMR12"
