@@ -1,8 +1,14 @@
 {
   "name": "inputParamsNMR11",
-  "title": "NMR 1:1",
-  "description": "NMR 1:1 initial parameter values",
+  "title": "Input parameters",
+  "description": "Initial parameter values",
   "profile": "parameter-data-resource",
+  "metadata": {
+    "model": {
+      "name": "nmr1to1",
+      "title": "NMR 1:1"
+    }
+  },
   "data": {
     "k": {
       "vary": true,
