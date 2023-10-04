@@ -3,43 +3,7 @@
   "title": "Optimised parameters",
   "description": "Optimised parameter values",
   "profile": "parameter-data-resource",
-  "data": {
-    "k": {
-    }
-  },
-  "schema": {
-    "keys": [
-      {
-        "name": "k",
-        "unit": "M^{-1}",
-        "fields": [
-          {
-            "name": "vary",
-            "title": "Vary",
-            "type": "boolean"
-          },
-          {
-            "name": "value",
-            "title": "Value",
-            "type": "number"
-          },
-          {
-            "name": "stderr",
-            "title": "Error",
-            "type": "number"
-          },
-          {
-            "name": "lowerBound",
-            "title": "Lower bound",
-            "type": "number"
-          },
-          {
-            "name": "upperBound",
-            "title": "Upper bound",
-            "type": "number"
-          }
-        ]
-      }
-    ]
-  }
+  "metadata": {},
+  "data": {},
+  "schema": {}
 }

@@ -98,14 +98,17 @@ def main(
 
     # TODO: This conversion should be moved to Bindfit library
     for key, param in fitter.params.items():
-        outputs["params"].update({
-            "data": {
-                key: {
-                    "value": param["value"],
-                    "stderr": param["stderr"],
-                },
+        outputs["params"]["data"].update({
+            key: {
+                "value": param["value"],
+                "stderr": param["stderr"],
             },
         })
+
+    # TODO: Think of a better way of doing this?
+    # Populate output params schema and metadata from input params
+    outputs["params"]["metadata"] = params["metadata"]
+    outputs["params"]["schema"] = params["schema"]
 
     # Translate fitter.fit into JSON for tabular data schema
     # TODO: This should be done by the Bindfit library
