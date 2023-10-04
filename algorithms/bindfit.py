@@ -98,12 +98,23 @@ def main(
 
     # TODO: This conversion should be moved to Bindfit library
     for key, param in fitter.params.items():
-        outputs["params"]["data"].update({
-            key: {
-                "value": param["value"],
-                "stderr": param["stderr"],
-            },
-        })
+        try:
+            outputs["params"]["data"].update({
+                key: {
+                    "value": param["value"],
+                    "stderr": param["stderr"],
+                },
+            })
+        except KeyError:
+            # No existing data key, create
+            outputs["params"] = {
+                "data": {
+                    key: {
+                        "value": param["value"],
+                        "stderr": param["stderr"],
+                    },
+                },
+            }
 
     # TODO: Think of a better way of doing this?
     # Populate output params schema and metadata from input params
