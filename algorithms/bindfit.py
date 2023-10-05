@@ -1,7 +1,7 @@
 def main(
+    datapackage,
     data,
     params,
-    options,
     outputs,
     **kwargs,
 ):
@@ -27,6 +27,21 @@ def main(
         })
 
     model = params["metadata"]["model"]["name"]
+
+    # Get options resource
+    # TODO: Temporary
+    # This will eventually be split out into helper library
+    def find(lst, key, value):
+        for i in lst:
+            if i[key] == value:
+                return i
+        return None
+
+    options = find(
+        lst=datapackage["resources"],
+        key="name",
+        value=params["options"]["resource"],
+    )
 
     # Bindfit options
     method = options["data"]["method"]

@@ -16,11 +16,6 @@
         "inputParamsNMR11",
         "inputParamsNMR12"
       ]
-    },
-    {
-      "name": "options",
-      "type": "resource",
-      "resource": "inputOptions"
     }
   ],
   "outputs": [

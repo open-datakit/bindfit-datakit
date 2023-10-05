@@ -3,6 +3,10 @@
   "title": "Input parameters",
   "description": "Initial parameter values",
   "profile": "parameter-data-resource",
+  "options": {
+    "type": "resource",
+    "resource": "inputOptionsNMR"
+  },
   "metadata": {
     "model": {
       "name": "nmr1to2",
