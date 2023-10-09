@@ -1,7 +1,7 @@
 def main(
     datapackage,
-    data,
     params,
+    data,
     outputs,
     **kwargs,
 ):

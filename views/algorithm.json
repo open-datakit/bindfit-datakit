@@ -1,0 +1,18 @@
+{
+  "name": "algorithm",
+  "title": "Algorithm parameters",
+  "specType": "opendatafit-algorithm-params",
+  "algorithm": "bindfit",
+  "resources": {
+    "options": {
+      "type": "algorithmOptions"
+    },
+    "input": {
+      "type": "algorithmParams"
+    },
+    "output": {
+      "type": "resource",
+      "name": "outputParams"
+    }
+  }
+}

@@ -4,18 +4,24 @@
   "code": "",
   "inputs": [
     {
+      "name": "params",
+      "type": "algorithmParams",
+      "resource": "inputParamsNMR12",
+      "resources": [
+        {
+          "params": "inputParamsNMR11",
+          "options": "inputOptionsNMR"
+        },
+        {
+          "params": "inputParamsNMR12",
+          "options": "inputOptionsNMR"
+        }
+      ]
+    },
+    {
       "name": "data",
       "type": "resource",
       "resource": "inputData"
-    },
-    {
-      "name": "params",
-      "type": "enum",
-      "resource": "inputParamsNMR12",
-      "enum": [
-        "inputParamsNMR11",
-        "inputParamsNMR12"
-      ]
     }
   ],
   "outputs": [
