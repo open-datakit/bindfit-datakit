@@ -6,7 +6,10 @@
     {
       "name": "params",
       "type": "algorithmParams",
-      "resource": "inputParamsNMR12",
+      "resource": {
+        "params": "inputParamsNMR12",
+        "options": "inputOptionsNMR"
+      },
       "resources": [
         {
           "params": "inputParamsNMR11",
