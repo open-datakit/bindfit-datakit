@@ -18,6 +18,18 @@
         {
           "params": "inputParamsNMR12",
           "options": "inputOptionsNMR"
+        },
+        {
+          "params": "inputParamsNMR12Add",
+          "options": "inputOptionsNMR"
+        },
+        {
+          "params": "inputParamsNMR12Noncoop",
+          "options": "inputOptionsNMR"
+        },
+        {
+          "params": "inputParamsNMR12Stat",
+          "options": "inputOptionsNMR"
         }
       ]
     },

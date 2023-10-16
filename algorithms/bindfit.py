@@ -28,12 +28,12 @@ def main(
         })
 
     model = params["metadata"]["model"]["name"]
+    flavour = params["metadata"]["model"].get("flavour", None)
 
     # Bindfit options
     method = options["data"]["method"]["name"]
     normalise = options["data"]["normalise"]
     dilute = options["data"]["dilute"]
-    flavour = options["data"]["flavour"]["name"]
 
     # Load data
     # TODO: Split this function out into datapackage-utilities library

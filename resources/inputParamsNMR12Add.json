@@ -1,0 +1,83 @@
+{
+  "name": "inputParamsNMR12Add",
+  "title": "Input parameters",
+  "description": "Initial parameter values",
+  "profile": "parameter-data-resource",
+  "metadata": {
+    "model": {
+      "name": "nmr1to2",
+      "title": "NMR 1:2 - Additive",
+      "flavour": "add"
+    }
+  },
+  "data": {
+    "k11": {
+      "vary": true,
+      "value": 1000,
+      "lowerBound": 0,
+      "upperBound": null
+    },
+    "k12": {
+      "vary": true,
+      "value": 100,
+      "lowerBound": 0,
+      "upperBound": null
+    }
+  },
+  "schema": {
+    "keys": [
+      {
+        "name": "k11",
+        "unit": "M^{-1}",
+        "fields": [
+          {
+            "name": "vary",
+            "title": "Vary",
+            "type": "boolean"
+          },
+          {
+            "name": "value",
+            "title": "Value",
+            "type": "number"
+          },
+          {
+            "name": "lowerBound",
+            "title": "Lower bound",
+            "type": "number"
+          },
+          {
+            "name": "upperBound",
+            "title": "Upper bound",
+            "type": "number"
+          }
+        ]
+      },
+      {
+        "name": "k12",
+        "unit": "M^{-1}",
+        "fields": [
+          {
+            "name": "vary",
+            "title": "Vary",
+            "type": "boolean"
+          },
+          {
+            "name": "value",
+            "title": "Value",
+            "type": "number"
+          },
+          {
+            "name": "lowerBound",
+            "title": "Lower bound",
+            "type": "number"
+          },
+          {
+            "name": "upperBound",
+            "title": "Upper bound",
+            "type": "number"
+          }
+        ]
+      }
+    ]
+  }
+}

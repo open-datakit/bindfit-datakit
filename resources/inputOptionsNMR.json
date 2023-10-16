@@ -9,11 +9,7 @@
       "name": "nelder-mead"
     },
     "normalise": true,
-    "dilute": false,
-    "flavour": {
-      "title": "None (Full)",
-      "name": "none"
-    }
+    "dilute": false
   },
   "schema": {
     "fields": [
@@ -56,42 +52,6 @@
         "title": "Dilution correction",
         "description": "Apply dilution correction to data",
         "type": "boolean"
-      },
-      {
-        "name": "flavour",
-        "title": "Flavour",
-        "description": "Fitting algorithm flavour",
-        "type": "object",
-        "objectFields": [
-          {
-            "name": "title",
-            "type": "string"
-          },
-          {
-            "name": "name",
-            "type": "string"
-          }
-        ],
-        "constraints": {
-          "enum": [
-            {
-              "title": "None (Full)",
-              "name": "none"
-            },
-            {
-              "title": "Non-cooperative",
-              "name": "noncoop"
-            },
-            {
-              "title": "Additive",
-              "name": "add"
-            },
-            {
-              "title": "Statistical",
-              "name": "stat"
-            }
-          ]
-        }
       }
     ]
   }
