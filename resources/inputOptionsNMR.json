@@ -4,10 +4,16 @@
   "description": "Fit options",
   "profile": "options-data-resource",
   "data": {
-    "method": "Nelder-Mead",
+    "method": {
+      "title": "Nelder-Mead",
+      "name": "nelder-mead"
+    },
     "normalise": true,
     "dilute": false,
-    "flavour": "none"
+    "flavour": {
+      "title": "None (Full)",
+      "name": "none"
+    }
   },
   "schema": {
     "fields": [
