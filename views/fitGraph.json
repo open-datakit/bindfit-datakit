@@ -21,7 +21,7 @@
           "values": [
             "darkcyan",
             "darkslateblue",
-            "darkmagenta",
+            "darkgoldenrod",
             "crimson"
           ]
         },
@@ -54,7 +54,7 @@
           "values": [
             "darkcyan",
             "darkslateblue",
-            "darkmagenta",
+            "darkgoldenrod",
             "crimson"
           ]
         },
@@ -87,7 +87,7 @@
           "values": [
             "darkcyan",
             "darkslateblue",
-            "darkmagenta",
+            "darkgoldenrod",
             "crimson"
           ]
         },
@@ -103,6 +103,14 @@
       }
     ],
     "layout": {
+      "margin": {
+        "t": 0,
+        "b": 0,
+        "l": 0,
+        "r": 0,
+        "pad": 0,
+        "autoexpand": true
+      },
       "xaxis": {
         "title": {
           "text": "Equivalent total [G]<sub>0</sub>/[H]<sub>0</sub>"
@@ -129,7 +137,8 @@
         ],
         "side": "left",
         "type": "linear",
-        "autorange": true
+        "autorange": true,
+        "automargin": true
       },
       "yaxis2": {
         "title": {
@@ -143,7 +152,8 @@
         ],
         "side": "left",
         "type": "linear",
-        "autorange": true
+        "autorange": true,
+        "automargin": true
       },
       "autosize": true,
       "hovermode": "x",

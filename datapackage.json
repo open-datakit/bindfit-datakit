@@ -549,7 +549,7 @@
               "values": [
                 "darkcyan",
                 "darkslateblue",
-                "darkmagenta",
+                "darkgoldenrod",
                 "crimson"
               ]
             },
@@ -582,7 +582,7 @@
               "values": [
                 "darkcyan",
                 "darkslateblue",
-                "darkmagenta",
+                "darkgoldenrod",
                 "crimson"
               ]
             },
@@ -615,7 +615,7 @@
               "values": [
                 "darkcyan",
                 "darkslateblue",
-                "darkmagenta",
+                "darkgoldenrod",
                 "crimson"
               ]
             },
@@ -631,8 +631,13 @@
           }
         ],
         "layout": {
-          "title": {
-            "text": "Bindfit"
+          "margin": {
+            "t": 0,
+            "b": 0,
+            "l": 0,
+            "r": 0,
+            "pad": 0,
+            "autoexpand": true
           },
           "xaxis": {
             "title": {
@@ -650,7 +655,7 @@
           },
           "yaxis": {
             "title": {
-              "text": "$\\delta$"
+              "text": "\u03b4"
             },
             "ticksuffix": " ppm",
             "exponentformat": "power",
@@ -660,7 +665,8 @@
             ],
             "side": "left",
             "type": "linear",
-            "autorange": true
+            "autorange": true,
+            "automargin": true
           },
           "yaxis2": {
             "title": {
@@ -674,7 +680,8 @@
             ],
             "side": "left",
             "type": "linear",
-            "autorange": true
+            "autorange": true,
+            "automargin": true
           },
           "autosize": true,
           "hovermode": "x",

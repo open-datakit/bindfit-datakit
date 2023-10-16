@@ -125,7 +125,7 @@
             "legendgroup": 3,
             "marker": {
               "size": 8,
-              "color": "darkmagenta",
+              "color": "darkgoldenrod",
               "symbol": "circle-open-dot"
             },
             "x": [
@@ -361,7 +361,7 @@
             "legendgroup": 3,
             "line": {
                 "width": 1,
-                "color": "darkmagenta",
+                "color": "darkgoldenrod",
                 "shape": "spline"
             },
             "x": [
@@ -598,7 +598,7 @@
             "legendgroup": 3,
             "line": {
                 "width": 1,
-                "color": "darkmagenta"
+                "color": "darkgoldenrod"
             },
             "x": [
                 "0",
@@ -710,6 +710,14 @@
         }
     ],
     "layout": {
+        "margin": {
+          "t": 0,
+          "b": 0,
+          "l": 0,
+          "r": 0,
+          "pad": 0,
+          "autoexpand": true
+        },
         "xaxis": {
             "title": {
                 "text": "Equivalent total [G]<sub>0</sub>/[H]<sub>0</sub>"
@@ -736,7 +744,8 @@
             ],
             "side": "left",
             "type": "linear",
-            "autorange": true
+            "autorange": true,
+            "automargin": true
         },
         "yaxis2": {
             "title": {
@@ -750,7 +759,8 @@
             ],
             "side": "left",
             "type": "linear",
-            "autorange": true
+            "autorange": true,
+            "automargin": true
         },
         "autosize": true,
         "hovermode": "x",
