@@ -632,10 +632,10 @@
         ],
         "layout": {
           "margin": {
-            "t": 0,
-            "b": 0,
-            "l": 0,
-            "r": 0,
+            "t": 5,
+            "b": 5,
+            "l": 5,
+            "r": 5,
             "pad": 0,
             "autoexpand": true
           },
@@ -651,7 +651,15 @@
             "side": "bottom",
             "type": "linear",
             "autorange": true,
-            "automargin": true
+            "automargin": true,
+            "showgrid": true,
+            "gridcolor": "gainsboro",
+            "gridwidth": 1,
+            "showline": true,
+            "linecolor": "gainsboro",
+            "zerolinecolor": "gainsboro",
+            "zerolinewidth": 2,
+            "mirror": "all"
           },
           "yaxis": {
             "title": {
@@ -666,7 +674,15 @@
             "side": "left",
             "type": "linear",
             "autorange": true,
-            "automargin": true
+            "automargin": true,
+            "showgrid": true,
+            "gridcolor": "gainsboro",
+            "gridwidth": 1,
+            "showline": true,
+            "linecolor": "gainsboro",
+            "zerolinecolor": "gainsboro",
+            "zerolinewidth": 2,
+            "mirror": "all"
           },
           "yaxis2": {
             "title": {
@@ -681,8 +697,18 @@
             "side": "left",
             "type": "linear",
             "autorange": true,
-            "automargin": true
+            "automargin": true,
+            "showgrid": true,
+            "gridcolor": "gainsboro",
+            "gridwidth": 1,
+            "showline": true,
+            "linecolor": "gainsboro",
+            "zerolinecolor": "gainsboro",
+            "zerolinewidth": 2,
+            "mirror": "all"
           },
+          "plot_bgcolor": "white",
+          "paper_bgcolor": "white",
           "autosize": true,
           "hovermode": "x",
           "showlegend": true,
