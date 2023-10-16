@@ -103,9 +103,6 @@
       }
     ],
     "layout": {
-      "title": {
-        "text": "Bindfit"
-      },
       "xaxis": {
         "title": {
           "text": "Equivalent total [G]<sub>0</sub>/[H]<sub>0</sub>"
@@ -122,7 +119,7 @@
       },
       "yaxis": {
         "title": {
-          "text": "$\\delta$"
+          "text": "δ"
         },
         "ticksuffix": " ppm",
         "exponentformat": "power",
