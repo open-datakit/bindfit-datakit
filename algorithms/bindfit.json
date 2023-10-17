@@ -54,6 +54,11 @@
       "name": "residuals",
       "type": "resource",
       "resource": "outputResiduals"
+    },
+    {
+      "name": "molefracs",
+      "type": "resource",
+      "resource": "outputMolefracs"
     }
   ]
 }

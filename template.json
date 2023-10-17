@@ -36,6 +36,9 @@
     },
     {
       "name": "outputResiduals"
+    },
+    {
+      "name": "outputMolefracs"
     }
   ],
   "views": [

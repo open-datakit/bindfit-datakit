@@ -149,4 +149,48 @@ def main(
     outputs["residuals"]["data"] = fit_to_json(data, fitter.fit - data_y)
     outputs["residuals"]["schema"] = data["schema"]
 
+    # Translate fitter.molefrac into JSON for tabular data schema
+    # TODO: This should be done by the Bindfit library
+    def molefrac_to_json(data, molefrac):
+        # TODO: Please get rid of this XD
+        # This mapping should happen inside Bindfit library
+        y_field_name_map = {
+            "nmr1to1": ["H", "HG"],
+            "nmr1to2": ["H", "HG", "HG2"],
+        }
+
+        x_fields = [ i["name"] for i in data["schema"]["fields"][:2] ]
+        y_fields = y_field_name_map[model]
+
+        molefrac_data = []
+
+        for data_row, molefrac_row in zip(data["data"], molefrac.T):
+            row = {}
+
+            for field in x_fields:
+                row[field] = data_row[field]
+
+            for i, field in enumerate(y_fields):
+                row[field] = molefrac_row[i]
+
+            molefrac_data.append(row)
+
+        molefrac_schema = {
+            "primaryKey": data["schema"]["primaryKey"],
+            "fields": data["schema"]["fields"][:2] +
+            [
+                {
+                    "name": i,
+                    "title": i,
+                    "type": "number",
+                    "unit": "",
+                }
+                for i in y_fields
+            ],
+        }
+
+        return molefrac_data, molefrac_schema
+
+    outputs["molefracs"]["data"], outputs["molefracs"]["schema"] = molefrac_to_json(data, fitter.molefrac)
+
     return outputs
