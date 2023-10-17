@@ -1023,9 +1023,8 @@
             },
             "yaxis": {
               "title": {
-                "text": "\u03b4"
+                "text": "Molefraction"
               },
-              "ticksuffix": " ppm",
               "exponentformat": "power",
               "domain": [
                 0,
@@ -1080,6 +1079,7 @@
                 "name": "main",
                 "tabs": [
                   "fit",
+                  "molefracs",
                   "data"
                 ]
               }
