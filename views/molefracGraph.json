@@ -1,0 +1,107 @@
+{
+  "name": "molefracGraph",
+  "spec": {
+    "data": [
+      {
+        "name": "outputMolefracs",
+        "x": {
+            "transform": {
+            "type": "formula",
+            "expr": "datum[1]/datum[0]"
+          }
+        },
+        "y": {
+            "transform": {
+            "type": "formula",
+            "expr": "datum.slice(2)"
+          }
+        },
+        "colors": {
+          "attributePath": "line.color",
+          "values": [
+            "darkcyan",
+            "darkslateblue",
+            "darkgoldenrod",
+            "crimson"
+          ]
+        },
+        "config": {
+          "mode": "lines",
+          "type": "scatter",
+          "line": {
+            "width": 1,
+            "color": "",
+            "shape": "spline"
+          }
+        }
+      }
+    ],
+    "layout": {
+      "margin": {
+        "t": 5,
+        "b": 5,
+        "l": 5,
+        "r": 5,
+        "pad": 0,
+        "autoexpand": true
+      },
+      "xaxis": {
+        "title": {
+          "text": "Equivalent total [G]<sub>0</sub>/[H]<sub>0</sub>"
+        },
+        "exponentformat": "power",
+        "domain": [
+          0,
+          1
+        ],
+        "side": "bottom",
+        "type": "linear",
+        "autorange": true,
+        "automargin": true,
+        "showgrid": true,
+        "gridcolor": "gainsboro",
+        "gridwidth": 1,
+        "showline": true,
+        "linecolor": "gainsboro",
+        "zerolinecolor": "gainsboro",
+        "zerolinewidth": 2,
+        "mirror": "all"
+      },
+      "yaxis": {
+        "title": {
+          "text": "δ"
+        },
+        "ticksuffix": " ppm",
+        "exponentformat": "power",
+        "domain": [
+          0,
+          1
+        ],
+        "side": "left",
+        "type": "linear",
+        "autorange": true,
+        "automargin": true,
+        "showgrid": true,
+        "gridcolor": "gainsboro",
+        "gridwidth": 1,
+        "showline": true,
+        "linecolor": "gainsboro",
+        "zerolinecolor": "gainsboro",
+        "zerolinewidth": 2,
+        "mirror": "all"
+      },
+      "plot_bgcolor": "white",
+      "paper_bgcolor": "white",
+      "autosize": true,
+      "hovermode": "x",
+      "showlegend": true,
+      "legend": {
+        "traceorder": "grouped"
+      }
+    }
+  },
+  "specType": "plotly",
+  "resources": [
+    "outputMolefracs"
+  ]
+}

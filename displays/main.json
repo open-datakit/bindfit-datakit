@@ -40,6 +40,14 @@
           ]
         },
         {
+          "name": "molefracs",
+          "title": "Molefractions",
+          "icon": "",
+          "views": [
+            "molefracGraph"
+          ]
+        },
+        {
           "name": "data",
           "title": "Data",
           "icon": "",

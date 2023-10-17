@@ -56,6 +56,9 @@
     },
     {
       "name": "fitGraph"
+    },
+    {
+      "name": "molefracGraph"
     }
   ],
   "displays": [
