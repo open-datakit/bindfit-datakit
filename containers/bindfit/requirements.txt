@@ -1,4 +1,4 @@
 numpy
 pandas
 matplotlib
-bindfit@git+https://github.com/opendatafit/bindfit.git@main
+bindfit@git+https://github.com/opendatastudio/bindfit.git@main
