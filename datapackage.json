@@ -1,11 +1,11 @@
 {
   "title": "Bindfit",
   "description": "Binding constant fitter datapackage",
-  "profile": "opendatastudio-datapackage",
+  "profile": "ods-datapackage",
   "repository": {
     "type": "git",
-    "url": "https://github.com/opendatafit/bindfit-datapackage",
-    "name": "opendatafit/bindfit-datapackage"
+    "url": "https://github.com/opendatastudio/bindfit-datapackage",
+    "name": "opendatastudio/bindfit-datapackage"
   },
   "algorithms": [
     "bindfit"
@@ -52,5 +52,5 @@
     "fitGraphMatplotlib"
   ],
   "created": 1721295423,
-  "updated": 1724301697
+  "updated": 1725085551
 }

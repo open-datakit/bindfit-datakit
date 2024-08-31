@@ -1,9 +1,9 @@
-# Bindfit datapackage for opendata.fit
+# Bindfit datapackage for opendata.studio
 
 Bindfit is a binding constant fitting tool designed to work with classical supramolecular titration data obtained from NMR, UV, Fluorescence and other methods.
 
-* 🗒️ [Bindfit datapackage documentation](https://docs.opendata.fit/v/bindfit-datapackage/)
-* 💻 [Bindfit Python library GitHub](https://github.com/opendatafit/bindfit)
+* 🗒️ [Bindfit datapackage documentation](https://docs.opendata.fstudio/v/bindfit-datapackage/)
+* 💻 [Bindfit Python library GitHub](https://github.com/opendatastudio/bindfit)
 
 ## Example usage
 ```
@@ -22,8 +22,8 @@ ods view-table fitCoefficients              # View fit coefficients table
 
 * Docker
 * Python (to run CLI)
-* [opendatafit/cli](https://github.com/opendatafit/cli)
-* [opendatafit/containers](https://github.com/opendatafit/containers)
+* [opendatastudio/cli](https://github.com/opendatastudio/cli)
+* [opendatastudio/containers](https://github.com/opendatastudio/containers)
 
 ### Set up pre-commit hooks
 
@@ -39,7 +39,7 @@ pre-commit run --all-files
 
 Build base execution container:
 ```
-# Navigate to opendatafit/containers repository
+# Navigate to opendatastudio/containers repository
 cd python-execution-base
 ./build.sh
 ```

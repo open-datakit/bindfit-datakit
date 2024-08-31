@@ -1,7 +1,7 @@
 {
   "name": "bindfit",
   "title": "Bindfit",
-  "profile": "opendatafit-algorithm",
+  "profile": "ods-algorithm",
   "code": "bindfit.py",
   "interface": [
     {

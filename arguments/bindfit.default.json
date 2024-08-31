@@ -1,7 +1,7 @@
 {
   "name": "bindfit.default",
   "title": "Bindfit algorithm default argument space",
-  "profile": "opendatafit-algorithm-arguments",
+  "profile": "ods-algorithm-arguments",
   "data": [
     {
       "name": "data",
@@ -65,5 +65,5 @@
     }
   ],
   "algorithm": "bindfit",
-  "container": "opendatafit/bindfit"
+  "container": "ods/bindfit"
 }

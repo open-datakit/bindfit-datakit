@@ -1,3 +1,3 @@
 #!/usr/bin/env bash
 
-docker build -t opendatafit/bindfit . $@
+docker build -t ods/bindfit . $@

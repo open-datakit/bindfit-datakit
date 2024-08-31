@@ -2,7 +2,7 @@
   "name": "dataTable",
   "title": "Input data",
   "spec": {},
-  "specType": "opendatafit-table",
+  "specType": "ods-table",
   "resources": [
     "inputData"
   ]

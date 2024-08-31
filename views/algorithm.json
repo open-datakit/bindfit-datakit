@@ -1,7 +1,7 @@
 {
   "name": "algorithm",
   "title": "Algorithm parameters",
-  "specType": "opendatafit-algorithm-params",
+  "specType": "ods-algorithm-params",
   "algorithm": "bindfit",
   "resources": {
     "options": {
