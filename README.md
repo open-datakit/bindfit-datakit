@@ -9,9 +9,9 @@ Bindfit is a binding constant fitting tool designed to work with classical supra
 ```
 ods reset                                   # Clear any previous outputs
 ods load bindfit data ./data/nmr11.csv      # Load input data
-ods set-param bindfit fitModelParams k 314  # Set initial parameter guess
+ods set-param fitModelParams k 314          # Set initial parameter guess
 ods set-arg fitMethod "bfgs"                # Set fit method
-ods run bindfit  # Run algorithm
+ods run                                     # Run algorithm
 ods view fitGraphMatplotlib                 # View fit graph
 ods view-table fitCoefficients              # View fit coefficients table
 ```
