@@ -15,7 +15,7 @@
         "dataAgg"
       ],
       "null": false,
-      "defaultData": {
+      "defaultConfiguration": {
         "resource": "data",
         "format": "data"
       }
@@ -36,7 +36,7 @@
         }
       ],
       "null": false,
-      "defaultData": {
+      "defaultConfiguration": {
         "value": "nelder-mead"
       }
     },
@@ -59,6 +59,14 @@
           "value": "nmr2to1"
         },
         {
+          "title": "NMR Dimer",
+          "value": "nmrdimer"
+        },
+        {
+          "title": "NMR CoEK",
+          "value": "nmrcoek"
+        },
+        {
           "title": "UV 1:1",
           "value": "uv1to2"
         },
@@ -69,10 +77,18 @@
         {
           "title": "UV 2:1",
           "value": "uv2to1"
+        },
+        {
+          "title": "UV Dimer",
+          "value": "uvdimer"
+        },
+        {
+          "title": "UV CoEK",
+          "value": "uvcoek"
         }
       ],
       "null": false,
-      "defaultData": {
+      "defaultConfiguration": {
         "value": "nmr1to1"
       }
     },
@@ -96,7 +112,7 @@
         "uvDimerParams"
       ],
       "null": false,
-      "defaultData": {
+      "defaultConfiguration": {
         "resource": "nmr11Params",
         "format": "params"
       }
@@ -107,7 +123,7 @@
       "description": "If true, assumes the first data point is the chemical shift of the pure host and fits only the differences between pure host and complex(es)",
       "type": "boolean",
       "null": false,
-      "defaultData": {
+      "defaultConfiguration": {
         "value": true
       }
     },
@@ -117,7 +133,7 @@
       "description": "If true, apply dilution correction to the data before fitting",
       "type": "boolean",
       "null": false,
-      "defaultData": {
+      "defaultConfiguration": {
         "value": false
       }
     },
@@ -141,7 +157,7 @@
         }
       ],
       "null": true,
-      "defaultData": {
+      "defaultConfiguration": {
         "value": null
       }
     },
@@ -156,7 +172,7 @@
         "data",
         "dataAgg"
       ],
-      "defaultData": {
+      "defaultConfiguration": {
         "resource": "fitCurve",
         "format": "data"
       }
@@ -172,7 +188,7 @@
         "data",
         "dataAgg"
       ],
-      "defaultData": {
+      "defaultConfiguration": {
         "resource": "fitResiduals",
         "format": "data"
       }
@@ -190,7 +206,7 @@
         "molefractions21",
         "molefractionsAgg"
       ],
-      "defaultData": {
+      "defaultConfiguration": {
         "resource": "fitMolefractions",
         "format": "molefractions11"
       }
@@ -208,7 +224,7 @@
         "coefficients21",
         "coefficientsAgg"
       ],
-      "defaultData": {
+      "defaultConfiguration": {
         "resource": "fitCoefficients",
         "format": "coefficients11"
       }
@@ -221,7 +237,7 @@
       "profile": "tabular-data-resource",
       "null": true,
       "format": "quality",
-      "defaultData": {
+      "defaultConfiguration": {
         "resource": "fitQuality",
         "format": "quality"
       }
@@ -234,10 +250,235 @@
       "profile": "tabular-data-resource",
       "null": true,
       "format": "summary",
-      "defaultData": {
+      "defaultConfiguration": {
         "resource": "fitSummary",
         "format": "summary"
       }
+    }
+  ],
+  "relationships": [
+    {
+      "source": "fitModel",
+      "rules": [
+        {
+          "description": "NMR/UV 1:1 parameter defaults",
+          "value": [
+            "nmr1to1",
+            "uv1to1"
+          ],
+          "target": [
+            {
+              "name": "fitModelParams",
+              "data": [
+                {
+                  "name": "k",
+                  "fit": true,
+                  "init": 100,
+                  "value": null,
+                  "lowerBound": 0,
+                  "upperBound": 1000,
+                  "stderr": null
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "description": "NMR/UV 1:2 parameter defaults",
+          "value": [
+            "nmr1to2",
+            "uv1to2"
+          ],
+          "target": [
+            {
+              "name": "fitModelParams",
+              "data": [
+                {
+                  "name": "k11",
+                  "fit": true,
+                  "init": 1000,
+                  "value": null,
+                  "lowerBound": 0,
+                  "upperBound": null,
+                  "stderr": null
+                },
+                {
+                  "name": "k12",
+                  "fit": true,
+                  "init": 100,
+                  "value": null,
+                  "lowerBound": 0,
+                  "upperBound": null,
+                  "stderr": null
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "description": "NMR/UV 2:1 parameter defaults",
+          "value": [
+            "nmr2to1",
+            "uv2to1"
+          ],
+          "target": [
+            {
+              "name": "fitModelParams",
+              "data": [
+                {
+                  "name": "k11",
+                  "fit": true,
+                  "init": 1000,
+                  "value": null,
+                  "lowerBound": 0,
+                  "upperBound": null,
+                  "stderr": null
+                },
+                {
+                  "name": "k21",
+                  "fit": true,
+                  "init": 100,
+                  "value": null,
+                  "lowerBound": 0,
+                  "upperBound": null,
+                  "stderr": null
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "description": "NMR/UV Dimer parameter defaults",
+          "value": [
+            "nmrdimer",
+            "uvdimer"
+          ],
+          "target": [
+            {
+              "name": "fitModelParams",
+              "data": [
+                {
+                  "name": "ke",
+                  "fit": true,
+                  "init": 100,
+                  "value": null,
+                  "lowerBound": 0,
+                  "upperBound": 1000,
+                  "stderr": null
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "description": "NMR CoEK parameter defaults",
+          "value": "nmrcoek",
+          "target": [
+            {
+              "name": "fitModelParams",
+              "data": [
+                {
+                  "name": "ke",
+                  "fit": true,
+                  "init": 200,
+                  "value": null,
+                  "lowerBound": 0,
+                  "upperBound": null,
+                  "stderr": null
+                },
+                {
+                  "name": "rho",
+                  "fit": true,
+                  "init": 0.3,
+                  "value": null,
+                  "lowerBound": 0,
+                  "upperBound": null,
+                  "stderr": null
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "description": "UV CoEK parameter defaults",
+          "value": "uvcoek",
+          "target": [
+            {
+              "name": "fitModelParams",
+              "data": [
+                {
+                  "name": "ke",
+                  "fit": true,
+                  "init": 2700,
+                  "value": null,
+                  "lowerBound": 0,
+                  "upperBound": null,
+                  "stderr": null
+                },
+                {
+                  "name": "rho",
+                  "fit": true,
+                  "init": 0.003,
+                  "value": null,
+                  "lowerBound": 0,
+                  "upperBound": null,
+                  "stderr": null
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "description": "NMR sub init values and dilution correction",
+          "value": [
+            "nmr1to1",
+            "nmr1to2",
+            "nmr2to1"
+          ],
+          "target": [
+            {
+              "name": "subInitValues",
+              "value": true
+            },
+            {
+              "name": "dilutionCorrection",
+              "value": false
+            }
+          ]
+        },
+        {
+          "description": "UV sub init values and dilution correction",
+          "value": [
+            "uv1to1",
+            "uv1to2",
+            "uv2to1"
+          ],
+          "target": [
+            {
+              "name": "subInitValues",
+              "value": true
+            },
+            {
+              "name": "dilutionCorrection",
+              "value": true
+            }
+          ]
+        },
+        {
+          "description": "Disable flavour for 1:1 models",
+          "value": [
+            "uv1to1",
+            "nmr1to1"
+          ],
+          "target": [
+            {
+              "name": "flavour",
+              "value": null,
+              "enabled": false
+            }
+          ]
+        }
+      ]
     }
   ]
 }
