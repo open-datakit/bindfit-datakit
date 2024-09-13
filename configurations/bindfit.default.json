@@ -20,7 +20,7 @@
     },
     {
       "name": "params",
-      "resource": "nmr11Params",
+      "resource": "params",
       "format": "params"
     },
     {

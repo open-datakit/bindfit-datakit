@@ -99,21 +99,9 @@
       "type": "resource",
       "profile": "parameter-tabular-data-resource",
       "format": "params",
-      "enum": [
-        "nmr11Params",
-        "nmr12Params",
-        "nmr21Params",
-        "nmrCoekParams",
-        "nmrDimerParams",
-        "uv11Params",
-        "uv12Params",
-        "uv21Params",
-        "uvCoekParams",
-        "uvDimerParams"
-      ],
       "null": false,
       "defaultConfiguration": {
-        "resource": "nmr11Params",
+        "resource": "params",
         "format": "params"
       }
     },

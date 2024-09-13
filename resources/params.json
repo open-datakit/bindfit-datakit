@@ -1,0 +1,8 @@
+{
+  "name": "params",
+  "title": "Parameters",
+  "description": "Binding model parameters",
+  "profile": "parameter-tabular-data-resource",
+  "schema": "inherit-from-format",
+  "data": []
+}
