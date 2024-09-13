@@ -1,8 +1,8 @@
 def main(
     data,
-    fitMethod,
-    fitModel,
-    fitModelParams,
+    method,
+    model,
+    params,
     subInitValues,
     dilutionCorrection,
     flavour,
@@ -19,11 +19,11 @@ def main(
     ---------------
     data: `tabular-data-resource`
         Tabular input data in array of named row objects format
-    fitMethod: `str`
+    method: `str`
         The optimisation algorithm to use for fitting
-    fitModel: `str`
+    model: `str`
         The model to fit to the data
-    fitModelParams: `parameter-tabular-data-resource`
+    params: `parameter-tabular-data-resource`
         Table of parameters containing initial guesses and output values
     subInitValues: `bool`
         If true, subtract the first column from all data before fitting
@@ -40,7 +40,7 @@ def main(
 
     Returns
     -------
-    fitModelParams: `parameter-tabular-data-resource`
+    params: `parameter-tabular-data-resource`
         Table of parameters containing initial guesses and output values
     fitCurve: `tabular-data-resource`
         Optimised fit curve
@@ -65,7 +65,7 @@ def main(
     # Convert param initial values and bounds to Bindfit format
     input_params = {}
 
-    for key, row in fitModelParams.data.iterrows():
+    for key, row in params.data.iterrows():
         input_params.update(
             {
                 key: {
@@ -80,7 +80,7 @@ def main(
 
     # Construct and run Bindfit fitter
     function = bindfit.functions.construct(
-        fitModel,
+        model,
         normalise=subInitValues,
         flavour=flavour,
     )
@@ -93,14 +93,14 @@ def main(
         dilution_correction=dilutionCorrection,
     )
 
-    fitter.run_scipy(input_params, method=fitMethod)
+    fitter.run_scipy(input_params, method=method)
 
     # Munge output data
 
     # Write optimised parameter values
     for key, result in fitter.params.items():
-        fitModelParams.data.loc[key, "value"] = result["value"]
-        fitModelParams.data.loc[key, "stderr"] = result["stderr"]
+        params.data.loc[key, "value"] = result["value"]
+        params.data.loc[key, "stderr"] = result["stderr"]
 
     # Write output fit and residuals data
     fitCurve.data = fitter.fit_curve
@@ -119,7 +119,7 @@ def main(
     fitSummary.data = fitter.fit_summary
 
     return {
-        "fitModelParams": fitModelParams,
+        "params": params,
         "fitCurve": fitCurve,
         "fitResiduals": fitResiduals,
         "fitMolefractions": fitMolefractions,

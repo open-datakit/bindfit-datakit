@@ -11,15 +11,15 @@
       "format": "data"
     },
     {
-      "name": "fitMethod",
+      "name": "method",
       "value": "nelder-mead"
     },
     {
-      "name": "fitModel",
+      "name": "model",
       "value": "nmr1to1"
     },
     {
-      "name": "fitModelParams",
+      "name": "params",
       "resource": "nmr11Params",
       "format": "params"
     },

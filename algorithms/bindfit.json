@@ -21,7 +21,7 @@
       }
     },
     {
-      "name": "fitMethod",
+      "name": "method",
       "title": "Fit method",
       "description": "The optimisation method to use for fitting",
       "type": "string",
@@ -41,8 +41,8 @@
       }
     },
     {
-      "name": "fitModel",
-      "title": "Fit model",
+      "name": "model",
+      "title": "Model",
       "description": "The model to fit to the data",
       "type": "string",
       "enum": [
@@ -93,9 +93,9 @@
       }
     },
     {
-      "name": "fitModelParams",
-      "title": "Fit model parameters",
-      "description": "Fit model parameter initial guesses and optimised values",
+      "name": "params",
+      "title": "Parameters",
+      "description": "Parameter initial guesses and optimised values",
       "type": "resource",
       "profile": "parameter-tabular-data-resource",
       "format": "params",
@@ -258,7 +258,7 @@
   ],
   "relationships": [
     {
-      "source": "fitModel",
+      "source": "model",
       "rules": [
         {
           "description": "NMR/UV 1:1 parameter defaults",
@@ -268,7 +268,7 @@
           ],
           "target": [
             {
-              "name": "fitModelParams",
+              "name": "params",
               "data": [
                 {
                   "name": "k",
@@ -291,7 +291,7 @@
           ],
           "target": [
             {
-              "name": "fitModelParams",
+              "name": "params",
               "data": [
                 {
                   "name": "k11",
@@ -323,7 +323,7 @@
           ],
           "target": [
             {
-              "name": "fitModelParams",
+              "name": "params",
               "data": [
                 {
                   "name": "k11",
@@ -355,7 +355,7 @@
           ],
           "target": [
             {
-              "name": "fitModelParams",
+              "name": "params",
               "data": [
                 {
                   "name": "ke",
@@ -375,7 +375,7 @@
           "value": "nmrcoek",
           "target": [
             {
-              "name": "fitModelParams",
+              "name": "params",
               "data": [
                 {
                   "name": "ke",
@@ -404,7 +404,7 @@
           "value": "uvcoek",
           "target": [
             {
-              "name": "fitModelParams",
+              "name": "params",
               "data": [
                 {
                   "name": "ke",
