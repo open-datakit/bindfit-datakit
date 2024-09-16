@@ -250,6 +250,7 @@
       "rules": [
         {
           "description": "NMR/UV 1:1 parameter defaults",
+          "type": "value",
           "value": [
             "nmr1to1",
             "uv1to1"
@@ -257,6 +258,7 @@
           "target": [
             {
               "name": "params",
+              "type": "resource",
               "data": [
                 {
                   "name": "k",
