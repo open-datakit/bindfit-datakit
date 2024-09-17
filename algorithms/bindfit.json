@@ -251,11 +251,11 @@
         {
           "description": "NMR/UV 1:1 parameter defaults",
           "type": "value",
-          "value": [
+          "values": [
             "nmr1to1",
             "uv1to1"
           ],
-          "target": [
+          "targets": [
             {
               "name": "params",
               "type": "resource",
@@ -275,13 +275,15 @@
         },
         {
           "description": "NMR/UV 1:2 parameter defaults",
-          "value": [
+          "type": "value",
+          "values": [
             "nmr1to2",
             "uv1to2"
           ],
-          "target": [
+          "targets": [
             {
               "name": "params",
+              "type": "resource",
               "data": [
                 {
                   "name": "k11",
@@ -307,13 +309,15 @@
         },
         {
           "description": "NMR/UV 2:1 parameter defaults",
-          "value": [
+          "type": "value",
+          "values": [
             "nmr2to1",
             "uv2to1"
           ],
-          "target": [
+          "targets": [
             {
               "name": "params",
+              "type": "resource",
               "data": [
                 {
                   "name": "k11",
@@ -339,13 +343,15 @@
         },
         {
           "description": "NMR/UV Dimer parameter defaults",
-          "value": [
+          "type": "value",
+          "values": [
             "nmrdimer",
             "uvdimer"
           ],
-          "target": [
+          "targets": [
             {
               "name": "params",
+              "type": "resource",
               "data": [
                 {
                   "name": "ke",
@@ -362,10 +368,14 @@
         },
         {
           "description": "NMR CoEK parameter defaults",
-          "value": "nmrcoek",
-          "target": [
+          "type": "value",
+          "values": [
+            "nmrcoek"
+          ],
+          "targets": [
             {
               "name": "params",
+              "type": "resource",
               "data": [
                 {
                   "name": "ke",
@@ -391,10 +401,14 @@
         },
         {
           "description": "UV CoEK parameter defaults",
-          "value": "uvcoek",
-          "target": [
+          "type": "value",
+          "values": [
+            "uvcoek"
+          ],
+          "targets": [
             {
               "name": "params",
+              "type": "resource",
               "data": [
                 {
                   "name": "ke",
@@ -420,49 +434,57 @@
         },
         {
           "description": "NMR sub init values and dilution correction",
-          "value": [
+          "type": "value",
+          "values": [
             "nmr1to1",
             "nmr1to2",
             "nmr2to1"
           ],
-          "target": [
+          "targets": [
             {
               "name": "subInitValues",
+              "type": "value",
               "value": true
             },
             {
               "name": "dilutionCorrection",
+              "type": "value",
               "value": false
             }
           ]
         },
         {
           "description": "UV sub init values and dilution correction",
-          "value": [
+          "type": "value",
+          "values": [
             "uv1to1",
             "uv1to2",
             "uv2to1"
           ],
-          "target": [
+          "targets": [
             {
               "name": "subInitValues",
+              "type": "value",
               "value": true
             },
             {
               "name": "dilutionCorrection",
+              "type": "value",
               "value": true
             }
           ]
         },
         {
           "description": "Disable flavour for 1:1 models",
-          "value": [
+          "type": "value",
+          "values": [
             "uv1to1",
             "nmr1to1"
           ],
-          "target": [
+          "targets": [
             {
               "name": "flavour",
+              "type": "value",
               "value": null,
               "enabled": false
             }
