@@ -475,11 +475,15 @@
           ]
         },
         {
-          "description": "Disable flavour for 1:1 models",
+          "description": "Disable flavour for 1:1 and agg models",
           "type": "value",
           "values": [
+            "nmr1to1",
+            "nmrdimer",
+            "nmrcoek",
             "uv1to1",
-            "nmr1to1"
+            "uvdimer",
+            "uvcoek"
           ],
           "targets": [
             {
@@ -487,6 +491,24 @@
               "type": "value",
               "value": null,
               "disabled": true
+            }
+          ]
+        },
+        {
+          "description": "Enable flavour for 1:2, 2:1 models",
+          "type": "value",
+          "values": [
+            "uv1to2",
+            "uv2to1",
+            "nmr1to2",
+            "nmr2to1"
+          ],
+          "targets": [
+            {
+              "name": "flavour",
+              "type": "value",
+              "value": null,
+              "disabled": false
             }
           ]
         }
