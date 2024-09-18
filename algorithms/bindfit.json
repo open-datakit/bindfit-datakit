@@ -486,7 +486,7 @@
               "name": "flavour",
               "type": "value",
               "value": null,
-              "enabled": false
+              "disabled": true
             }
           ]
         }
