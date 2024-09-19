@@ -33,7 +33,8 @@
     },
     {
       "name": "flavour",
-      "value": null
+      "value": null,
+      "disabled": true
     },
     {
       "name": "fitCurve",

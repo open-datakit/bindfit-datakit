@@ -146,7 +146,8 @@
       ],
       "null": true,
       "defaultConfiguration": {
-        "value": null
+        "value": null,
+        "disabled": true
       }
     },
     {
