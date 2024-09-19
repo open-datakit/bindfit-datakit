@@ -3,6 +3,7 @@
   "title": "Bindfit",
   "profile": "opends-algorithm",
   "code": "algorithm.py",
+  "container": "opends/bindfit",
   "signature": [
     {
       "name": "data",
