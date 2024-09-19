@@ -100,6 +100,7 @@
       "type": "resource",
       "profile": "parameter-tabular-data-resource",
       "format": "params",
+      "schema": "inherit-from-format",
       "null": false,
       "defaultConfiguration": {
         "resource": "params",
