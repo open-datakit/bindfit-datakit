@@ -4,5 +4,15 @@
   "description": "Binding model parameters",
   "profile": "parameter-tabular-data-resource",
   "schema": "inherit-from-format",
-  "data": []
+  "data": [
+    {
+      "name": "k",
+      "fit": true,
+      "init": 100,
+      "value": null,
+      "lowerBound": 0,
+      "upperBound": 1000,
+      "stderr": null
+    }
+  ]
 }
