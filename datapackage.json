@@ -2,12 +2,12 @@
   "title": "Bindfit",
   "description": "Binding constant fitter datapackage",
   "profile": "ods-datapackage",
-  "defaultConfiguration": "bindfit.default",
+  "configurations": [],
   "repository": {
     "type": "git",
     "url": "https://github.com/opendatastudio/bindfit-datapackage",
     "name": "opendatastudio/bindfit-datapackage"
   },
   "created": 1721295423,
-  "updated": 1726041752
+  "updated": 1726712740
 }

@@ -2,7 +2,7 @@
   "name": "bindfit",
   "title": "Bindfit",
   "profile": "ods-algorithm",
-  "code": "bindfit.py",
+  "code": "algorithm.py",
   "signature": [
     {
       "name": "data",
