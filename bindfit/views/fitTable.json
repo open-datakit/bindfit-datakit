@@ -2,7 +2,7 @@
   "name": "fitTable",
   "title": "Fit data",
   "spec": {},
-  "specType": "ods-table",
+  "specType": "opends-table",
   "resources": [
     "outputFit"
   ]

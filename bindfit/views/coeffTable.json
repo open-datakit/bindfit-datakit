@@ -2,7 +2,7 @@
   "name": "coeffTable",
   "title": "Coefficients",
   "spec": {},
-  "specType": "ods-basic-table",
+  "specType": "opends-basic-table",
   "resources": [
     "outputCoeffs"
   ]

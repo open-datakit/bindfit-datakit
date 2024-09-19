@@ -2,7 +2,7 @@
   "name": "qofTable",
   "title": "Quality of fit",
   "spec": {},
-  "specType": "ods-basic-table",
+  "specType": "opends-basic-table",
   "resources": [
     "outputQof"
   ]

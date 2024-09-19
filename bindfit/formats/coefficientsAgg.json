@@ -1,7 +1,7 @@
 {
   "name": "coefficientsAgg",
   "title": "Format for aggregate model coefficients",
-  "profile": "ods-format",
+  "profile": "opends-format",
   "schema": {
     "fields": [
       {

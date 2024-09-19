@@ -1,7 +1,7 @@
 {
   "name": "data",
   "title": "Format for non-aggregate model data",
-  "profile": "ods-format",
+  "profile": "opends-format",
   "schema": {
     "primaryKey": [
       "host",

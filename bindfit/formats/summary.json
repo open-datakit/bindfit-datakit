@@ -1,7 +1,7 @@
 {
   "name": "summary",
   "title": "Format for fit summary data",
-  "profile": "ods-format",
+  "profile": "opends-format",
   "schema": {
     "primaryKey": "model",
     "fields": [

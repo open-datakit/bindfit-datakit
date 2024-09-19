@@ -1,7 +1,7 @@
 {
   "name": "coefficients11",
   "title": "Format for 1:1 model coefficients",
-  "profile": "ods-format",
+  "profile": "opends-format",
   "schema": {
     "primaryKey": "name",
     "fields": [

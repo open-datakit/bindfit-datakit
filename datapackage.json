@@ -1,7 +1,7 @@
 {
   "title": "Bindfit",
   "description": "Binding constant fitter datapackage",
-  "profile": "ods-datapackage",
+  "profile": "opends-datapackage",
   "configurations": [],
   "repository": {
     "type": "git",
