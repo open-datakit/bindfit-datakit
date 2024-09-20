@@ -16,7 +16,7 @@
         "dataAgg"
       ],
       "null": false,
-      "defaultConfiguration": {
+      "default": {
         "resource": "data",
         "format": "data"
       }
@@ -37,7 +37,7 @@
         }
       ],
       "null": false,
-      "defaultConfiguration": {
+      "default": {
         "value": "nelder-mead"
       }
     },
@@ -89,7 +89,7 @@
         }
       ],
       "null": false,
-      "defaultConfiguration": {
+      "default": {
         "value": "nmr1to1"
       }
     },
@@ -102,7 +102,7 @@
       "format": "params",
       "schema": "inherit-from-format",
       "null": false,
-      "defaultConfiguration": {
+      "default": {
         "resource": "params",
         "format": "params"
       }
@@ -113,7 +113,7 @@
       "description": "If true, assumes the first data point is the chemical shift of the pure host and fits only the differences between pure host and complex(es)",
       "type": "boolean",
       "null": false,
-      "defaultConfiguration": {
+      "default": {
         "value": true
       }
     },
@@ -123,7 +123,7 @@
       "description": "If true, apply dilution correction to the data before fitting",
       "type": "boolean",
       "null": false,
-      "defaultConfiguration": {
+      "default": {
         "value": false
       }
     },
@@ -147,7 +147,7 @@
         }
       ],
       "null": true,
-      "defaultConfiguration": {
+      "default": {
         "value": null,
         "disabled": true
       }
@@ -163,7 +163,7 @@
         "data",
         "dataAgg"
       ],
-      "defaultConfiguration": {
+      "default": {
         "resource": "fitCurve",
         "format": "data"
       }
@@ -179,7 +179,7 @@
         "data",
         "dataAgg"
       ],
-      "defaultConfiguration": {
+      "default": {
         "resource": "fitResiduals",
         "format": "data"
       }
@@ -197,7 +197,7 @@
         "molefractions21",
         "molefractionsAgg"
       ],
-      "defaultConfiguration": {
+      "default": {
         "resource": "fitMolefractions",
         "format": "molefractions11"
       }
@@ -215,7 +215,7 @@
         "coefficients21",
         "coefficientsAgg"
       ],
-      "defaultConfiguration": {
+      "default": {
         "resource": "fitCoefficients",
         "format": "coefficients11"
       }
@@ -228,7 +228,7 @@
       "profile": "tabular-data-resource",
       "null": true,
       "format": "quality",
-      "defaultConfiguration": {
+      "default": {
         "resource": "fitQuality",
         "format": "quality"
       }
@@ -241,7 +241,7 @@
       "profile": "tabular-data-resource",
       "null": true,
       "format": "summary",
-      "defaultConfiguration": {
+      "default": {
         "resource": "fitSummary",
         "format": "summary"
       }
