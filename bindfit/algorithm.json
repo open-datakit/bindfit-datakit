@@ -441,7 +441,9 @@
           "values": [
             "nmr1to1",
             "nmr1to2",
-            "nmr2to1"
+            "nmr2to1",
+            "nmrdimer",
+            "nmrcoek"
           ],
           "targets": [
             {
@@ -462,7 +464,9 @@
           "values": [
             "uv1to1",
             "uv1to2",
-            "uv2to1"
+            "uv2to1",
+            "uvdimer",
+            "uvcoek"
           ],
           "targets": [
             {
