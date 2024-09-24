@@ -2,7 +2,7 @@
   "name": "fitGraphMatplotlib",
   "specType": "matplotlib",
   "specFile": "fitGraphMatplotlib.py",
-  "container": "ods/bindfit",
+  "container": "opends/bindfit",
   "resources": [
     "data",
     "fitCurve",
