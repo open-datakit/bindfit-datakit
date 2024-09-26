@@ -1,7 +1,7 @@
 {
   "name": "data",
-  "title": "Format for aggregate model data",
-  "profile": "opends-format",
+  "title": "Metaschema for aggregate model data",
+  "profile": "opends-metaschema",
   "schema": {
     "primaryKey": "host",
     "fields": [

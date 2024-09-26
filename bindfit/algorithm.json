@@ -11,14 +11,14 @@
       "description": "Input data",
       "type": "resource",
       "profile": "tabular-data-resource",
-      "format": [
+      "metaschemas": [
         "data",
         "dataAgg"
       ],
       "null": false,
       "default": {
         "resource": "data",
-        "format": "data"
+        "metaschema": "data"
       }
     },
     {
@@ -156,13 +156,13 @@
       "type": "resource",
       "profile": "tabular-data-resource",
       "null": true,
-      "format": [
+      "metaschemas": [
         "data",
         "dataAgg"
       ],
       "default": {
         "resource": "fitCurve",
-        "format": "data"
+        "metaschema": "data"
       }
     },
     {
@@ -172,13 +172,13 @@
       "type": "resource",
       "profile": "tabular-data-resource",
       "null": true,
-      "format": [
+      "metaschemas": [
         "data",
         "dataAgg"
       ],
       "default": {
         "resource": "fitResiduals",
-        "format": "data"
+        "metaschema": "data"
       }
     },
     {
