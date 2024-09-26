@@ -1,0 +1,39 @@
+{
+  "name": "fitMolefractions",
+  "title": "Fit molefractions",
+  "description": "Fit residuals",
+  "profile": "tabular-data-resource",
+  "schema": {
+    "primaryKey": [
+      "host",
+      "guest"
+    ],
+    "fields": [
+      {
+        "name": "host",
+        "unit": "",
+        "type": "number",
+        "title": "host"
+      },
+      {
+        "name": "guest",
+        "unit": "",
+        "type": "number",
+        "title": "guest"
+      },
+      {
+        "name": "H",
+        "unit": "",
+        "type": "number",
+        "title": "H"
+      },
+      {
+        "name": "HG",
+        "unit": "",
+        "type": "number",
+        "title": "HG"
+      }
+    ]
+  },
+  "data": []
+}

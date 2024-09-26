@@ -1,57 +1,62 @@
 {
   "name": "params",
-  "title": "Format for bindfit algorithm parameters",
-  "profile": "opends-format",
+  "title": "Parameters",
+  "description": "Parameter initial guesses and optimised values",
+  "profile": "parameter-tabular-data-resource",
   "schema": {
     "primaryKey": "name",
     "fields": [
       {
         "name": "name",
         "title": "Name",
-        "index": 0,
         "type": "string"
       },
       {
         "name": "fit",
         "title": "Fit",
-        "index": 1,
         "type": "boolean"
       },
       {
         "name": "init",
         "title": "Initial value",
-        "index": 2,
         "type": "number",
         "unit": "M^{-1}"
       },
       {
         "name": "value",
         "title": "Optimised value",
-        "index": 3,
         "type": "number",
         "unit": "M^{-1}"
       },
       {
         "name": "lowerBound",
         "title": "Lower bound",
-        "index": 4,
         "type": "number",
         "unit": "M^{-1}"
       },
       {
         "name": "upperBound",
         "title": "Upper bound",
-        "index": 5,
         "type": "number",
         "unit": "M^{-1}"
       },
       {
         "name": "stderr",
         "title": "Standard error",
-        "index": 6,
         "type": "number",
         "unit": "M^{-1}"
       }
     ]
-  }
+  },
+  "data": [
+    {
+      "name": "k",
+      "fit": true,
+      "init": 100,
+      "value": null,
+      "lowerBound": 0,
+      "upperBound": 1000,
+      "stderr": null
+    }
+  ]
 }

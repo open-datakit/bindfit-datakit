@@ -1,31 +1,30 @@
 {
-  "name": "quality",
-  "title": "Format for fit quality data",
-  "profile": "opends-format",
+  "name": "fitQuality",
+  "title": "Fit quality",
+  "description": "Fit quality",
+  "profile": "tabular-data-resource",
   "schema": {
     "primaryKey": "fit",
     "fields": [
       {
         "name": "fit",
         "title": "Fit",
-        "index": "0",
         "unit": "",
         "type": "string"
       },
       {
         "name": "rms",
         "title": "RMS",
-        "index": "1",
         "unit": "",
         "type": "number"
       },
       {
         "name": "cov",
         "title": "Covariance",
-        "index": "2",
         "unit": "",
         "type": "number"
       }
     ]
-  }
+  },
+  "data": []
 }

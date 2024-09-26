@@ -1,45 +1,42 @@
 {
-  "name": "summary",
-  "title": "Format for fit summary data",
-  "profile": "opends-format",
+  "name": "fitSummary",
+  "title": "Fit summary",
+  "description": "Fit summary",
+  "profile": "tabular-data-resource",
   "schema": {
     "primaryKey": "model",
     "fields": [
       {
         "name": "model",
         "title": "Model",
-        "index": "0",
         "unit": "",
         "type": "string"
       },
       {
         "name": "time",
         "title": "Time",
-        "index": "1",
         "unit": "s",
         "type": "number"
       },
       {
         "name": "ssr",
         "title": "SSR",
-        "index": "2",
         "unit": "",
         "type": "number"
       },
       {
         "name": "n_y",
         "title": "Fitted datapoints",
-        "index": "3",
         "unit": "",
         "type": "number"
       },
       {
         "name": "n_params",
         "title": "Fitted parameters",
-        "index": "4",
         "unit": "",
         "type": "number"
       }
     ]
-  }
+  },
+  "data": []
 }

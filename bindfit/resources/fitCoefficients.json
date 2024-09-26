@@ -1,31 +1,30 @@
 {
-  "name": "coefficients11",
-  "title": "Format for 1:1 model coefficients",
-  "profile": "opends-format",
+  "name": "fitCoefficients",
+  "title": "Fit coefficients",
+  "description": "Fit coefficients",
+  "profile": "tabular-data-resource",
   "schema": {
     "primaryKey": "name",
     "fields": [
       {
         "name": "name",
-        "title": "Name",
-        "index": "0",
+        "title": "name",
         "unit": "",
         "type": "string"
       },
       {
         "name": "h",
         "title": "H",
-        "index": "1",
         "unit": "",
         "type": "number"
       },
       {
         "name": "hg",
         "title": "HG",
-        "index": "2",
         "unit": "",
         "type": "number"
       }
     ]
-  }
+  },
+  "data": []
 }

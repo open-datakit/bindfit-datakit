@@ -99,12 +99,9 @@
       "description": "Parameter initial guesses and optimised values",
       "type": "resource",
       "profile": "parameter-tabular-data-resource",
-      "format": "params",
-      "schema": "inherit-from-format",
       "null": false,
       "default": {
-        "resource": "params",
-        "format": "params"
+        "resource": "params"
       }
     },
     {
@@ -191,15 +188,8 @@
       "type": "resource",
       "profile": "tabular-data-resource",
       "null": true,
-      "format": [
-        "molefractions11",
-        "molefractions12",
-        "molefractions21",
-        "molefractionsAgg"
-      ],
       "default": {
-        "resource": "fitMolefractions",
-        "format": "molefractions11"
+        "resource": "fitMolefractions"
       }
     },
     {
@@ -209,15 +199,8 @@
       "type": "resource",
       "profile": "tabular-data-resource",
       "null": true,
-      "format": [
-        "coefficients11",
-        "coefficients12",
-        "coefficients21",
-        "coefficientsAgg"
-      ],
       "default": {
-        "resource": "fitCoefficients",
-        "format": "coefficients11"
+        "resource": "fitCoefficients"
       }
     },
     {
@@ -227,10 +210,8 @@
       "type": "resource",
       "profile": "tabular-data-resource",
       "null": true,
-      "format": "quality",
       "default": {
-        "resource": "fitQuality",
-        "format": "quality"
+        "resource": "fitQuality"
       }
     },
     {
@@ -240,10 +221,8 @@
       "type": "resource",
       "profile": "tabular-data-resource",
       "null": true,
-      "format": "summary",
       "default": {
-        "resource": "fitSummary",
-        "format": "summary"
+        "resource": "fitSummary"
       }
     }
   ],
@@ -432,6 +411,380 @@
                   "stderr": null
                 }
               ]
+            }
+          ]
+        },
+        {
+          "description": "1:1 molefraction defaults",
+          "type": "value",
+          "values": [
+            "nmr1to1",
+            "uv1to1"
+          ],
+          "targets": [
+            {
+              "name": "fitMolefractions",
+              "type": "resource",
+              "data": [],
+              "schema": {
+                "primaryKey": [
+                  "host",
+                  "guest"
+                ],
+                "fields": [
+                  {
+                    "name": "host",
+                    "index": "0",
+                    "unit": "",
+                    "type": "number"
+                  },
+                  {
+                    "name": "guest",
+                    "index": "1",
+                    "unit": "",
+                    "type": "number"
+                  },
+                  {
+                    "name": "H",
+                    "index": "2",
+                    "unit": "",
+                    "type": "number"
+                  },
+                  {
+                    "name": "HG",
+                    "index": "3",
+                    "unit": "",
+                    "type": "number"
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "description": "1:2 molefraction defaults",
+          "type": "value",
+          "values": [
+            "nmr1to2",
+            "uv1to2"
+          ],
+          "targets": [
+            {
+              "name": "fitMolefractions",
+              "type": "resource",
+              "data": [],
+              "schema": {
+                "primaryKey": [
+                  "host",
+                  "guest"
+                ],
+                "fields": [
+                  {
+                    "name": "host",
+                    "index": "0",
+                    "unit": "",
+                    "type": "number"
+                  },
+                  {
+                    "name": "guest",
+                    "index": "1",
+                    "unit": "",
+                    "type": "number"
+                  },
+                  {
+                    "name": "H",
+                    "index": "2",
+                    "unit": "",
+                    "type": "number"
+                  },
+                  {
+                    "name": "HG",
+                    "index": "3",
+                    "unit": "",
+                    "type": "number"
+                  },
+                  {
+                    "name": "HG2",
+                    "index": "4",
+                    "unit": "",
+                    "type": "number"
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "description": "2:1 molefraction defaults",
+          "type": "value",
+          "values": [
+            "nmr2to1",
+            "uv2to1"
+          ],
+          "targets": [
+            {
+              "name": "fitMolefractions",
+              "type": "resource",
+              "data": [],
+              "schema": {
+                "primaryKey": [
+                  "host",
+                  "guest"
+                ],
+                "fields": [
+                  {
+                    "name": "host",
+                    "index": "0",
+                    "unit": "",
+                    "type": "number"
+                  },
+                  {
+                    "name": "guest",
+                    "index": "1",
+                    "unit": "",
+                    "type": "number"
+                  },
+                  {
+                    "name": "H",
+                    "index": "2",
+                    "unit": "",
+                    "type": "number"
+                  },
+                  {
+                    "name": "HG",
+                    "index": "3",
+                    "unit": "",
+                    "type": "number"
+                  },
+                  {
+                    "name": "H2G",
+                    "index": "4",
+                    "unit": "",
+                    "type": "number"
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "description": "Agg molefraction defaults",
+          "type": "value",
+          "values": [
+            "nmrdimer",
+            "nmrcoek",
+            "uvdimer",
+            "uvcoek"
+          ],
+          "targets": [
+            {
+              "name": "fitMolefractions",
+              "type": "resource",
+              "data": [],
+              "schema": {
+                "primaryKey": [
+                  "host"
+                ],
+                "fields": [
+                  {
+                    "name": "host",
+                    "index": "0",
+                    "unit": "",
+                    "type": "number"
+                  },
+                  {
+                    "name": "Hs",
+                    "index": "1",
+                    "unit": "",
+                    "type": "number"
+                  },
+                  {
+                    "name": "He",
+                    "index": "2",
+                    "unit": "",
+                    "type": "number"
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "description": "1:1 coefficient defaults",
+          "type": "value",
+          "values": [
+            "nmr1to1",
+            "uv1to1"
+          ],
+          "targets": [
+            {
+              "name": "fitCoefficients",
+              "type": "resource",
+              "data": [],
+              "schema": {
+                "primaryKey": "name",
+                "fields": [
+                  {
+                    "name": "name",
+                    "title": "Name",
+                    "index": "0",
+                    "unit": "",
+                    "type": "string"
+                  },
+                  {
+                    "name": "h",
+                    "title": "H",
+                    "index": "1",
+                    "unit": "",
+                    "type": "number"
+                  },
+                  {
+                    "name": "hg",
+                    "title": "HG",
+                    "index": "2",
+                    "unit": "",
+                    "type": "number"
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "description": "1:2 coefficient defaults",
+          "type": "value",
+          "values": [
+            "nmr1to2",
+            "uv1to2"
+          ],
+          "targets": [
+            {
+              "name": "fitCoefficients",
+              "type": "resource",
+              "data": [],
+              "schema": {
+                "primaryKey": "name",
+                "fields": [
+                  {
+                    "name": "name",
+                    "title": "Name",
+                    "index": "0",
+                    "unit": "",
+                    "type": "string"
+                  },
+                  {
+                    "name": "h",
+                    "title": "H",
+                    "index": "1",
+                    "unit": "",
+                    "type": "number"
+                  },
+                  {
+                    "name": "hg",
+                    "title": "HG",
+                    "index": "2",
+                    "unit": "",
+                    "type": "number"
+                  },
+                  {
+                    "name": "hg2",
+                    "title": "HG2",
+                    "index": "3",
+                    "unit": "",
+                    "type": "number"
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "description": "2:1 coefficient defaults",
+          "type": "value",
+          "values": [
+            "nmr2to1",
+            "uv2to1"
+          ],
+          "targets": [
+            {
+              "name": "fitCoefficients",
+              "type": "resource",
+              "data": [],
+              "schema": {
+                "primaryKey": "name",
+                "fields": [
+                  {
+                    "name": "name",
+                    "title": "Name",
+                    "index": "0",
+                    "unit": "",
+                    "type": "string"
+                  },
+                  {
+                    "name": "h",
+                    "title": "H",
+                    "index": "1",
+                    "unit": "",
+                    "type": "number"
+                  },
+                  {
+                    "name": "hg",
+                    "title": "HG",
+                    "index": "2",
+                    "unit": "",
+                    "type": "number"
+                  },
+                  {
+                    "name": "h2g",
+                    "title": "H2G",
+                    "index": "3",
+                    "unit": "",
+                    "type": "number"
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "description": "Agg coefficient defaults",
+          "type": "value",
+          "values": [
+            "nmrcoek",
+            "nmrdimer",
+            "uvcoek",
+            "uvdimer"
+          ],
+          "targets": [
+            {
+              "name": "fitCoefficients",
+              "type": "resource",
+              "data": [],
+              "schema": {
+                "fields": [
+                  {
+                    "name": "name",
+                    "title": "Name",
+                    "index": "0",
+                    "unit": "",
+                    "type": "string"
+                  },
+                  {
+                    "name": "h",
+                    "title": "H + He/2",
+                    "index": "1",
+                    "unit": "",
+                    "type": "number"
+                  },
+                  {
+                    "name": "hs",
+                    "title": "Hs + He/2",
+                    "index": "2",
+                    "unit": "",
+                    "type": "number"
+                  }
+                ]
+              }
             }
           ]
         },
