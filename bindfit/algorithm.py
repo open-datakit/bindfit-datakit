@@ -1,29 +1,27 @@
+import pandas as pd
+import bindfit
+
+
 def main(
-    data,
-    method,
-    model,
-    params,
-    subInitValues,
-    dilutionCorrection,
-    flavour,
-    fitCurve,
-    fitResiduals,
-    fitMolefractions,
-    fitCoefficients,
-    fitQuality,
-    fitSummary,
-):
+    data: pd.DataFrame,
+    method: str,
+    model: str,
+    inputParams: pd.DataFrame,
+    subInitValues: bool,
+    dilutionCorrection: bool,
+    flavour: str | None,
+) -> dict:
     """Construct and run a Bindfit fitter given a dataset and parameters
 
     Parameter space
     ---------------
-    data: `tabular-data-resource`
-        Tabular input data in array of named row objects format
+    data: `pd.DataFrame`
+        Input data
     method: `str`
         The optimisation algorithm to use for fitting
     model: `str`
         The model to fit to the data
-    params: `tabular-data-resource`
+    inputParams: `pd.DataFrame`
         Table of parameters containing initial guesses and output values
     subInitValues: `bool`
         If true, subtract the first column from all data before fitting
@@ -31,41 +29,33 @@ def main(
         If true, apply dilution correction to data before fitting
     flavour: `str` or None
         If not None, one of "add", "stat" or "noncoop"
-    fitCurve: `tabular-data-resource`
-        Output fit curve
-    fitResiduals: `tabular-data-resource`
-        Output fit residuals
-    fitMolefractions: `tabular-data-resource`
-        Output fit molefractions
 
     Returns
     -------
-    params: `tabular-data-resource`
+    outputParams: `pd.DataFrame`
         Table of parameters containing initial guesses and output values
-    fitCurve: `tabular-data-resource`
+    fit: `pd.DataFrame`
         Optimised fit curve
-    fitResiduals: `tabular-data-resource`
+    residuals: `pd.DataFrame`
         Optimised fit curve residual values
-    fitMolefractions: `tabular-data-resource`
+    molefractions: `pd.DataFrame`
         Optimised fit molefractions
-    fitCoefficients: `tabular-data-resource`
+    coefficients: `pd.DataFrame`
         Optimised fit coefficients
-    fitSummary: `tabular-data-resource`
-        A summary of fit information - time to fit, degrees of freedom, etc.
-    fitQuality: `tabular-data-resource`
+    quality: `pd.DataFrame`
         Quality of fit metrics
+    summary: `pdDataFrame`
+        A summary of fit information - time to fit, degrees of freedom, etc.
     """
-    # Imports
-    import bindfit
 
     # Error checks
-    if not data:
+    if data.empty:
         raise ValueError("No data passed to algorithm")
 
     # Convert param initial values and bounds to Bindfit format
     input_params = {}
 
-    for key, row in params.data.iterrows():
+    for key, row in inputParams.iterrows():
         input_params.update(
             {
                 key: {
@@ -86,7 +76,7 @@ def main(
     )
 
     fitter = bindfit.fitter.Fitter(
-        data=data.data,
+        data=data,
         function=function,
         params=input_params,
         normalise=subInitValues,
@@ -98,32 +88,20 @@ def main(
     # Munge output data
 
     # Write optimised parameter values
-    for key, result in fitter.params.items():
-        params.data.loc[key, "value"] = result["value"]
-        params.data.loc[key, "stderr"] = result["stderr"]
-
-    # Write output fit and residuals data
-    fitCurve.data = fitter.fit_curve
-    fitResiduals.data = fitter.fit_residuals
-
-    # Write output molefractions
-    fitMolefractions.data = fitter.fit_molefractions
-
-    # Write output coefficients
-    fitCoefficients.data = fitter.fit_coefficients
-
-    # Write output fit quality statistics
-    fitQuality.data = fitter.fit_quality
-
-    # Write output fit details
-    fitSummary.data = fitter.fit_summary
+    outputParams = pd.DataFrame(
+        [
+            [key, result["value"], result["stderr"]]
+            for key, result in fitter.params.items()
+        ],
+        columns=["name", "value", "stderr"],
+    )
 
     return {
-        "params": params,
-        "fitCurve": fitCurve,
-        "fitResiduals": fitResiduals,
-        "fitMolefractions": fitMolefractions,
-        "fitCoefficients": fitCoefficients,
-        "fitSummary": fitSummary,
-        "fitQuality": fitQuality,
+        "outputParams": outputParams,
+        "fit": fitter.fit_curve,
+        "residuals": fitter.fit_residuals,
+        "molefractions": fitter.fit_molefractions,
+        "coefficients": fitter.fit_coefficients,
+        "summary": fitter.fit_summary,
+        "quality": fitter.fit_quality,
     }
