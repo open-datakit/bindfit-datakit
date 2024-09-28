@@ -5,7 +5,7 @@
   "container": "opends/bindfit",
   "resources": [
     "data",
-    "fitCurve",
-    "fitResiduals"
+    "fit",
+    "residuals"
   ]
 }

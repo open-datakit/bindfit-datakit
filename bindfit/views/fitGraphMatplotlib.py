@@ -5,14 +5,14 @@ from matplotlib.figure import Figure
 
 
 def main(
-    data: pd.DataFrame, fitCurve: pd.DataFrame, fitResiduals: pd.DataFrame
+    data: pd.DataFrame, fit: pd.DataFrame, residuals: pd.DataFrame
 ) -> Figure:
     # Get data
     index = np.array(list(data.data.index.to_numpy()))
     x = index[:, 1] / index[:, 0]  # guest/host
     y = data.data.to_numpy()
-    y_fit = fitCurve.data.to_numpy()
-    y_residuals = fitResiduals.data.to_numpy()
+    y_fit = fit.data.to_numpy()
+    y_residuals = residuals.data.to_numpy()
 
     # Upper plot
     fig = plt.figure(1)
