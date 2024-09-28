@@ -160,7 +160,7 @@
         "profile": "output-parameter-tabular-data-resource",
         "null": false,
         "default": {
-          "resource": "inputParams"
+          "resource": "outputParams"
         }
       },
       {
