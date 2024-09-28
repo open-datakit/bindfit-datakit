@@ -99,7 +99,7 @@
         "title": "Input parameters",
         "description": "Fit parameter initial guesses and bounds",
         "type": "resource",
-        "profile": "input-parameter-tabular-data-resource",
+        "profile": "tabular-data-resource",
         "null": false,
         "default": {
           "resource": "inputParams"
@@ -157,7 +157,7 @@
         "title": "Output parameters",
         "description": "Optimised parameter values",
         "type": "resource",
-        "profile": "output-parameter-tabular-data-resource",
+        "profile": "tabular-data-resource",
         "null": false,
         "default": {
           "resource": "outputParams"

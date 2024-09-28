@@ -2,7 +2,7 @@
   "name": "outputParams",
   "title": "Output parameters",
   "description": "Optimised parameter values",
-  "profile": "parameter-tabular-data-resource",
+  "profile": "tabular-data-resource",
   "schema": {
     "primaryKey": "name",
     "fields": [

@@ -2,7 +2,7 @@
   "name": "inputParams",
   "title": "Input parameters",
   "description": "Fit parameter initial guesses and bounds",
-  "profile": "parameter-tabular-data-resource",
+  "profile": "tabular-data-resource",
   "schema": {
     "primaryKey": "name",
     "fields": [
