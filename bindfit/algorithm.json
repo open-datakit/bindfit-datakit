@@ -164,7 +164,7 @@
         }
       },
       {
-        "name": "curve",
+        "name": "fit",
         "title": "Fit curve",
         "description": "Fit curve",
         "type": "resource",
@@ -175,7 +175,7 @@
           "dataAgg"
         ],
         "default": {
-          "resource": "curve",
+          "resource": "fit",
           "metaschema": "data"
         }
       },
