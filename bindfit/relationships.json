@@ -84,6 +84,17 @@
                   "upperBound": 1000
                 }
               ]
+            },
+            {
+              "name": "outputParams",
+              "type": "resource",
+              "data": [
+                {
+                  "name": "k",
+                  "value": null,
+                  "stderr": null
+                }
+              ]
             }
           ]
         },
@@ -112,6 +123,22 @@
                   "init": 100,
                   "lowerBound": 0,
                   "upperBound": null
+                }
+              ]
+            },
+            {
+              "name": "outputParams",
+              "type": "resource",
+              "data": [
+                {
+                  "name": "k11",
+                  "value": null,
+                  "stderr": null
+                },
+                {
+                  "name": "k12",
+                  "value": null,
+                  "stderr": null
                 }
               ]
             }
@@ -144,6 +171,22 @@
                   "upperBound": null
                 }
               ]
+            },
+            {
+              "name": "outputParams",
+              "type": "resource",
+              "data": [
+                {
+                  "name": "k11",
+                  "value": null,
+                  "stderr": null
+                },
+                {
+                  "name": "k21",
+                  "value": null,
+                  "stderr": null
+                }
+              ]
             }
           ]
         },
@@ -165,6 +208,17 @@
                   "init": 100,
                   "lowerBound": 0,
                   "upperBound": 1000
+                }
+              ]
+            },
+            {
+              "name": "outputParams",
+              "type": "resource",
+              "data": [
+                {
+                  "name": "ke",
+                  "value": null,
+                  "stderr": null
                 }
               ]
             }
@@ -196,6 +250,22 @@
                   "upperBound": null
                 }
               ]
+            },
+            {
+              "name": "outputParams",
+              "type": "resource",
+              "data": [
+                {
+                  "name": "ke",
+                  "value": null,
+                  "stderr": null
+                },
+                {
+                  "name": "rho",
+                  "value": null,
+                  "stderr": null
+                }
+              ]
             }
           ]
         },
@@ -223,6 +293,22 @@
                   "init": 0.003,
                   "lowerBound": 0,
                   "upperBound": null
+                }
+              ]
+            },
+            {
+              "name": "outputParams",
+              "type": "resource",
+              "data": [
+                {
+                  "name": "ke",
+                  "value": null,
+                  "stderr": null
+                },
+                {
+                  "name": "rho",
+                  "value": null,
+                  "stderr": null
                 }
               ]
             }
