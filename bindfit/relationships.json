@@ -1,0 +1,625 @@
+{
+  "name": "relationships",
+  "title": "Bindfit relationships",
+  "descriptions": "Relationship rules for Bindfit inputs and outputs",
+  "profile": "opends-relationships",
+  "algorithm": "bindfit",
+  "relationships": [
+    {
+      "source": "model",
+      "rules": [
+        {
+          "description": "NMR/UV 1:1 parameter defaults",
+          "type": "value",
+          "values": [
+            "nmr1to1",
+            "uv1to1"
+          ],
+          "targets": [
+            {
+              "name": "params",
+              "type": "resource",
+              "data": [
+                {
+                  "name": "k",
+                  "fit": true,
+                  "init": 100,
+                  "value": null,
+                  "lowerBound": 0,
+                  "upperBound": 1000,
+                  "stderr": null
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "description": "NMR/UV 1:2 parameter defaults",
+          "type": "value",
+          "values": [
+            "nmr1to2",
+            "uv1to2"
+          ],
+          "targets": [
+            {
+              "name": "params",
+              "type": "resource",
+              "data": [
+                {
+                  "name": "k11",
+                  "fit": true,
+                  "init": 1000,
+                  "value": null,
+                  "lowerBound": 0,
+                  "upperBound": null,
+                  "stderr": null
+                },
+                {
+                  "name": "k12",
+                  "fit": true,
+                  "init": 100,
+                  "value": null,
+                  "lowerBound": 0,
+                  "upperBound": null,
+                  "stderr": null
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "description": "NMR/UV 2:1 parameter defaults",
+          "type": "value",
+          "values": [
+            "nmr2to1",
+            "uv2to1"
+          ],
+          "targets": [
+            {
+              "name": "params",
+              "type": "resource",
+              "data": [
+                {
+                  "name": "k11",
+                  "fit": true,
+                  "init": 1000,
+                  "value": null,
+                  "lowerBound": 0,
+                  "upperBound": null,
+                  "stderr": null
+                },
+                {
+                  "name": "k21",
+                  "fit": true,
+                  "init": 100,
+                  "value": null,
+                  "lowerBound": 0,
+                  "upperBound": null,
+                  "stderr": null
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "description": "NMR/UV Dimer parameter defaults",
+          "type": "value",
+          "values": [
+            "nmrdimer",
+            "uvdimer"
+          ],
+          "targets": [
+            {
+              "name": "params",
+              "type": "resource",
+              "data": [
+                {
+                  "name": "ke",
+                  "fit": true,
+                  "init": 100,
+                  "value": null,
+                  "lowerBound": 0,
+                  "upperBound": 1000,
+                  "stderr": null
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "description": "NMR CoEK parameter defaults",
+          "type": "value",
+          "values": [
+            "nmrcoek"
+          ],
+          "targets": [
+            {
+              "name": "params",
+              "type": "resource",
+              "data": [
+                {
+                  "name": "ke",
+                  "fit": true,
+                  "init": 200,
+                  "value": null,
+                  "lowerBound": 0,
+                  "upperBound": null,
+                  "stderr": null
+                },
+                {
+                  "name": "rho",
+                  "fit": true,
+                  "init": 0.3,
+                  "value": null,
+                  "lowerBound": 0,
+                  "upperBound": null,
+                  "stderr": null
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "description": "UV CoEK parameter defaults",
+          "type": "value",
+          "values": [
+            "uvcoek"
+          ],
+          "targets": [
+            {
+              "name": "params",
+              "type": "resource",
+              "data": [
+                {
+                  "name": "ke",
+                  "fit": true,
+                  "init": 2700,
+                  "value": null,
+                  "lowerBound": 0,
+                  "upperBound": null,
+                  "stderr": null
+                },
+                {
+                  "name": "rho",
+                  "fit": true,
+                  "init": 0.003,
+                  "value": null,
+                  "lowerBound": 0,
+                  "upperBound": null,
+                  "stderr": null
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "description": "1:1 molefraction defaults",
+          "type": "value",
+          "values": [
+            "nmr1to1",
+            "uv1to1"
+          ],
+          "targets": [
+            {
+              "name": "fitMolefractions",
+              "type": "resource",
+              "data": [],
+              "schema": {
+                "primaryKey": [
+                  "host",
+                  "guest"
+                ],
+                "fields": [
+                  {
+                    "name": "host",
+                    "unit": "",
+                    "type": "number"
+                  },
+                  {
+                    "name": "guest",
+                    "unit": "",
+                    "type": "number"
+                  },
+                  {
+                    "name": "H",
+                    "unit": "",
+                    "type": "number"
+                  },
+                  {
+                    "name": "HG",
+                    "unit": "",
+                    "type": "number"
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "description": "1:2 molefraction defaults",
+          "type": "value",
+          "values": [
+            "nmr1to2",
+            "uv1to2"
+          ],
+          "targets": [
+            {
+              "name": "fitMolefractions",
+              "type": "resource",
+              "data": [],
+              "schema": {
+                "primaryKey": [
+                  "host",
+                  "guest"
+                ],
+                "fields": [
+                  {
+                    "name": "host",
+                    "unit": "",
+                    "type": "number"
+                  },
+                  {
+                    "name": "guest",
+                    "unit": "",
+                    "type": "number"
+                  },
+                  {
+                    "name": "H",
+                    "unit": "",
+                    "type": "number"
+                  },
+                  {
+                    "name": "HG",
+                    "unit": "",
+                    "type": "number"
+                  },
+                  {
+                    "name": "HG2",
+                    "unit": "",
+                    "type": "number"
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "description": "2:1 molefraction defaults",
+          "type": "value",
+          "values": [
+            "nmr2to1",
+            "uv2to1"
+          ],
+          "targets": [
+            {
+              "name": "fitMolefractions",
+              "type": "resource",
+              "data": [],
+              "schema": {
+                "primaryKey": [
+                  "host",
+                  "guest"
+                ],
+                "fields": [
+                  {
+                    "name": "host",
+                    "unit": "",
+                    "type": "number"
+                  },
+                  {
+                    "name": "guest",
+                    "unit": "",
+                    "type": "number"
+                  },
+                  {
+                    "name": "H",
+                    "unit": "",
+                    "type": "number"
+                  },
+                  {
+                    "name": "HG",
+                    "unit": "",
+                    "type": "number"
+                  },
+                  {
+                    "name": "H2G",
+                    "unit": "",
+                    "type": "number"
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "description": "Agg molefraction defaults",
+          "type": "value",
+          "values": [
+            "nmrdimer",
+            "nmrcoek",
+            "uvdimer",
+            "uvcoek"
+          ],
+          "targets": [
+            {
+              "name": "fitMolefractions",
+              "type": "resource",
+              "data": [],
+              "schema": {
+                "primaryKey": [
+                  "host"
+                ],
+                "fields": [
+                  {
+                    "name": "host",
+                    "unit": "",
+                    "type": "number"
+                  },
+                  {
+                    "name": "Hs",
+                    "unit": "",
+                    "type": "number"
+                  },
+                  {
+                    "name": "He",
+                    "unit": "",
+                    "type": "number"
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "description": "1:1 coefficient defaults",
+          "type": "value",
+          "values": [
+            "nmr1to1",
+            "uv1to1"
+          ],
+          "targets": [
+            {
+              "name": "fitCoefficients",
+              "type": "resource",
+              "data": [],
+              "schema": {
+                "primaryKey": "name",
+                "fields": [
+                  {
+                    "name": "name",
+                    "title": "Name",
+                    "unit": "",
+                    "type": "string"
+                  },
+                  {
+                    "name": "h",
+                    "title": "H",
+                    "unit": "",
+                    "type": "number"
+                  },
+                  {
+                    "name": "hg",
+                    "title": "HG",
+                    "unit": "",
+                    "type": "number"
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "description": "1:2 coefficient defaults",
+          "type": "value",
+          "values": [
+            "nmr1to2",
+            "uv1to2"
+          ],
+          "targets": [
+            {
+              "name": "fitCoefficients",
+              "type": "resource",
+              "data": [],
+              "schema": {
+                "primaryKey": "name",
+                "fields": [
+                  {
+                    "name": "name",
+                    "title": "Name",
+                    "unit": "",
+                    "type": "string"
+                  },
+                  {
+                    "name": "h",
+                    "title": "H",
+                    "unit": "",
+                    "type": "number"
+                  },
+                  {
+                    "name": "hg",
+                    "title": "HG",
+                    "unit": "",
+                    "type": "number"
+                  },
+                  {
+                    "name": "hg2",
+                    "title": "HG2",
+                    "unit": "",
+                    "type": "number"
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "description": "2:1 coefficient defaults",
+          "type": "value",
+          "values": [
+            "nmr2to1",
+            "uv2to1"
+          ],
+          "targets": [
+            {
+              "name": "fitCoefficients",
+              "type": "resource",
+              "data": [],
+              "schema": {
+                "primaryKey": "name",
+                "fields": [
+                  {
+                    "name": "name",
+                    "title": "Name",
+                    "unit": "",
+                    "type": "string"
+                  },
+                  {
+                    "name": "h",
+                    "title": "H",
+                    "unit": "",
+                    "type": "number"
+                  },
+                  {
+                    "name": "hg",
+                    "title": "HG",
+                    "unit": "",
+                    "type": "number"
+                  },
+                  {
+                    "name": "h2g",
+                    "title": "H2G",
+                    "unit": "",
+                    "type": "number"
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "description": "Agg coefficient defaults",
+          "type": "value",
+          "values": [
+            "nmrcoek",
+            "nmrdimer",
+            "uvcoek",
+            "uvdimer"
+          ],
+          "targets": [
+            {
+              "name": "fitCoefficients",
+              "type": "resource",
+              "data": [],
+              "schema": {
+                "fields": [
+                  {
+                    "name": "name",
+                    "title": "Name",
+                    "unit": "",
+                    "type": "string"
+                  },
+                  {
+                    "name": "h",
+                    "title": "H + He/2",
+                    "unit": "",
+                    "type": "number"
+                  },
+                  {
+                    "name": "hs",
+                    "title": "Hs + He/2",
+                    "unit": "",
+                    "type": "number"
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "description": "NMR sub init values and dilution correction",
+          "type": "value",
+          "values": [
+            "nmr1to1",
+            "nmr1to2",
+            "nmr2to1",
+            "nmrdimer",
+            "nmrcoek"
+          ],
+          "targets": [
+            {
+              "name": "subInitValues",
+              "type": "value",
+              "value": true
+            },
+            {
+              "name": "dilutionCorrection",
+              "type": "value",
+              "value": false
+            }
+          ]
+        },
+        {
+          "description": "UV sub init values and dilution correction",
+          "type": "value",
+          "values": [
+            "uv1to1",
+            "uv1to2",
+            "uv2to1",
+            "uvdimer",
+            "uvcoek"
+          ],
+          "targets": [
+            {
+              "name": "subInitValues",
+              "type": "value",
+              "value": true
+            },
+            {
+              "name": "dilutionCorrection",
+              "type": "value",
+              "value": true
+            }
+          ]
+        },
+        {
+          "description": "Disable flavour for 1:1 and agg models",
+          "type": "value",
+          "values": [
+            "nmr1to1",
+            "nmrdimer",
+            "nmrcoek",
+            "uv1to1",
+            "uvdimer",
+            "uvcoek"
+          ],
+          "targets": [
+            {
+              "name": "flavour",
+              "type": "value",
+              "value": null,
+              "disabled": true
+            }
+          ]
+        },
+        {
+          "description": "Enable flavour for 1:2, 2:1 models",
+          "type": "value",
+          "values": [
+            "uv1to2",
+            "uv2to1",
+            "nmr1to2",
+            "nmr2to1"
+          ],
+          "targets": [
+            {
+              "name": "flavour",
+              "type": "value",
+              "value": null,
+              "disabled": false
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
