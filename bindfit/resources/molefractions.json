@@ -13,22 +13,22 @@
         "name": "host",
         "unit": "",
         "type": "number",
-        "title": "host"
+        "title": "Host"
       },
       {
         "name": "guest",
         "unit": "",
         "type": "number",
-        "title": "guest"
+        "title": "Guest"
       },
       {
-        "name": "H",
+        "name": "h",
         "unit": "",
         "type": "number",
         "title": "H"
       },
       {
-        "name": "HG",
+        "name": "hg",
         "unit": "",
         "type": "number",
         "title": "HG"

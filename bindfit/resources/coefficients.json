@@ -8,7 +8,7 @@
     "fields": [
       {
         "name": "name",
-        "title": "name",
+        "title": "Name",
         "unit": "",
         "type": "string"
       },

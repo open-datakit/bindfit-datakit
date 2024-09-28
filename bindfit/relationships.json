@@ -355,21 +355,25 @@
                 "fields": [
                   {
                     "name": "host",
+                    "title": "Host",
                     "unit": "",
                     "type": "number"
                   },
                   {
                     "name": "guest",
+                    "title": "Guest",
                     "unit": "",
                     "type": "number"
                   },
                   {
-                    "name": "H",
+                    "name": "h",
+                    "title": "H",
                     "unit": "",
                     "type": "number"
                   },
                   {
-                    "name": "HG",
+                    "name": "hg",
+                    "title": "HG",
                     "unit": "",
                     "type": "number"
                   }
@@ -398,26 +402,31 @@
                 "fields": [
                   {
                     "name": "host",
+                    "title": "Host",
                     "unit": "",
                     "type": "number"
                   },
                   {
                     "name": "guest",
+                    "title": "Guest",
                     "unit": "",
                     "type": "number"
                   },
                   {
-                    "name": "H",
+                    "name": "h",
+                    "title": "H",
                     "unit": "",
                     "type": "number"
                   },
                   {
-                    "name": "HG",
+                    "name": "hg",
+                    "title": "HG",
                     "unit": "",
                     "type": "number"
                   },
                   {
-                    "name": "HG2",
+                    "name": "hg2",
+                    "title": "HG2",
                     "unit": "",
                     "type": "number"
                   }
@@ -446,26 +455,31 @@
                 "fields": [
                   {
                     "name": "host",
+                    "title": "Host",
                     "unit": "",
                     "type": "number"
                   },
                   {
                     "name": "guest",
+                    "title": "Guest",
                     "unit": "",
                     "type": "number"
                   },
                   {
-                    "name": "H",
+                    "name": "h",
+                    "title": "H",
                     "unit": "",
                     "type": "number"
                   },
                   {
-                    "name": "HG",
+                    "name": "hg",
+                    "title": "HG",
                     "unit": "",
                     "type": "number"
                   },
                   {
-                    "name": "H2G",
+                    "name": "h2g",
+                    "title": "H2G",
                     "unit": "",
                     "type": "number"
                   }
@@ -495,16 +509,19 @@
                 "fields": [
                   {
                     "name": "host",
+                    "title": "Host",
                     "unit": "",
                     "type": "number"
                   },
                   {
-                    "name": "Hs",
+                    "name": "hs",
+                    "title": "Hs",
                     "unit": "",
                     "type": "number"
                   },
                   {
-                    "name": "He",
+                    "name": "he",
+                    "title": "He",
                     "unit": "",
                     "type": "number"
                   }
