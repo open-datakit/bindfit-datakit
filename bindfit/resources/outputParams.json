@@ -1,0 +1,38 @@
+{
+  "name": "outputParams",
+  "title": "Output parameters",
+  "description": "Optimised parameter values",
+  "profile": "parameter-tabular-data-resource",
+  "schema": {
+    "primaryKey": "name",
+    "fields": [
+      {
+        "name": "name",
+        "title": "Name",
+        "description": "The name of the parameter",
+        "type": "string"
+      },
+      {
+        "name": "value",
+        "title": "Optimised value",
+        "description": "The optimised parameter value",
+        "type": "number",
+        "unit": "M^{-1}"
+      },
+      {
+        "name": "stderr",
+        "title": "Standard error",
+        "description": "The standard error of the optimised parameter value",
+        "type": "number",
+        "unit": "M^{-1}"
+      }
+    ]
+  },
+  "data": [
+    {
+      "name": "k",
+      "value": null,
+      "stderr": null
+    }
+  ]
+}

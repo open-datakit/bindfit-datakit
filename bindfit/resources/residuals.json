@@ -1,6 +1,6 @@
 {
-  "name": "fitResiduals",
-  "title": "Fit residuals",
+  "name": "residuals",
+  "title": "Residuals",
   "description": "Fit residuals",
   "profile": "tabular-data-resource",
   "schema": {},

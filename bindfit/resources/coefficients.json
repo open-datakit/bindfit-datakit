@@ -1,6 +1,6 @@
 {
-  "name": "fitCoefficients",
-  "title": "Fit coefficients",
+  "name": "coefficients",
+  "title": "Coefficients",
   "description": "Fit coefficients",
   "profile": "tabular-data-resource",
   "schema": {

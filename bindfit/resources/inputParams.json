@@ -1,7 +1,7 @@
 {
-  "name": "params",
-  "title": "Parameters",
-  "description": "Parameter initial guesses and optimised values",
+  "name": "inputParams",
+  "title": "Input parameters",
+  "description": "Fit parameter initial guesses and bounds",
   "profile": "parameter-tabular-data-resource",
   "schema": {
     "primaryKey": "name",
@@ -9,40 +9,33 @@
       {
         "name": "name",
         "title": "Name",
+        "description": "The name of the parameter",
         "type": "string"
       },
       {
         "name": "fit",
         "title": "Fit",
+        "description": "Whether to fit this parameter",
         "type": "boolean"
       },
       {
         "name": "init",
         "title": "Initial value",
-        "type": "number",
-        "unit": "M^{-1}"
-      },
-      {
-        "name": "value",
-        "title": "Optimised value",
+        "description": "The initial guess for the parameter value",
         "type": "number",
         "unit": "M^{-1}"
       },
       {
         "name": "lowerBound",
         "title": "Lower bound",
+        "description": "The lower bound for the parameter value",
         "type": "number",
         "unit": "M^{-1}"
       },
       {
         "name": "upperBound",
         "title": "Upper bound",
-        "type": "number",
-        "unit": "M^{-1}"
-      },
-      {
-        "name": "stderr",
-        "title": "Standard error",
+        "description": "The upper bound for the parameter value",
         "type": "number",
         "unit": "M^{-1}"
       }
@@ -53,10 +46,8 @@
       "name": "k",
       "fit": true,
       "init": 100,
-      "value": null,
       "lowerBound": 0,
-      "upperBound": 1000,
-      "stderr": null
+      "upperBound": 1000
     }
   ]
 }

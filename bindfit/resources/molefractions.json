@@ -1,7 +1,7 @@
 {
-  "name": "fitMolefractions",
-  "title": "Fit molefractions",
-  "description": "Fit residuals",
+  "name": "molefractions",
+  "title": "Molefractions",
+  "description": "Fit molefractions",
   "profile": "tabular-data-resource",
   "schema": {
     "primaryKey": [

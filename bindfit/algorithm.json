@@ -4,228 +4,243 @@
   "profile": "opends-algorithm",
   "code": "algorithm.py",
   "container": "opends/bindfit",
-  "signature": [
-    {
-      "name": "data",
-      "title": "Input data",
-      "description": "Input data",
-      "type": "resource",
-      "profile": "tabular-data-resource",
-      "metaschemas": [
-        "data",
-        "dataAgg"
-      ],
-      "null": false,
-      "default": {
-        "resource": "data",
-        "metaschema": "data"
-      }
-    },
-    {
-      "name": "method",
-      "title": "Fit method",
-      "description": "The optimisation method to use for fitting",
-      "type": "string",
-      "enum": [
-        {
-          "title": "Nelder-Mead",
+  "signature": {
+    "inputs": [
+      {
+        "name": "data",
+        "title": "Input data",
+        "description": "Input data",
+        "type": "resource",
+        "profile": "tabular-data-resource",
+        "metaschemas": [
+          "data",
+          "dataAgg"
+        ],
+        "null": false,
+        "default": {
+          "resource": "data",
+          "metaschema": "data"
+        }
+      },
+      {
+        "name": "method",
+        "title": "Fit method",
+        "description": "The optimisation method to use for fitting",
+        "type": "string",
+        "enum": [
+          {
+            "title": "Nelder-Mead",
+            "value": "nelder-mead"
+          },
+          {
+            "title": "L-BFGS-B",
+            "value": "bfgs"
+          }
+        ],
+        "null": false,
+        "default": {
           "value": "nelder-mead"
-        },
-        {
-          "title": "L-BFGS-B",
-          "value": "bfgs"
         }
-      ],
-      "null": false,
-      "default": {
-        "value": "nelder-mead"
-      }
-    },
-    {
-      "name": "model",
-      "title": "Model",
-      "description": "The model to fit to the data",
-      "type": "string",
-      "enum": [
-        {
-          "title": "NMR 1:1",
+      },
+      {
+        "name": "model",
+        "title": "Model",
+        "description": "The model to fit to the data",
+        "type": "string",
+        "enum": [
+          {
+            "title": "NMR 1:1",
+            "value": "nmr1to1"
+          },
+          {
+            "title": "NMR 1:2",
+            "value": "nmr1to2"
+          },
+          {
+            "title": "NMR 2:1",
+            "value": "nmr2to1"
+          },
+          {
+            "title": "NMR Dimer",
+            "value": "nmrdimer"
+          },
+          {
+            "title": "NMR CoEK",
+            "value": "nmrcoek"
+          },
+          {
+            "title": "UV 1:1",
+            "value": "uv1to2"
+          },
+          {
+            "title": "UV 1:2",
+            "value": "uv1to2"
+          },
+          {
+            "title": "UV 2:1",
+            "value": "uv2to1"
+          },
+          {
+            "title": "UV Dimer",
+            "value": "uvdimer"
+          },
+          {
+            "title": "UV CoEK",
+            "value": "uvcoek"
+          }
+        ],
+        "null": false,
+        "default": {
           "value": "nmr1to1"
-        },
-        {
-          "title": "NMR 1:2",
-          "value": "nmr1to2"
-        },
-        {
-          "title": "NMR 2:1",
-          "value": "nmr2to1"
-        },
-        {
-          "title": "NMR Dimer",
-          "value": "nmrdimer"
-        },
-        {
-          "title": "NMR CoEK",
-          "value": "nmrcoek"
-        },
-        {
-          "title": "UV 1:1",
-          "value": "uv1to2"
-        },
-        {
-          "title": "UV 1:2",
-          "value": "uv1to2"
-        },
-        {
-          "title": "UV 2:1",
-          "value": "uv2to1"
-        },
-        {
-          "title": "UV Dimer",
-          "value": "uvdimer"
-        },
-        {
-          "title": "UV CoEK",
-          "value": "uvcoek"
         }
-      ],
-      "null": false,
-      "default": {
-        "value": "nmr1to1"
-      }
-    },
-    {
-      "name": "params",
-      "title": "Parameters",
-      "description": "Parameter initial guesses and optimised values",
-      "type": "resource",
-      "profile": "parameter-tabular-data-resource",
-      "null": false,
-      "default": {
-        "resource": "params"
-      }
-    },
-    {
-      "name": "subInitValues",
-      "title": "Subtract initial values",
-      "description": "If true, assumes the first data point is the chemical shift of the pure host and fits only the differences between pure host and complex(es)",
-      "type": "boolean",
-      "null": false,
-      "default": {
-        "value": true
-      }
-    },
-    {
-      "name": "dilutionCorrection",
-      "title": "Dilution correction",
-      "description": "If true, apply dilution correction to the data before fitting",
-      "type": "boolean",
-      "null": false,
-      "default": {
-        "value": false
-      }
-    },
-    {
-      "name": "flavour",
-      "title": "Dilution correction",
-      "description": "If true, apply dilution correction to the data before fitting",
-      "type": "string",
-      "enum": [
-        {
-          "title": "Add",
-          "value": "add"
-        },
-        {
-          "title": "Stat",
-          "value": "stat"
-        },
-        {
-          "title": "Non-coop",
-          "value": "noncoop"
+      },
+      {
+        "name": "inputParams",
+        "title": "Input parameters",
+        "description": "Fit parameter initial guesses and bounds",
+        "type": "resource",
+        "profile": "input-parameter-tabular-data-resource",
+        "null": false,
+        "default": {
+          "resource": "inputParams"
         }
-      ],
-      "null": true,
-      "default": {
-        "value": null,
-        "disabled": true
+      },
+      {
+        "name": "subInitValues",
+        "title": "Subtract initial values",
+        "description": "If true, assumes the first data point is the chemical shift of the pure host and fits only the differences between pure host and complex(es)",
+        "type": "boolean",
+        "null": false,
+        "default": {
+          "value": true
+        }
+      },
+      {
+        "name": "dilutionCorrection",
+        "title": "Dilution correction",
+        "description": "If true, apply dilution correction to the data before fitting",
+        "type": "boolean",
+        "null": false,
+        "default": {
+          "value": false
+        }
+      },
+      {
+        "name": "flavour",
+        "title": "Dilution correction",
+        "description": "If true, apply dilution correction to the data before fitting",
+        "type": "string",
+        "enum": [
+          {
+            "title": "Add",
+            "value": "add"
+          },
+          {
+            "title": "Stat",
+            "value": "stat"
+          },
+          {
+            "title": "Non-coop",
+            "value": "noncoop"
+          }
+        ],
+        "null": true,
+        "default": {
+          "value": null,
+          "disabled": true
+        }
       }
-    },
-    {
-      "name": "fitCurve",
-      "title": "Fit curve",
-      "description": "Fit curve",
-      "type": "resource",
-      "profile": "tabular-data-resource",
-      "null": true,
-      "metaschemas": [
-        "data",
-        "dataAgg"
-      ],
-      "default": {
-        "resource": "fitCurve",
-        "metaschema": "data"
+    ],
+    "outputs": [
+      {
+        "name": "outputParams",
+        "title": "Output parameters",
+        "description": "Optimised parameter values",
+        "type": "resource",
+        "profile": "output-parameter-tabular-data-resource",
+        "null": false,
+        "default": {
+          "resource": "inputParams"
+        }
+      },
+      {
+        "name": "curve",
+        "title": "Fit curve",
+        "description": "Fit curve",
+        "type": "resource",
+        "profile": "tabular-data-resource",
+        "null": true,
+        "metaschemas": [
+          "data",
+          "dataAgg"
+        ],
+        "default": {
+          "resource": "curve",
+          "metaschema": "data"
+        }
+      },
+      {
+        "name": "residuals",
+        "title": "Residuals",
+        "description": "Fit residuals",
+        "type": "resource",
+        "profile": "tabular-data-resource",
+        "null": true,
+        "metaschemas": [
+          "data",
+          "dataAgg"
+        ],
+        "default": {
+          "resource": "residuals",
+          "metaschema": "data"
+        }
+      },
+      {
+        "name": "molefractions",
+        "title": "Molefractions",
+        "description": "Fit molefractions",
+        "type": "resource",
+        "profile": "tabular-data-resource",
+        "null": true,
+        "default": {
+          "resource": "molefractions"
+        }
+      },
+      {
+        "name": "coefficients",
+        "title": "Coefficients",
+        "description": "Fit coefficients",
+        "type": "resource",
+        "profile": "tabular-data-resource",
+        "null": true,
+        "default": {
+          "resource": "coefficients"
+        }
+      },
+      {
+        "name": "quality",
+        "title": "Fit quality",
+        "description": "Fit quality",
+        "type": "resource",
+        "profile": "tabular-data-resource",
+        "null": true,
+        "default": {
+          "resource": "quality"
+        }
+      },
+      {
+        "name": "summary",
+        "title": "Fit summary",
+        "description": "Fit summary",
+        "type": "resource",
+        "profile": "tabular-data-resource",
+        "null": true,
+        "default": {
+          "resource": "summary"
+        }
       }
-    },
-    {
-      "name": "fitResiduals",
-      "title": "Fit residuals",
-      "description": "Fit residuals",
-      "type": "resource",
-      "profile": "tabular-data-resource",
-      "null": true,
-      "metaschemas": [
-        "data",
-        "dataAgg"
-      ],
-      "default": {
-        "resource": "fitResiduals",
-        "metaschema": "data"
-      }
-    },
-    {
-      "name": "fitMolefractions",
-      "title": "Fit molefractions",
-      "description": "Fit residuals",
-      "type": "resource",
-      "profile": "tabular-data-resource",
-      "null": true,
-      "default": {
-        "resource": "fitMolefractions"
-      }
-    },
-    {
-      "name": "fitCoefficients",
-      "title": "Fit coefficients",
-      "description": "Fit coefficients",
-      "type": "resource",
-      "profile": "tabular-data-resource",
-      "null": true,
-      "default": {
-        "resource": "fitCoefficients"
-      }
-    },
-    {
-      "name": "fitQuality",
-      "title": "Fit quality",
-      "description": "Fit quality",
-      "type": "resource",
-      "profile": "tabular-data-resource",
-      "null": true,
-      "default": {
-        "resource": "fitQuality"
-      }
-    },
-    {
-      "name": "fitSummary",
-      "title": "Fit summary",
-      "description": "Fit summary",
-      "type": "resource",
-      "profile": "tabular-data-resource",
-      "null": true,
-      "default": {
-        "resource": "fitSummary"
-      }
-    }
-  ],
+    ]
+  },
   "relationships": [
     {
       "source": "model",
