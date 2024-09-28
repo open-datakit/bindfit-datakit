@@ -9,6 +9,62 @@
       "source": "model",
       "rules": [
         {
+          "description": "Non-agg model data/fit/residuals metaschema",
+          "type": "value",
+          "values": [
+            "nmr1to1",
+            "nmr1to2",
+            "nmr2to1",
+            "uv1to1",
+            "uv1to2",
+            "uv2to1"
+          ],
+          "targets": [
+            {
+              "name": "data",
+              "type": "value",
+              "metaschema": "data"
+            },
+            {
+              "name": "fit",
+              "type": "value",
+              "metaschema": "data"
+            },
+            {
+              "name": "residuals",
+              "type": "value",
+              "metaschema": "data"
+            }
+          ]
+        },
+        {
+          "description": "Agg model data/fit/residuals metaschema",
+          "type": "value",
+          "values": [
+            "nmrdimer",
+            "nmrcoek",
+            "uvdimer",
+            "uvcoek"
+          ],
+          "targets": [
+            {
+              "name": "data",
+              "type": "value",
+              "metaschema": "dataAgg"
+            },
+            {
+              "name": "fit",
+              "type": "value",
+              "metaschema": "dataAgg"
+            },
+            {
+              "name": "residuals",
+              "type": "value",
+              "metaschema": "dataAgg"
+            }
+          ]
+        },
+        {
           "description": "NMR/UV 1:1 parameter defaults",
           "type": "value",
           "values": [
@@ -17,17 +73,15 @@
           ],
           "targets": [
             {
-              "name": "params",
+              "name": "inputParams",
               "type": "resource",
               "data": [
                 {
                   "name": "k",
                   "fit": true,
                   "init": 100,
-                  "value": null,
                   "lowerBound": 0,
-                  "upperBound": 1000,
-                  "stderr": null
+                  "upperBound": 1000
                 }
               ]
             }
@@ -42,26 +96,22 @@
           ],
           "targets": [
             {
-              "name": "params",
+              "name": "inputParams",
               "type": "resource",
               "data": [
                 {
                   "name": "k11",
                   "fit": true,
                   "init": 1000,
-                  "value": null,
                   "lowerBound": 0,
-                  "upperBound": null,
-                  "stderr": null
+                  "upperBound": null
                 },
                 {
                   "name": "k12",
                   "fit": true,
                   "init": 100,
-                  "value": null,
                   "lowerBound": 0,
-                  "upperBound": null,
-                  "stderr": null
+                  "upperBound": null
                 }
               ]
             }
@@ -76,26 +126,22 @@
           ],
           "targets": [
             {
-              "name": "params",
+              "name": "inputParams",
               "type": "resource",
               "data": [
                 {
                   "name": "k11",
                   "fit": true,
                   "init": 1000,
-                  "value": null,
                   "lowerBound": 0,
-                  "upperBound": null,
-                  "stderr": null
+                  "upperBound": null
                 },
                 {
                   "name": "k21",
                   "fit": true,
                   "init": 100,
-                  "value": null,
                   "lowerBound": 0,
-                  "upperBound": null,
-                  "stderr": null
+                  "upperBound": null
                 }
               ]
             }
@@ -110,17 +156,15 @@
           ],
           "targets": [
             {
-              "name": "params",
+              "name": "inputParams",
               "type": "resource",
               "data": [
                 {
                   "name": "ke",
                   "fit": true,
                   "init": 100,
-                  "value": null,
                   "lowerBound": 0,
-                  "upperBound": 1000,
-                  "stderr": null
+                  "upperBound": 1000
                 }
               ]
             }
@@ -134,26 +178,22 @@
           ],
           "targets": [
             {
-              "name": "params",
+              "name": "inputParams",
               "type": "resource",
               "data": [
                 {
                   "name": "ke",
                   "fit": true,
                   "init": 200,
-                  "value": null,
                   "lowerBound": 0,
-                  "upperBound": null,
-                  "stderr": null
+                  "upperBound": null
                 },
                 {
                   "name": "rho",
                   "fit": true,
                   "init": 0.3,
-                  "value": null,
                   "lowerBound": 0,
-                  "upperBound": null,
-                  "stderr": null
+                  "upperBound": null
                 }
               ]
             }
@@ -167,33 +207,29 @@
           ],
           "targets": [
             {
-              "name": "params",
+              "name": "inputParams",
               "type": "resource",
               "data": [
                 {
                   "name": "ke",
                   "fit": true,
                   "init": 2700,
-                  "value": null,
                   "lowerBound": 0,
-                  "upperBound": null,
-                  "stderr": null
+                  "upperBound": null
                 },
                 {
                   "name": "rho",
                   "fit": true,
                   "init": 0.003,
-                  "value": null,
                   "lowerBound": 0,
-                  "upperBound": null,
-                  "stderr": null
+                  "upperBound": null
                 }
               ]
             }
           ]
         },
         {
-          "description": "1:1 molefraction defaults",
+          "description": "1:1 molefractions schema",
           "type": "value",
           "values": [
             "nmr1to1",
@@ -201,7 +237,7 @@
           ],
           "targets": [
             {
-              "name": "fitMolefractions",
+              "name": "molefractions",
               "type": "resource",
               "data": [],
               "schema": {
@@ -236,7 +272,7 @@
           ]
         },
         {
-          "description": "1:2 molefraction defaults",
+          "description": "1:2 molefractions schema",
           "type": "value",
           "values": [
             "nmr1to2",
@@ -244,7 +280,7 @@
           ],
           "targets": [
             {
-              "name": "fitMolefractions",
+              "name": "molefractions",
               "type": "resource",
               "data": [],
               "schema": {
@@ -284,7 +320,7 @@
           ]
         },
         {
-          "description": "2:1 molefraction defaults",
+          "description": "2:1 molefractions schema",
           "type": "value",
           "values": [
             "nmr2to1",
@@ -292,7 +328,7 @@
           ],
           "targets": [
             {
-              "name": "fitMolefractions",
+              "name": "molefractions",
               "type": "resource",
               "data": [],
               "schema": {
@@ -332,7 +368,7 @@
           ]
         },
         {
-          "description": "Agg molefraction defaults",
+          "description": "Agg molefractions schema",
           "type": "value",
           "values": [
             "nmrdimer",
@@ -342,7 +378,7 @@
           ],
           "targets": [
             {
-              "name": "fitMolefractions",
+              "name": "molefractions",
               "type": "resource",
               "data": [],
               "schema": {
@@ -371,7 +407,7 @@
           ]
         },
         {
-          "description": "1:1 coefficient defaults",
+          "description": "1:1 coefficients schema",
           "type": "value",
           "values": [
             "nmr1to1",
@@ -379,7 +415,7 @@
           ],
           "targets": [
             {
-              "name": "fitCoefficients",
+              "name": "coefficients",
               "type": "resource",
               "data": [],
               "schema": {
@@ -409,7 +445,7 @@
           ]
         },
         {
-          "description": "1:2 coefficient defaults",
+          "description": "1:2 coefficients schema",
           "type": "value",
           "values": [
             "nmr1to2",
@@ -417,7 +453,7 @@
           ],
           "targets": [
             {
-              "name": "fitCoefficients",
+              "name": "coefficients",
               "type": "resource",
               "data": [],
               "schema": {
@@ -453,7 +489,7 @@
           ]
         },
         {
-          "description": "2:1 coefficient defaults",
+          "description": "2:1 coefficients schema",
           "type": "value",
           "values": [
             "nmr2to1",
@@ -461,7 +497,7 @@
           ],
           "targets": [
             {
-              "name": "fitCoefficients",
+              "name": "coefficients",
               "type": "resource",
               "data": [],
               "schema": {
@@ -497,7 +533,7 @@
           ]
         },
         {
-          "description": "Agg coefficient defaults",
+          "description": "Agg coefficients schema",
           "type": "value",
           "values": [
             "nmrcoek",
@@ -507,7 +543,7 @@
           ],
           "targets": [
             {
-              "name": "fitCoefficients",
+              "name": "coefficients",
               "type": "resource",
               "data": [],
               "schema": {
