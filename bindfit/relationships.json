@@ -6,6 +6,27 @@
   "algorithm": "bindfit",
   "relationships": [
     {
+      "source": "data",
+      "rules": [
+        {
+          "description": "Update related schemas whenever data is changed",
+          "type": "change",
+          "targets": [
+            {
+              "name": "fit",
+              "type": "resource",
+              "schema": "mirror"
+            },
+            {
+              "name": "residuals",
+              "type": "resource",
+              "schema": "mirror"
+            }
+          ]
+        }
+      ]
+    },
+    {
       "source": "model",
       "rules": [
         {
