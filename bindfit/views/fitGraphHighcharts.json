@@ -237,7 +237,7 @@
           "series": [
             {
               "id": "residuals",
-              "name": "Data",
+              "name": "Fit",
               "type": "line",
               "marker": {
                 "enabled": false,
