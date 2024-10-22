@@ -98,6 +98,16 @@
           }
         ],
         "chartOptions": {
+          "colors": [
+            "#79BCB8",
+            "#0B4F6C",
+            "#197BBD",
+            "#033860",
+            "#47A8BD",
+            "#1E3888",
+            "#EE6C4D",
+            "#FA8334"
+          ],
           "title": {
             "text": "Fit curve"
           },
@@ -131,7 +141,6 @@
               "name": "Data",
               "type": "line",
               "lineWidth": 0,
-              "dashStyle": "dot",
               "marker": {
                 "enabled": true
               }
@@ -178,6 +187,16 @@
           }
         ],
         "chartOptions": {
+          "colors": [
+            "#79BCB8",
+            "#0B4F6C",
+            "#197BBD",
+            "#033860",
+            "#47A8BD",
+            "#1E3888",
+            "#EE6C4D",
+            "#FA8334"
+          ],
           "title": {
             "text": "Residuals"
           },
