@@ -38,7 +38,7 @@
               "cells": [
                 {
                   "id": "cell-1",
-                  "height": "400px"
+                  "height": "300px"
                 }
               ]
             },
@@ -46,7 +46,7 @@
               "cells": [
                 {
                   "id": "cell-2",
-                  "height": "250px"
+                  "height": "200px"
                 }
               ]
             }
@@ -72,8 +72,7 @@
                   [
                     "data_y0",
                     "data_y1",
-                    "data_y2",
-                    "data_y3"
+                    "data_y2"
                   ]
                 ]
               }
@@ -89,8 +88,7 @@
                   [
                     "fit_y0",
                     "fit_y1",
-                    "fit_y2",
-                    "fit_y3"
+                    "fit_y2"
                   ]
                 ]
               }
@@ -108,13 +106,18 @@
             "#EE6C4D",
             "#FA8334"
           ],
+          "chart": {
+            "marginRight": 100,
+            "marginLeft": 100
+          },
           "title": {
-            "text": "Fit curve"
+            "text": null
           },
           "xAxis": {
             "title": {
               "text": "Equivalent total [G]/[H]"
-            }
+            },
+            "gridLineWidth": 1
           },
           "yAxis": {
             "title": {
@@ -122,9 +125,9 @@
             }
           },
           "legend": {
-            "align": "center",
-            "verticalAlign": "top",
-            "layout": "horizontal"
+            "align": "right",
+            "verticalAlign": "middle",
+            "layout": "vertical"
           },
           "tooltip": {
             "crosshairs": [
@@ -178,8 +181,7 @@
                   [
                     "residuals_y0",
                     "residuals_y1",
-                    "residuals_y2",
-                    "residuals_y3"
+                    "residuals_y2"
                   ]
                 ]
               }
@@ -197,13 +199,18 @@
             "#EE6C4D",
             "#FA8334"
           ],
+          "chart": {
+            "marginRight": 100,
+            "marginLeft": 100
+          },
           "title": {
-            "text": "Residuals"
+            "text": null
           },
           "xAxis": {
             "title": {
               "text": "Equivalent total [G]/[H]"
-            }
+            },
+            "gridLineWidth": 1
           },
           "yAxis": {
             "title": {
@@ -211,9 +218,9 @@
             }
           },
           "legend": {
-            "align": "center",
-            "verticalAlign": "bottom",
-            "layout": "horizontal"
+            "align": "right",
+            "verticalAlign": "middle",
+            "layout": "vertical"
           },
           "tooltip": {
             "crosshairs": [
@@ -227,7 +234,7 @@
           "series": [
             {
               "id": "residuals",
-              "name": "Residuals",
+              "name": "Data",
               "type": "line",
               "marker": {
                 "enabled": false,
