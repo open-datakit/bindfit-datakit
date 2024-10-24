@@ -1,7 +1,7 @@
 {
   "name": "molefracGraphHighcharts",
   "title": "Molefractions",
-  "description": "Optimised molefractions",
+  "description": "Calculated molefractions",
   "spec": {
     "dataPool": {
       "connectors": [
@@ -77,10 +77,6 @@
             "#EE6C4D",
             "#FA8334"
           ],
-          "chart": {
-            "marginRight": 100,
-            "marginLeft": 100
-          },
           "title": {
             "text": null
           },
@@ -112,7 +108,7 @@
             {
               "id": "molefractions",
               "name": "Molefraction",
-              "type": "line",
+              "type": "spline",
               "marker": {
                 "enabled": false,
                 "states": {
