@@ -1,0 +1,134 @@
+{
+  "name": "molefracGraphHighcharts",
+  "title": "Molefractions",
+  "description": "Optimised molefractions",
+  "spec": {
+    "dataPool": {
+      "connectors": [
+        {
+          "id": "connector",
+          "type": "JSON",
+          "options": {
+            "data": {
+              "resources": [
+                "molefractions"
+              ]
+            },
+            "dataModifier": {
+              "type": "Math",
+              "columnFormulas": [
+                {
+                  "column": "x",
+                  "formula": "B1/A1"
+                }
+              ]
+            }
+          }
+        }
+      ]
+    },
+    "gui": {
+      "layouts": [
+        {
+          "id": "layout-1",
+          "rows": [
+            {
+              "cells": [
+                {
+                  "id": "cell-1",
+                  "height": "300px"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "components": [
+      {
+        "cell": "cell-1",
+        "type": "Highcharts",
+        "connector": [
+          {
+            "id": "connector",
+            "columnAssignment": [
+              {
+                "seriesId": "molefractions",
+                "data": [
+                  "x",
+                  [
+                    "molefractions_h",
+                    "molefractions_hg",
+                    "molefractions_hg2"
+                  ]
+                ]
+              }
+            ]
+          }
+        ],
+        "chartOptions": {
+          "colors": [
+            "#79BCB8",
+            "#0B4F6C",
+            "#197BBD",
+            "#033860",
+            "#47A8BD",
+            "#1E3888",
+            "#EE6C4D",
+            "#FA8334"
+          ],
+          "chart": {
+            "marginRight": 100,
+            "marginLeft": 100
+          },
+          "title": {
+            "text": null
+          },
+          "xAxis": {
+            "title": {
+              "text": "Equivalent total [G]/[H]"
+            },
+            "gridLineWidth": 1
+          },
+          "yAxis": {
+            "title": {
+              "text": "Molefraction"
+            }
+          },
+          "legend": {
+            "align": "right",
+            "verticalAlign": "middle",
+            "layout": "vertical"
+          },
+          "tooltip": {
+            "crosshairs": [
+              true,
+              false
+            ],
+            "shared": true,
+            "valueDecimals": 4
+          },
+          "series": [
+            {
+              "id": "molefractions",
+              "name": "Molefraction",
+              "type": "line",
+              "marker": {
+                "enabled": false,
+                "states": {
+                  "hover": {
+                    "enabled": true
+                  }
+                }
+              }
+            }
+          ]
+        }
+      }
+    ]
+  },
+  "specType": "highcharts",
+  "resources": [
+    "molefractions"
+  ]
+}
