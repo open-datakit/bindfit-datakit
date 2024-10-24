@@ -1,22 +1,22 @@
-# Bindfit datakit for opendata.studio
+# Bindfit datakit
 
 Bindfit is a binding constant fitting tool designed to work with classical supramolecular titration data obtained from NMR, UV, Fluorescence and other methods.
 
-* 🗒️ [Bindfit datakit documentation](https://docs.opendata.fstudio/v/bindfit-datakit/)
-* 💻 [Bindfit Python library GitHub](https://github.com/opendatastudio/bindfit)
+* 🗒️ [Datakit documentation](https://docs.opendatakit.io/)
+* 💻 [Bindfit Python library GitHub](https://github.com/open-datakit/bindfit)
 
 ## Example usage
 ```
-opends reset                                   # Clear any previous outputs
-opends init                                    # Initialise the default run
-opends load data ./data/nmr11.csv              # Load input data
-opends set model "nmr1to1"                     # Set fit model
-opends set method "nelder-mead"                # Set fit method
-opends set inputParams.k.init 314              # Set initial parameter guess
-opends run                                     # Run algorithm
-opends show outputParams                       # View optimised parameters
-opends show summary                            # View fit summary
-opends view fitGraphMatplotlib                 # View fit graph
+dk reset                                   # Clear any previous outputs
+dk init                                    # Initialise the default run
+dk load data ./data/nmr11.csv              # Load input data
+dk set model "nmr1to1"                     # Set fit model
+dk set method "nelder-mead"                # Set fit method
+dk set inputParams.k.init 314              # Set initial parameter guess
+dk run                                     # Run algorithm
+dk show outputParams                       # View optimised parameters
+dk show summary                            # View fit summary
+dk view fitGraphMatplotlib                 # View fit graph
 ```
 
 ## Development
@@ -25,8 +25,8 @@ opends view fitGraphMatplotlib                 # View fit graph
 
 * Docker
 * Python (to run CLI)
-* [opendatastudio/cli](https://github.com/opendatastudio/cli)
-* [opendatastudio/containers](https://github.com/opendatastudio/containers)
+* [open-datakit/cli](https://github.com/open-datakit/cli)
+* [open-datakit/containers](https://github.com/open-datakit/containers)
 
 ### Set up pre-commit hooks
 
@@ -42,7 +42,7 @@ pre-commit run --all-files
 
 Build base execution container:
 ```
-# Navigate to opendatastudio/python-run-base repository
+# Navigate to python-run-base repository
 ./build.sh
 ```
 
@@ -60,7 +60,7 @@ python -m venv .venv
 source .venv/bin/activate
 pip install -e /PATH/TO/CLI
 
-opends  # Check CLI is installed
+dk  # Check CLI is installed
 ```
 
 See [Usage](#usage) for command reference.

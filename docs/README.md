@@ -16,5 +16,5 @@ For further details:
 
 ## External links
 
-* 📦 [Bindfit datakit on GitHub](https://github.com/opendatastudio/bindfit-datakit)
-* 💻 [Bindfit Python library on GitHub](https://github.com/opendatastudio/bindfit)
+* 📦 [Bindfit datakit on GitHub](https://github.com/open-datakit/bindfit-datakit)
+* 💻 [Bindfit Python library on GitHub](https://github.com/open-datakit/bindfit)

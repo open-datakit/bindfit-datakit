@@ -1,1 +1,1 @@
-bindfit@git+https://github.com/opendatastudio/bindfit.git@main
+bindfit@git+https://github.com/open-datakit/bindfit.git@main

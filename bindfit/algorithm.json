@@ -1,9 +1,9 @@
 {
   "name": "bindfit",
   "title": "Bindfit",
-  "profile": "opends-algorithm",
+  "profile": "datakit-algorithm",
   "code": "algorithm.py",
-  "container": "opends/bindfit",
+  "container": "datakits/bindfit",
   "signature": {
     "inputs": [
       {

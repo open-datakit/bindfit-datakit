@@ -1,7 +1,7 @@
 {
   "name": "data",
   "title": "Metaschema for aggregate model data",
-  "profile": "opends-metaschema",
+  "profile": "datakit-metaschema",
   "schema": {
     "primaryKey": "host",
     "fields": [

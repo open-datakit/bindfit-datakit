@@ -2,7 +2,7 @@
   "name": "relationships",
   "title": "Bindfit relationships",
   "descriptions": "Relationship rules for Bindfit inputs and outputs",
-  "profile": "opends-relationships",
+  "profile": "datakit-relationships",
   "algorithm": "bindfit",
   "relationships": [
     {

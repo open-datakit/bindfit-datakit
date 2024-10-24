@@ -1,16 +1,16 @@
 {
   "title": "Bindfit",
   "description": "Binding constant fitter datakit",
-  "profile": "opends-analysis-datakit",
+  "profile": "datakit",
   "algorithms": [
     "bindfit"
   ],
   "runs": [],
   "repository": {
     "type": "git",
-    "url": "https://github.com/opendatastudio/bindfit-datakit",
-    "name": "opendatastudio/bindfit-datakit"
+    "url": "https://github.com/open-datakit/bindfit-datakit",
+    "name": "open-datakit/bindfit-datakit"
   },
   "created": 1721295423,
-  "updated": 1729152421
+  "updated": 1729468370
 }
