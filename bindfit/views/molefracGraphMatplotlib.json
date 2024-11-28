@@ -1,0 +1,9 @@
+{
+  "name": "molefracGraphMatplotlib",
+  "specType": "matplotlib",
+  "specFile": "molefracGraphMatplotlib.py",
+  "container": "datakits/bindfit",
+  "resources": [
+    "molefractions"
+  ]
+}
