@@ -4,6 +4,7 @@
     "layout": {
       "rows": [
         {
+          "name": "main-row",
           "style": "display: grid; gap: 1rem; grid-template-columns: repeat(4, minmax(0, 1fr));",
           "cells": [
             {
@@ -67,6 +68,14 @@
                       {
                         "name": "control-panel-dilution",
                         "variable": "dilutionCorrection"
+                      }
+                    ]
+                  },
+                  {
+                    "cells": [
+                      {
+                        "name": "control-panel-execute",
+                        "component": "execute"
                       }
                     ]
                   }
