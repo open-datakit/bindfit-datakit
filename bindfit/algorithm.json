@@ -3,6 +3,10 @@
   "title": "Bindfit",
   "profile": "datakit-algorithm",
   "code": "algorithm.py",
+  "requirements": [
+    "pandas",
+    "bindfit"
+  ],
   "container": "datakits/bindfit",
   "signature": {
     "inputs": [
