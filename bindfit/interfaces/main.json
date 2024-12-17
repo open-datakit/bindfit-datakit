@@ -91,17 +91,20 @@
                   {
                     "cells": [
                       {
-                        "name": "main-panel-top",
+                        "name": "main-panel-top-row",
+                        "style": "display: flex; gap: 2ch; width: 100%;",
                         "layout": {
                           "rows": [
                             {
                               "cells": [
                                 {
                                   "name": "main-panel-fit-params",
+                                  "style": "flex: 1;",
                                   "variable": "outputParams"
                                 },
                                 {
                                   "name": "main-panel-fit-summary",
+                                  "style": "flex: 1;",
                                   "variable": "summary"
                                 }
                               ]
