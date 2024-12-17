@@ -1,5 +1,5 @@
 {
-  "name": "data",
+  "name": "dataAgg",
   "title": "Metaschema for aggregate model data",
   "profile": "datakit-metaschema",
   "schema": {
