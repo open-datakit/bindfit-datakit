@@ -85,7 +85,34 @@
             {
               "name": "main-panel",
               "style": "grid-column: span 3 / span 3;",
-              "view": "fitGraphHighcharts"
+              "layout": {
+                "rows": [
+                  {
+                    "cells": [
+                      {
+                        "name": "main-panel-fit-summary",
+                        "resource": "summary"
+                      }
+                    ]
+                  },
+                  {
+                    "cells": [
+                      {
+                        "name": "main-panel-fit-params",
+                        "resource": "outputParams"
+                      }
+                    ]
+                  },
+                  {
+                    "cells": [
+                      {
+                        "name": "main-panel-fit-graph",
+                        "view": "fitGraphHighcharts"
+                      }
+                    ]
+                  }
+                ]
+              }
             }
           ]
         }
