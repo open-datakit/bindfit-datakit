@@ -16,7 +16,8 @@
                     "cells": [
                       {
                         "name": "control-panel-data",
-                        "variable": "data"
+                        "component": "upload",
+                        "targetVariable": "data"
                       }
                     ]
                   },
