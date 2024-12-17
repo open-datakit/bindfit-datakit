@@ -91,16 +91,23 @@
                   {
                     "cells": [
                       {
-                        "name": "main-panel-fit-summary",
-                        "variable": "summary"
-                      }
-                    ]
-                  },
-                  {
-                    "cells": [
-                      {
-                        "name": "main-panel-fit-params",
-                        "variable": "outputParams"
+                        "name": "main-panel-top",
+                        "layout": {
+                          "rows": [
+                            {
+                              "cells": [
+                                {
+                                  "name": "main-panel-fit-params",
+                                  "variable": "outputParams"
+                                },
+                                {
+                                  "name": "main-panel-fit-summary",
+                                  "variable": "summary"
+                                }
+                              ]
+                            }
+                          ]
+                        }
                       }
                     ]
                   },
