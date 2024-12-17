@@ -32,7 +32,7 @@
                     "cells": [
                       {
                         "name": "control-panel-parameters",
-                        "resource": "inputParams",
+                        "variable": "inputParams",
                         "options": {
                           "size": "compact"
                         }
@@ -91,7 +91,7 @@
                     "cells": [
                       {
                         "name": "main-panel-fit-summary",
-                        "resource": "summary"
+                        "variable": "summary"
                       }
                     ]
                   },
@@ -99,7 +99,7 @@
                     "cells": [
                       {
                         "name": "main-panel-fit-params",
-                        "resource": "outputParams"
+                        "variable": "outputParams"
                       }
                     ]
                   },
