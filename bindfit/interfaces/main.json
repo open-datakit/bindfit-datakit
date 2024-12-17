@@ -110,6 +110,14 @@
                         "view": "fitGraphHighcharts"
                       }
                     ]
+                  },
+                  {
+                    "cells": [
+                      {
+                        "name": "main-panel-molefrac-graph",
+                        "view": "molefracGraphHighcharts"
+                      }
+                    ]
                   }
                 ]
               }
