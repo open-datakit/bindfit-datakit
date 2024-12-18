@@ -106,7 +106,7 @@
                                 },
                                 {
                                   "name": "main-panel-fit-summary",
-                                  "style": "flex: 1; max-width: 50ch; margin-top: 2rem;",
+                                  "style": "flex: 1; max-width: 50ch;",
                                   "variable": "summary"
                                 }
                               ]
