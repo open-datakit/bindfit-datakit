@@ -5,7 +5,7 @@
       "rows": [
         {
           "name": "main-row",
-          "style": "display: grid; gap: 5ch; grid-template-columns: repeat(4, minmax(0, 1fr));",
+          "style": "display: grid; gap: 3ch; grid-template-columns: repeat(4, minmax(0, 1fr));",
           "cells": [
             {
               "name": "control-panel",
@@ -87,6 +87,7 @@
             {
               "name": "main-panel",
               "style": "grid-column: span 3 / span 3;",
+              "class": "card p-4",
               "layout": {
                 "rows": [
                   {
@@ -105,7 +106,7 @@
                                 },
                                 {
                                   "name": "main-panel-fit-summary",
-                                  "style": "flex: 1; max-width: 50ch;",
+                                  "style": "flex: 1; max-width: 50ch; margin-top: 2rem;",
                                   "variable": "summary"
                                 }
                               ]
@@ -119,6 +120,7 @@
                     "cells": [
                       {
                         "name": "main-panel-fit-graph",
+                        "style": "margin-top: 5rem;",
                         "view": "fitGraphHighcharts"
                       }
                     ]
