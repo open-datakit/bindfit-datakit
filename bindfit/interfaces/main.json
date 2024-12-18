@@ -120,7 +120,7 @@
                     "cells": [
                       {
                         "name": "main-panel-fit-graph",
-                        "style": "margin-top: 5rem;",
+                        "style": "margin-top: 2rem;",
                         "view": "fitGraphHighcharts"
                       }
                     ]
