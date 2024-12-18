@@ -1,6 +1,6 @@
 {
   "name": "summary",
-  "title": "Fit summary",
+  "title": "Summary",
   "description": "Fit summary",
   "profile": "tabular-data-resource",
   "schema": {
@@ -26,13 +26,13 @@
       },
       {
         "name": "n_y",
-        "title": "Fitted datapoints",
+        "title": "N datapoints",
         "unit": "",
         "type": "number"
       },
       {
         "name": "n_params",
-        "title": "Fitted parameters",
+        "title": "N parameters",
         "unit": "",
         "type": "number"
       }
