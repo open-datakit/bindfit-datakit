@@ -5,11 +5,12 @@
       "rows": [
         {
           "name": "main-row",
-          "style": "display: grid; gap: 1rem; grid-template-columns: repeat(4, minmax(0, 1fr));",
+          "style": "display: grid; gap: 5ch; grid-template-columns: repeat(4, minmax(0, 1fr));",
           "cells": [
             {
               "name": "control-panel",
-              "style": "grid-column: span 1 / span 1; display: flex; flex-direction: column; gap: 0.5em;",
+              "style": "grid-column: span 1 / span 1; display: flex; flex-direction: column; gap: 1em;",
+              "class": "card bg-light p-4",
               "layout": {
                 "rows": [
                   {
@@ -92,19 +93,19 @@
                     "cells": [
                       {
                         "name": "main-panel-top-row",
-                        "style": "display: flex; gap: 2ch; width: 100%;",
+                        "style": "display: flex; gap: 8ch; justify-content: center",
                         "layout": {
                           "rows": [
                             {
                               "cells": [
                                 {
                                   "name": "main-panel-fit-params",
-                                  "style": "flex: 1;",
+                                  "style": "flex: 1; max-width: 30ch;",
                                   "variable": "outputParams"
                                 },
                                 {
                                   "name": "main-panel-fit-summary",
-                                  "style": "flex: 1;",
+                                  "style": "flex: 1; max-width: 50ch;",
                                   "variable": "summary"
                                 }
                               ]
