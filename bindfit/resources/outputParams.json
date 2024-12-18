@@ -14,14 +14,14 @@
       },
       {
         "name": "value",
-        "title": "Optimised value",
+        "title": "Value",
         "description": "The optimised parameter value",
         "type": "number",
         "unit": "M^{-1}"
       },
       {
         "name": "stderr",
-        "title": "Standard error",
+        "title": "Error",
         "description": "The standard error of the optimised parameter value",
         "type": "number",
         "unit": "M^{-1}"

@@ -20,21 +20,21 @@
       },
       {
         "name": "init",
-        "title": "Init",
+        "title": "Guess",
         "description": "The initial guess for the parameter value",
         "type": "number",
         "unit": "M^{-1}"
       },
       {
         "name": "lowerBound",
-        "title": "Lower",
+        "title": "Min",
         "description": "The lower bound for the parameter value",
         "type": "number",
         "unit": "M^{-1}"
       },
       {
         "name": "upperBound",
-        "title": "Upper",
+        "title": "Max",
         "description": "The upper bound for the parameter value",
         "type": "number",
         "unit": "M^{-1}"
